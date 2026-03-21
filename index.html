@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -48,13 +48,44 @@
 
         #user-info { font-size: 0.9rem; font-weight: 500; }
 
+        /* --- Mode Selector --- */
+        .mode-nav {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .mode-btn {
+            background: #ddd;
+            color: #555;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+            flex: 1;
+        }
+
+        .mode-btn.active {
+            background: #3498db;
+            color: white;
+            box-shadow: 0 2px 5px rgba(52, 152, 219, 0.4);
+        }
+
         /* --- Stats Navbar --- */
         .stats-nav {
             width: 100%;
             max-width: 500px;
             display: flex;
             justify-content: space-between;
-            padding: 15px 20px;
+            padding: 15px 20px 5px 20px;
             box-sizing: border-box;
             z-index: 10;
         }
@@ -108,7 +139,7 @@
             max-width: 400px;
             height: 55%;
             position: relative;
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         #card {
@@ -164,17 +195,8 @@
         }
 
         /* --- Animations --- */
-        .fly-left {
-            transform: translateX(-150%) rotate(-30deg) !important;
-            opacity: 0;
-            transition: transform 0.4s ease-out, opacity 0.4s ease-out;
-        }
-
-        .fly-right {
-            transform: translateX(150%) rotate(30deg) !important;
-            opacity: 0;
-            transition: transform 0.4s ease-out, opacity 0.4s ease-out;
-        }
+        .fly-left { transform: translateX(-150%) rotate(-30deg) !important; opacity: 0; transition: transform 0.4s ease-out, opacity 0.4s ease-out; }
+        .fly-right { transform: translateX(150%) rotate(30deg) !important; opacity: 0; transition: transform 0.4s ease-out, opacity 0.4s ease-out; }
 
         /* --- Modals for Word Lists --- */
         .modal {
@@ -205,15 +227,7 @@
             box-shadow: 0 15px 30px rgba(0,0,0,0.2);
         }
 
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-        }
-
+        .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 10px; }
         .modal-header h2 { margin: 0; font-size: 1.5rem; color: #333; }
         .close-btn { background: none; border: none; font-size: 2rem; cursor: pointer; color: #888; }
         .word-list { list-style: none; padding: 0; margin: 0; overflow-y: auto; flex-grow: 1; }
@@ -237,6 +251,12 @@
     </div>
 
     <div id="main-app-content">
+        <div class="mode-nav">
+            <button id="btn-de-en" class="mode-btn active" onclick="setMode('de-en')">DE ➔ EN</button>
+            <button id="btn-en-de" class="mode-btn" onclick="setMode('en-de')">EN ➔ DE</button>
+            <button id="btn-random" class="mode-btn" onclick="setMode('random')">Random</button>
+        </div>
+
         <div class="stats-nav">
             <button class="stat-btn weak" onclick="openModal('weak')">
                 Weak <span class="badge" id="badge-weak">0</span>
@@ -250,7 +270,7 @@
             <div id="card">
                 <div class="face front" id="front-text">Loading Data...</div>
                 <div class="face back">
-                    <span class="word-type">Translation</span>
+                    <span class="word-type" id="back-label">Translation</span>
                     <span id="back-text">...</span>
                 </div>
             </div>
@@ -279,7 +299,7 @@
 
     <script>
         // ==========================================
-        // 1. FIREBASE CONFIGURATION (PASTE YOURS HERE)
+        // 1. FIREBASE CONFIGURATION 
         // ==========================================
         const firebaseConfig = {
           apiKey: "AIzaSyDLuU96NZ-4I5PqUnpO0fPuM9z4BJnvX_M",
@@ -291,21 +311,22 @@
           measurementId: "G-JZZ03GQ2ZV"
         };
 
-        // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
         const db = firebase.firestore();
 
         // Global State
         let currentUser = null;
-        let cloudWeights = {}; // Replaces localStorage
+        let cloudWeights = {}; 
         let flashcards = [];
         let currentCard = null;
+        let currentMode = 'de-en'; // Default Mode
 
         // UI Elements
         const card = document.getElementById('card');
         const frontText = document.getElementById('front-text');
         const backText = document.getElementById('back-text');
+        const backLabel = document.getElementById('back-label');
         const badgeWeak = document.getElementById('badge-weak');
         const badgeKnown = document.getElementById('badge-known');
         const mainAppContent = document.getElementById('main-app-content');
@@ -326,7 +347,6 @@
         // ==========================================
         auth.onAuthStateChanged(async (user) => {
             if (user) {
-                // User is logged in
                 currentUser = user;
                 userInfo.textContent = `Hi, ${user.displayName.split(' ')[0]}`;
                 loginBtn.style.display = 'none';
@@ -334,10 +354,9 @@
                 loginPrompt.style.display = 'none';
                 mainAppContent.style.display = 'flex';
 
-                await loadUserProgress(); // Fetch their weights from cloud
-                loadWordsFromFile();      // Then load the global text file
+                await loadUserProgress(); 
+                loadWordsFromFile();      
             } else {
-                // User is logged out
                 currentUser = null;
                 flashcards = [];
                 cloudWeights = {};
@@ -354,9 +373,7 @@
             auth.signInWithPopup(provider).catch(error => alert(error.message));
         }
 
-        function signOut() {
-            auth.signOut();
-        }
+        function signOut() { auth.signOut(); }
 
         // ==========================================
         // 3. FIRESTORE DATABASE LOGIC
@@ -366,38 +383,38 @@
             try {
                 const docRef = db.collection('users').doc(currentUser.uid);
                 const docSnap = await docRef.get();
-                
-                if (docSnap.exists) {
-                    cloudWeights = docSnap.data().weights || {};
-                } else {
-                    cloudWeights = {}; // First time user
-                }
-            } catch (error) {
-                console.error("Error fetching progress:", error);
-            }
+                if (docSnap.exists) { cloudWeights = docSnap.data().weights || {}; } 
+                else { cloudWeights = {}; }
+            } catch (error) { console.error("Error fetching progress:", error); }
         }
 
-        // Optimized save: we only update the specific word swiped in the database
         async function saveProgress(word, newWeight) {
             if (!currentUser) return;
-            
             try {
-                // Uses dot notation to update just one specific word in the weights map
                 await db.collection('users').doc(currentUser.uid).set({
-                    weights: {
-                        [word]: newWeight
-                    }
+                    weights: { [word]: newWeight }
                 }, { merge: true });
-                
                 updateUIStats();
-            } catch (error) {
-                console.error("Error saving progress:", error);
-            }
+            } catch (error) { console.error("Error saving progress:", error); }
         }
 
         // ==========================================
-        // 4. APP LOGIC (Parsing & Swiping)
+        // 4. APP LOGIC & MODE SELECTOR
         // ==========================================
+        function setMode(mode) {
+            currentMode = mode;
+            
+            // Update button styles
+            document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('btn-' + mode).classList.add('active');
+            
+            // Automatically reset the card to show it in the new mode
+            if (currentCard) {
+                if(isFlipped) toggleFlip(); // flip it back to front if it was open
+                setTimeout(updateCardText, 200); // Wait for flip animation to finish
+            }
+        }
+
         async function loadWordsFromFile() {
             try {
                 const response = await fetch('words.txt'); 
@@ -413,19 +430,16 @@
         function parseTextData(text) {
             flashcards = []; 
             const lines = text.split(/\r?\n/);
-            
             for (let i = 0; i < lines.length; i += 3) {
                 let deWord = lines[i] ? lines[i].trim() : '';
                 let enWord = lines[i+1] ? lines[i+1].trim() : '';
                 deWord = deWord.replace(/\\s*/g, '');
                 
                 if (deWord && enWord) {
-                    // Check cloudWeights instead of localStorage
                     const weight = cloudWeights[deWord] !== undefined ? cloudWeights[deWord] : 10;
                     flashcards.push({ de: deWord, en: enWord, weight: weight });
                 }
             }
-
             if (flashcards.length > 0) {
                 updateUIStats();
                 loadNextCard();
@@ -437,6 +451,28 @@
             const knownCount = flashcards.filter(c => c.weight <= 5).length;
             badgeWeak.textContent = weakCount;
             badgeKnown.textContent = knownCount;
+        }
+
+        function updateCardText() {
+            if (!currentCard) return;
+            
+            let showDeOnFront = true;
+            if (currentMode === 'en-de') {
+                showDeOnFront = false;
+            } else if (currentMode === 'random') {
+                // 50% chance to show German or English on the front
+                showDeOnFront = Math.random() > 0.5;
+            }
+
+            if (showDeOnFront) {
+                frontText.textContent = currentCard.de;
+                backText.textContent = currentCard.en;
+                backLabel.textContent = "English";
+            } else {
+                frontText.textContent = currentCard.en;
+                backText.textContent = currentCard.de;
+                backLabel.textContent = "German";
+            }
         }
 
         function loadNextCard() {
@@ -458,8 +494,7 @@
             }
 
             setTimeout(() => {
-                frontText.textContent = currentCard.de;
-                backText.textContent = currentCard.en;
+                updateCardText();
             }, 100); 
         }
 
@@ -477,12 +512,8 @@
             currentX = e.clientX - startX;
             currentY = e.clientY - startY;
             const rotate = currentX * 0.05; 
-            
-            if (isFlipped) {
-                card.style.transform = `translate(${currentX}px, ${currentY}px) rotateX(180deg) rotateZ(${rotate}deg)`;
-            } else {
-                card.style.transform = `translate(${currentX}px, ${currentY}px) rotate(${rotate}deg)`;
-            }
+            if (isFlipped) { card.style.transform = `translate(${currentX}px, ${currentY}px) rotateX(180deg) rotateZ(${rotate}deg)`; } 
+            else { card.style.transform = `translate(${currentX}px, ${currentY}px) rotate(${rotate}deg)`; }
         });
 
         card.addEventListener('pointerup', (e) => {
@@ -496,13 +527,11 @@
 
             if (Math.abs(currentX) > Math.abs(currentY)) {
                 if (currentX > thresholdX) {
-                    // FIX 2: Decrease weight by 5 so it immediately hits the <= 5 'Known' threshold
                     currentCard.weight = Math.max(1, currentCard.weight - 5);
                     saveProgress(currentCard.de, currentCard.weight); 
                     card.classList.add('fly-right');
                     setTimeout(loadNextCard, 300);
                 } else if (currentX < -thresholdX) {
-                    // Swipe Left (Increase weight by 5)
                     currentCard.weight += 5;
                     saveProgress(currentCard.de, currentCard.weight); 
                     card.classList.add('fly-left');
@@ -516,7 +545,6 @@
                     resetCardPosition();
                 } else if (Math.abs(currentX) < 10 && Math.abs(currentY) < 10) {
                     toggleFlip();
-                    // FIX 1: Explicitly reset the inline style on tap so it flips back smoothly
                     resetCardPosition(); 
                 } else {
                     resetCardPosition();
