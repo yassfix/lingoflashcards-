@@ -58,7 +58,7 @@
             font-weight: bold;
             font-size: 0.9rem;
             box-sizing: border-box;
-            display: none; /* Hidden by default */
+            display: none;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             z-index: 15;
         }
@@ -123,6 +123,18 @@
         .stat-btn:active { transform: scale(0.95); }
         .stat-btn.weak { color: #e74c3c; }
         .stat-btn.known { color: #2ecc71; }
+
+        /* NEW LOCK BUTTON STYLES */
+        #lock-btn {
+            background: #ecf0f1;
+            color: #7f8c8d;
+            transition: all 0.3s ease;
+        }
+        #lock-btn.locked {
+            background: #f39c12;
+            color: white;
+            box-shadow: 0 4px 10px rgba(243, 156, 18, 0.4);
+        }
         
         .badge {
             background: #eee;
@@ -316,6 +328,11 @@
             <button class="stat-btn weak" onclick="openModal('weak')">
                 Weak <span class="badge" id="badge-weak">0</span>
             </button>
+            
+            <button id="lock-btn" class="stat-btn" onclick="toggleLock()">
+                🔓 Unlocked
+            </button>
+
             <button class="stat-btn known" onclick="openModal('known')">
                 Known <span class="badge" id="badge-known">0</span>
             </button>
@@ -379,13 +396,14 @@
         const db = firebase.firestore();
 
         // Global State
-        const LOCAL_STORAGE_KEY = 'german_app_guest_progress'; // New local storage key
+        const LOCAL_STORAGE_KEY = 'german_app_guest_progress';
         let currentUser = null;
         let cloudWeights = {}; 
         let flashcards = [];
         let currentCard = null;
         let currentMode = 'de-en'; 
         let currentListType = ''; 
+        let isDeckLocked = false; 
 
         // UI Elements
         const card = document.getElementById('card');
@@ -394,8 +412,9 @@
         const backLabel = document.getElementById('back-label');
         const badgeWeak = document.getElementById('badge-weak');
         const badgeKnown = document.getElementById('badge-known');
+        const lockBtn = document.getElementById('lock-btn'); 
         const mainAppContent = document.getElementById('main-app-content');
-        const guestWarning = document.getElementById('guest-warning'); // Warning banner
+        const guestWarning = document.getElementById('guest-warning'); 
         const userInfo = document.getElementById('user-info');
         const loginBtn = document.getElementById('login-btn');
         const logoutBtn = document.getElementById('logout-btn');
@@ -417,27 +436,25 @@
         // ==========================================
         auth.onAuthStateChanged(async (user) => {
             if (user) {
-                // LOGGED IN USER
                 currentUser = user;
                 userInfo.textContent = `Hi, ${user.displayName.split(' ')[0]}`;
                 loginBtn.style.display = 'none';
                 logoutBtn.style.display = 'inline-block';
-                guestWarning.style.display = 'none'; // Hide warning
+                guestWarning.style.display = 'none';
                 mainAppContent.style.display = 'flex';
 
                 await loadCloudProgress(); 
                 loadWordsFromFile();      
             } else {
-                // GUEST USER
                 currentUser = null;
                 userInfo.textContent = "German Flashcards Pro";
                 loginBtn.style.display = 'inline-block';
                 logoutBtn.style.display = 'none';
-                guestWarning.style.display = 'block'; // Show warning
-                mainAppContent.style.display = 'flex'; // Make sure app is visible!
+                guestWarning.style.display = 'block';
+                mainAppContent.style.display = 'flex';
                 fullListView.style.display = 'none';
 
-                loadLocalProgress(); // Load from browser instead of cloud
+                loadLocalProgress(); 
                 loadWordsFromFile();
             }
         });
@@ -470,18 +487,15 @@
         }
 
         async function saveProgress(word, newWeight) {
-            // Update the memory object first
             cloudWeights[word] = newWeight;
 
             if (currentUser) {
-                // Save to Firebase if logged in
                 try {
                     await db.collection('users').doc(currentUser.uid).set({
                         weights: { [word]: newWeight }
                     }, { merge: true });
                 } catch (error) { console.error("Error saving progress:", error); }
             } else {
-                // Save to LocalStorage if Guest
                 localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(cloudWeights));
             }
             updateUIStats();
@@ -498,6 +512,29 @@
                 if(isFlipped) toggleFlip(); 
                 setTimeout(updateCardText, 200); 
             }
+        }
+
+        function toggleLock() {
+            // Check if there are any words that have been "seen"
+            const seenCards = flashcards.filter(c => c.seen);
+            
+            if (!isDeckLocked && seenCards.length === 0) {
+                alert("You haven't swiped any words yet! Swipe some cards first to lock your deck.");
+                return;
+            }
+
+            isDeckLocked = !isDeckLocked;
+            
+            if (isDeckLocked) {
+                lockBtn.classList.add('locked');
+                lockBtn.innerHTML = "🔒 Locked";
+            } else {
+                lockBtn.classList.remove('locked');
+                lockBtn.innerHTML = "🔓 Unlocked";
+            }
+            
+            if (currentCard && isFlipped) toggleFlip();
+            loadNextCard();
         }
 
         async function loadWordsFromFile() {
@@ -521,8 +558,10 @@
                 deWord = deWord.replace(/\\s*/g, '');
                 
                 if (deWord && enWord) {
-                    const weight = cloudWeights[deWord] !== undefined ? cloudWeights[deWord] : 10;
-                    flashcards.push({ de: deWord, en: enWord, weight: weight });
+                    // NEW LOGIC: A word is 'seen' if it exists in the database
+                    const isSeen = cloudWeights[deWord] !== undefined; 
+                    const weight = isSeen ? cloudWeights[deWord] : 10;
+                    flashcards.push({ de: deWord, en: enWord, weight: weight, seen: isSeen });
                 }
             }
             if (flashcards.length > 0) {
@@ -561,11 +600,20 @@
             card.style.transform = '';
             isFlipped = false;
 
-            const totalWeight = flashcards.reduce((sum, card) => sum + card.weight, 0);
+            // DETERMINE ACTIVE POOL BASED ON "SEEN" STATUS
+            let activePool = flashcards;
+            if (isDeckLocked) {
+                // Ignore weight entirely! Only check if the user has swiped it before
+                activePool = flashcards.filter(c => c.seen);
+                // Safety net:
+                if(activePool.length === 0) activePool = flashcards;
+            }
+
+            const totalWeight = activePool.reduce((sum, card) => sum + card.weight, 0);
             let random = Math.random() * totalWeight;
             
             let sum = 0;
-            for (let item of flashcards) {
+            for (let item of activePool) {
                 sum += item.weight;
                 if (random <= sum) {
                     currentCard = item;
@@ -604,11 +652,13 @@
 
             if (Math.abs(currentX) > Math.abs(currentY)) {
                 if (currentX > thresholdX) {
+                    currentCard.seen = true; // Mark as seen permanently for this session
                     currentCard.weight = Math.max(1, currentCard.weight - 5);
                     saveProgress(currentCard.de, currentCard.weight); 
                     card.classList.add('fly-right');
                     setTimeout(loadNextCard, 300);
                 } else if (currentX < -thresholdX) {
+                    currentCard.seen = true; // Mark as seen permanently for this session
                     currentCard.weight += 5;
                     saveProgress(currentCard.de, currentCard.weight); 
                     card.classList.add('fly-left');
