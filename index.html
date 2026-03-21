@@ -48,6 +48,21 @@
 
         #user-info { font-size: 0.9rem; font-weight: 500; }
 
+        /* --- Guest Warning Banner --- */
+        #guest-warning {
+            background: #f39c12;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            box-sizing: border-box;
+            display: none; /* Hidden by default */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 15;
+        }
+
         /* --- Mode Selector --- */
         .mode-nav {
             width: 100%;
@@ -124,13 +139,6 @@
             flex-direction: column;
             align-items: center;
             display: none; 
-        }
-
-        #login-prompt {
-            margin-top: 40px;
-            font-size: 1.2rem;
-            color: #555;
-            text-align: center;
         }
 
         #card-container {
@@ -288,13 +296,13 @@
     <div class="auth-nav">
         <span id="user-info">German Flashcards Pro</span>
         <div>
-            <button id="login-btn" class="auth-btn" onclick="signIn()">Login with Google</button>
+            <button id="login-btn" class="auth-btn" onclick="signIn()">Login</button>
             <button id="logout-btn" class="auth-btn logout" style="display:none;" onclick="signOut()">Logout</button>
         </div>
     </div>
 
-    <div id="login-prompt">
-        Please log in to load your personalized flashcards.
+    <div id="guest-warning">
+        Guest Mode: Progress is only saved on this browser. Log in to sync to the cloud!
     </div>
 
     <div id="main-app-content">
@@ -371,12 +379,13 @@
         const db = firebase.firestore();
 
         // Global State
+        const LOCAL_STORAGE_KEY = 'german_app_guest_progress'; // New local storage key
         let currentUser = null;
         let cloudWeights = {}; 
         let flashcards = [];
         let currentCard = null;
         let currentMode = 'de-en'; 
-        let currentListType = ''; // Tracks which list we are viewing
+        let currentListType = ''; 
 
         // UI Elements
         const card = document.getElementById('card');
@@ -386,7 +395,7 @@
         const badgeWeak = document.getElementById('badge-weak');
         const badgeKnown = document.getElementById('badge-known');
         const mainAppContent = document.getElementById('main-app-content');
-        const loginPrompt = document.getElementById('login-prompt');
+        const guestWarning = document.getElementById('guest-warning'); // Warning banner
         const userInfo = document.getElementById('user-info');
         const loginBtn = document.getElementById('login-btn');
         const logoutBtn = document.getElementById('logout-btn');
@@ -408,25 +417,28 @@
         // ==========================================
         auth.onAuthStateChanged(async (user) => {
             if (user) {
+                // LOGGED IN USER
                 currentUser = user;
                 userInfo.textContent = `Hi, ${user.displayName.split(' ')[0]}`;
                 loginBtn.style.display = 'none';
                 logoutBtn.style.display = 'inline-block';
-                loginPrompt.style.display = 'none';
+                guestWarning.style.display = 'none'; // Hide warning
                 mainAppContent.style.display = 'flex';
 
-                await loadUserProgress(); 
+                await loadCloudProgress(); 
                 loadWordsFromFile();      
             } else {
+                // GUEST USER
                 currentUser = null;
-                flashcards = [];
-                cloudWeights = {};
                 userInfo.textContent = "German Flashcards Pro";
                 loginBtn.style.display = 'inline-block';
                 logoutBtn.style.display = 'none';
-                loginPrompt.style.display = 'block';
-                mainAppContent.style.display = 'none';
+                guestWarning.style.display = 'block'; // Show warning
+                mainAppContent.style.display = 'flex'; // Make sure app is visible!
                 fullListView.style.display = 'none';
+
+                loadLocalProgress(); // Load from browser instead of cloud
+                loadWordsFromFile();
             }
         });
 
@@ -438,10 +450,9 @@
         function signOut() { auth.signOut(); }
 
         // ==========================================
-        // 3. FIRESTORE DATABASE LOGIC
+        // 3. DATABASE / LOCAL STORAGE LOGIC
         // ==========================================
-        async function loadUserProgress() {
-            if (!currentUser) return;
+        async function loadCloudProgress() {
             try {
                 const docRef = db.collection('users').doc(currentUser.uid);
                 const docSnap = await docRef.get();
@@ -450,14 +461,30 @@
             } catch (error) { console.error("Error fetching progress:", error); }
         }
 
-        async function saveProgress(word, newWeight) {
-            if (!currentUser) return;
+        function loadLocalProgress() {
             try {
-                await db.collection('users').doc(currentUser.uid).set({
-                    weights: { [word]: newWeight }
-                }, { merge: true });
-                updateUIStats();
-            } catch (error) { console.error("Error saving progress:", error); }
+                cloudWeights = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || {};
+            } catch (error) {
+                cloudWeights = {};
+            }
+        }
+
+        async function saveProgress(word, newWeight) {
+            // Update the memory object first
+            cloudWeights[word] = newWeight;
+
+            if (currentUser) {
+                // Save to Firebase if logged in
+                try {
+                    await db.collection('users').doc(currentUser.uid).set({
+                        weights: { [word]: newWeight }
+                    }, { merge: true });
+                } catch (error) { console.error("Error saving progress:", error); }
+            } else {
+                // Save to LocalStorage if Guest
+                localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(cloudWeights));
+            }
+            updateUIStats();
         }
 
         // ==========================================
@@ -633,7 +660,6 @@
             if (filteredCards.length === 0) {
                 modalList.innerHTML = `<li style="justify-content:center; color:#888;">No words in this pile yet!</li>`;
             } else {
-                // Show ONLY top 8 in the modal
                 const topCards = filteredCards.slice(0, 8);
                 topCards.forEach(card => {
                     const li = document.createElement('li');
@@ -641,7 +667,6 @@
                     modalList.appendChild(li);
                 });
 
-                // If there are more than 8, show a "View All" button
                 if (filteredCards.length > 8) {
                     const btnLi = document.createElement('li');
                     btnLi.style.borderBottom = 'none';
@@ -656,7 +681,7 @@
         modal.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
 
         function openFullList() {
-            closeModal(); // Hide the mini modal
+            closeModal(); 
             fullListContent.innerHTML = '';
             let filteredCards = [];
 
@@ -668,14 +693,12 @@
                 filteredCards = flashcards.filter(c => c.weight <= 5).sort((a,b) => a.weight - b.weight);
             }
 
-            // Populate all words
             filteredCards.forEach(card => {
                 const li = document.createElement('li');
                 li.innerHTML = `<span class="de">${card.de}</span> <span class="en">${card.en}</span>`;
                 fullListContent.appendChild(li);
             });
 
-            // Switch views
             mainAppContent.style.display = 'none';
             fullListView.style.display = 'flex';
         }
