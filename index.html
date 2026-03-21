@@ -496,15 +496,15 @@
 
             if (Math.abs(currentX) > Math.abs(currentY)) {
                 if (currentX > thresholdX) {
-                    // Swipe Right (Decrease weight by 3, min 1)
-                    currentCard.weight = Math.max(1, currentCard.weight - 3);
-                    saveProgress(currentCard.de, currentCard.weight); // Cloud save
+                    // FIX 2: Decrease weight by 5 so it immediately hits the <= 5 'Known' threshold
+                    currentCard.weight = Math.max(1, currentCard.weight - 5);
+                    saveProgress(currentCard.de, currentCard.weight); 
                     card.classList.add('fly-right');
                     setTimeout(loadNextCard, 300);
                 } else if (currentX < -thresholdX) {
                     // Swipe Left (Increase weight by 5)
                     currentCard.weight += 5;
-                    saveProgress(currentCard.de, currentCard.weight); // Cloud save
+                    saveProgress(currentCard.de, currentCard.weight); 
                     card.classList.add('fly-left');
                     setTimeout(loadNextCard, 300);
                 } else {
@@ -516,6 +516,8 @@
                     resetCardPosition();
                 } else if (Math.abs(currentX) < 10 && Math.abs(currentY) < 10) {
                     toggleFlip();
+                    // FIX 1: Explicitly reset the inline style on tap so it flips back smoothly
+                    resetCardPosition(); 
                 } else {
                     resetCardPosition();
                 }
