@@ -124,7 +124,6 @@
         .stat-btn.weak { color: #e74c3c; }
         .stat-btn.known { color: #2ecc71; }
 
-        /* NEW LOCK BUTTON STYLES */
         #lock-btn {
             background: #ecf0f1;
             color: #7f8c8d;
@@ -515,9 +514,10 @@
         }
 
         function toggleLock() {
-            const seenCards = flashcards.filter(c => c.seen);
+            // A word is "learned" if it is present in the weight records
+            const learnedCards = flashcards.filter(c => cloudWeights[c.de] !== undefined || c.seen);
             
-            if (!isDeckLocked && seenCards.length === 0) {
+            if (!isDeckLocked && learnedCards.length === 0) {
                 alert("You haven't swiped any words yet! Swipe some cards first to lock your deck.");
                 return;
             }
@@ -557,9 +557,13 @@
                 deWord = deWord.replace(/\\s*/g, '');
                 
                 if (deWord && enWord) {
-                    const isSeen = cloudWeights[deWord] !== undefined; 
-                    const weight = isSeen ? cloudWeights[deWord] : 10;
-                    flashcards.push({ de: deWord, en: enWord, weight: weight, seen: isSeen });
+                    const weight = cloudWeights[deWord] !== undefined ? cloudWeights[deWord] : 10;
+                    flashcards.push({ 
+                        de: deWord, 
+                        en: enWord, 
+                        weight: weight, 
+                        seen: cloudWeights[deWord] !== undefined 
+                    });
                 }
             }
             if (flashcards.length > 0) {
@@ -570,8 +574,12 @@
 
         function updateUIStats() {
             const weakCount = flashcards.filter(c => c.weight >= 15).length;
-            // UPDATE: Words are "Known" if weight <= 5 OR if they are exactly 10 but have been seen before.
-            const knownCount = flashcards.filter(c => c.weight <= 5 || (c.weight === 10 && c.seen)).length;
+            // A word is Known if: weight <= 5 OR (weight < 15 and it has been seen/swiped)
+            const knownCount = flashcards.filter(c => {
+                const hasBeenSeen = cloudWeights[c.de] !== undefined || c.seen;
+                return hasBeenSeen && c.weight < 15;
+            }).length;
+
             badgeWeak.textContent = weakCount;
             badgeKnown.textContent = knownCount;
         }
@@ -601,7 +609,8 @@
 
             let activePool = flashcards;
             if (isDeckLocked) {
-                activePool = flashcards.filter(c => c.seen);
+                // Only show words that exist in the progress database or have been seen
+                activePool = flashcards.filter(c => cloudWeights[c.de] !== undefined || c.seen);
                 if(activePool.length === 0) activePool = flashcards;
             }
 
@@ -700,8 +709,11 @@
             } else {
                 modalTitle.textContent = "Known Words";
                 modalTitle.style.color = "#2ecc71";
-                // UPDATE: Add words to the modal list if they are <= 5 OR (exactly 10 and seen)
-                filteredCards = flashcards.filter(c => c.weight <= 5 || (c.weight === 10 && c.seen)).sort((a,b) => a.weight - b.weight);
+                // A word is Known if: weight < 15 and it has been seen/swiped
+                filteredCards = flashcards.filter(c => {
+                    const hasBeenSeen = cloudWeights[c.de] !== undefined || c.seen;
+                    return hasBeenSeen && c.weight < 15;
+                }).sort((a,b) => a.weight - b.weight);
             }
 
             if (filteredCards.length === 0) {
@@ -737,8 +749,11 @@
                 filteredCards = flashcards.filter(c => c.weight >= 15).sort((a,b) => b.weight - a.weight);
             } else {
                 fullListTitle.textContent = "Known Words";
-                // UPDATE: Add words to the full list if they are <= 5 OR (exactly 10 and seen)
-                filteredCards = flashcards.filter(c => c.weight <= 5 || (c.weight === 10 && c.seen)).sort((a,b) => a.weight - b.weight);
+                // Same filter as modal
+                filteredCards = flashcards.filter(c => {
+                    const hasBeenSeen = cloudWeights[c.de] !== undefined || c.seen;
+                    return hasBeenSeen && c.weight < 15;
+                }).sort((a,b) => a.weight - b.weight);
             }
 
             filteredCards.forEach(card => {
