@@ -123,7 +123,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            display: none; /* Hidden until logged in */
+            display: none; 
         }
 
         #login-prompt {
@@ -234,6 +234,53 @@
         .word-list li { padding: 12px 0; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; font-size: 1.1rem; }
         .word-list li .de { font-weight: bold; color: #2c3e50; }
         .word-list li .en { color: #888; font-size: 0.95rem; }
+
+        /* --- Full Page List View --- */
+        #full-list-view {
+            display: none; 
+            width: 100%; 
+            height: 100%; 
+            flex-direction: column; 
+            background: white; 
+            z-index: 50; 
+            position: absolute; 
+            top: 0; 
+            left: 0;
+        }
+        
+        .full-list-header {
+            padding: 15px 20px; 
+            background: #2c3e50; 
+            color: white; 
+            display: flex; 
+            align-items: center; 
+            gap: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .back-btn {
+            background: none; 
+            border: none; 
+            color: white; 
+            font-size: 1.1rem; 
+            cursor: pointer;
+            padding: 5px 10px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        .view-all-btn {
+            background: #3498db; 
+            color: white; 
+            border: none; 
+            padding: 12px; 
+            border-radius: 10px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            width: 100%;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -293,6 +340,14 @@
         </div>
     </div>
 
+    <div id="full-list-view">
+        <div class="full-list-header">
+            <button class="back-btn" onclick="closeFullList()">← Back</button>
+            <h2 id="full-list-title" style="margin: 0; font-size: 1.2rem;">Full List</h2>
+        </div>
+        <ul id="full-list-content" class="word-list" style="padding: 0 20px; overflow-y: auto; flex-grow: 1;"></ul>
+    </div>
+
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
@@ -320,7 +375,8 @@
         let cloudWeights = {}; 
         let flashcards = [];
         let currentCard = null;
-        let currentMode = 'de-en'; // Default Mode
+        let currentMode = 'de-en'; 
+        let currentListType = ''; // Tracks which list we are viewing
 
         // UI Elements
         const card = document.getElementById('card');
@@ -334,9 +390,14 @@
         const userInfo = document.getElementById('user-info');
         const loginBtn = document.getElementById('login-btn');
         const logoutBtn = document.getElementById('logout-btn');
+        
         const modal = document.getElementById('word-modal');
         const modalList = document.getElementById('modal-list');
         const modalTitle = document.getElementById('modal-title');
+        
+        const fullListView = document.getElementById('full-list-view');
+        const fullListContent = document.getElementById('full-list-content');
+        const fullListTitle = document.getElementById('full-list-title');
 
         let isDragging = false;
         let startX = 0, startY = 0, currentX = 0, currentY = 0;
@@ -365,6 +426,7 @@
                 logoutBtn.style.display = 'none';
                 loginPrompt.style.display = 'block';
                 mainAppContent.style.display = 'none';
+                fullListView.style.display = 'none';
             }
         });
 
@@ -403,15 +465,11 @@
         // ==========================================
         function setMode(mode) {
             currentMode = mode;
-            
-            // Update button styles
             document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById('btn-' + mode).classList.add('active');
-            
-            // Automatically reset the card to show it in the new mode
             if (currentCard) {
-                if(isFlipped) toggleFlip(); // flip it back to front if it was open
-                setTimeout(updateCardText, 200); // Wait for flip animation to finish
+                if(isFlipped) toggleFlip(); 
+                setTimeout(updateCardText, 200); 
             }
         }
 
@@ -455,14 +513,9 @@
 
         function updateCardText() {
             if (!currentCard) return;
-            
             let showDeOnFront = true;
-            if (currentMode === 'en-de') {
-                showDeOnFront = false;
-            } else if (currentMode === 'random') {
-                // 50% chance to show German or English on the front
-                showDeOnFront = Math.random() > 0.5;
-            }
+            if (currentMode === 'en-de') showDeOnFront = false;
+            else if (currentMode === 'random') showDeOnFront = Math.random() > 0.5;
 
             if (showDeOnFront) {
                 frontText.textContent = currentCard.de;
@@ -492,10 +545,7 @@
                     break;
                 }
             }
-
-            setTimeout(() => {
-                updateCardText();
-            }, 100); 
+            setTimeout(() => { updateCardText(); }, 100); 
         }
 
         // --- Swipe Logic ---
@@ -558,15 +608,15 @@
             isFlipped = !isFlipped;
             isFlipped ? card.classList.add('flipped') : card.classList.remove('flipped');
         }
-
         function resetCardPosition() {
             card.style.transform = isFlipped ? 'rotateX(180deg)' : 'translate(0px, 0px) rotate(0deg)';
         }
 
         // ==========================================
-        // 5. MODAL LOGIC
+        // 5. MODAL & FULL PAGE LOGIC
         // ==========================================
         function openModal(type) {
+            currentListType = type;
             modalList.innerHTML = '';
             let filteredCards = [];
 
@@ -583,17 +633,57 @@
             if (filteredCards.length === 0) {
                 modalList.innerHTML = `<li style="justify-content:center; color:#888;">No words in this pile yet!</li>`;
             } else {
-                filteredCards.forEach(card => {
+                // Show ONLY top 8 in the modal
+                const topCards = filteredCards.slice(0, 8);
+                topCards.forEach(card => {
                     const li = document.createElement('li');
                     li.innerHTML = `<span class="de">${card.de}</span> <span class="en">${card.en}</span>`;
                     modalList.appendChild(li);
                 });
+
+                // If there are more than 8, show a "View All" button
+                if (filteredCards.length > 8) {
+                    const btnLi = document.createElement('li');
+                    btnLi.style.borderBottom = 'none';
+                    btnLi.innerHTML = `<button class="view-all-btn" onclick="openFullList()">View All (${filteredCards.length})</button>`;
+                    modalList.appendChild(btnLi);
+                }
             }
             modal.classList.add('show');
         }
 
         function closeModal() { modal.classList.remove('show'); }
         modal.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
+
+        function openFullList() {
+            closeModal(); // Hide the mini modal
+            fullListContent.innerHTML = '';
+            let filteredCards = [];
+
+            if (currentListType === 'weak') {
+                fullListTitle.textContent = "Weak Words";
+                filteredCards = flashcards.filter(c => c.weight >= 15).sort((a,b) => b.weight - a.weight);
+            } else {
+                fullListTitle.textContent = "Known Words";
+                filteredCards = flashcards.filter(c => c.weight <= 5).sort((a,b) => a.weight - b.weight);
+            }
+
+            // Populate all words
+            filteredCards.forEach(card => {
+                const li = document.createElement('li');
+                li.innerHTML = `<span class="de">${card.de}</span> <span class="en">${card.en}</span>`;
+                fullListContent.appendChild(li);
+            });
+
+            // Switch views
+            mainAppContent.style.display = 'none';
+            fullListView.style.display = 'flex';
+        }
+
+        function closeFullList() {
+            fullListView.style.display = 'none';
+            mainAppContent.style.display = 'flex';
+        }
 
     </script>
 </body>
