@@ -219,7 +219,6 @@
             font-weight: normal;
         }
 
-        /* NEW CARD CONTROLS ROW */
         .card-controls {
             display: flex;
             gap: 15px;
@@ -463,6 +462,9 @@
         let timeLeft = 5;
         let timerInterval = null;
         let isTimeUp = false;
+        
+        // NEW: History Buffer to space out words
+        let recentCards = []; 
 
         // UI Elements
         const card = document.getElementById('card');
@@ -610,10 +612,8 @@
             window.speechSynthesis.speak(utterance);
         }
 
-        // NEW SEARCH FUNCTION
         function searchWord() {
             if (currentCard && currentCard.de) {
-                // Creates a clean URL: "word meaning"
                 const query = encodeURIComponent(currentCard.de + " meaning");
                 window.open(`https://www.google.com/search?q=${query}`, '_blank');
             }
@@ -621,7 +621,7 @@
 
         // --- TIMER LOGIC ---
         function startTimer() {
-            clearInterval(timerInterval); // Double check clear
+            clearInterval(timerInterval); 
             timeLeft = 5;
             isTimeUp = false;
             timerBadge.textContent = `⏱️ ${timeLeft}s`;
@@ -635,7 +635,7 @@
                     timeLeft = 0;
                     isTimeUp = true;
                     timerBadge.textContent = `⏱️ 0s`;
-                    timerBadge.style.background = '#95a5a6'; // grey
+                    timerBadge.style.background = '#95a5a6';
                     clearInterval(timerInterval);
                 }
             }, 1000);
@@ -746,17 +746,37 @@
                 if(activePool.length === 0) activePool = flashcards;
             }
 
-            const totalWeight = activePool.reduce((sum, card) => sum + card.weight, 0);
+            // NEW: History Buffer Filter
+            // Blocks up to 50 of the most recently seen cards (or 60% of your deck, whichever is smaller)
+            let maxHistory = Math.min(50, Math.floor(activePool.length * 0.6));
+            let availablePool = activePool.filter(c => !recentCards.includes(c.de));
+            
+            // Fallback: If we filtered out everything, just ensure we don't show the EXACT same card twice in a row
+            if (availablePool.length === 0) {
+                availablePool = activePool.filter(c => currentCard ? c.de !== currentCard.de : true);
+                if (availablePool.length === 0) availablePool = activePool;
+            }
+
+            const totalWeight = availablePool.reduce((sum, card) => sum + card.weight, 0);
             let random = Math.random() * totalWeight;
             
             let sum = 0;
-            for (let item of activePool) {
+            for (let item of availablePool) {
                 sum += item.weight;
                 if (random <= sum) {
                     currentCard = item;
                     break;
                 }
             }
+
+            // Add new card to the History Buffer
+            if (currentCard) {
+                recentCards.push(currentCard.de);
+                if (recentCards.length > maxHistory) {
+                    recentCards.shift(); // Remove oldest card from buffer
+                }
+            }
+
             setTimeout(() => { 
                 updateCardText(); 
                 startTimer();
@@ -876,7 +896,7 @@
                 if (filteredCards.length > 8) {
                     const btnLi = document.createElement('li');
                     btnLi.style.borderBottom = 'none';
-                    btnLi.innerHTML = `<button class="view-all-btn" onclick="openFullList()">View All (${filteredCards.length})</button>`;
+                    btnLi.innerHTML = `<button class=\"view-all-btn\" onclick=\"openFullList()\">View All (${filteredCards.length})</button>`;
                     modalList.appendChild(btnLi);
                 }
             }
@@ -904,7 +924,7 @@
 
             filteredCards.forEach(card => {
                 const li = document.createElement('li');
-                li.innerHTML = `<span class="de">${card.de}</span> <span class="en">${card.en}</span>`;
+                li.innerHTML = `<span class=\"de\">${card.de}</span> <span class=\"en\">${card.en}</span>`;
                 fullListContent.appendChild(li);
             });
 
