@@ -156,7 +156,7 @@
             perspective: 1000px;
             width: 85%;
             max-width: 400px;
-            height: 50%; /* Slightly smaller to fit the external button perfectly */
+            height: 50%; 
             position: relative;
             margin-top: 15px;
         }
@@ -219,12 +219,17 @@
             font-weight: normal;
         }
 
-        /* NEW EXTERNAL SPEAKER BUTTON */
-        #external-speaker-btn {
+        /* NEW CARD CONTROLS ROW */
+        .card-controls {
+            display: flex;
+            gap: 15px;
             margin-top: 25px;
-            padding: 12px 25px;
+            z-index: 10;
+        }
+
+        .action-btn {
+            padding: 12px 20px;
             border-radius: 25px;
-            background: #8e44ad; /* Distinctive purple */
             color: white;
             border: none;
             font-size: 1.1rem;
@@ -232,13 +237,16 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.15);
             cursor: pointer;
             transition: transform 0.2s, background 0.2s;
-            z-index: 10;
             display: flex;
             align-items: center;
             gap: 8px;
         }
 
+        #external-speaker-btn { background: #8e44ad; }
         #external-speaker-btn:active { transform: scale(0.95); background: #732d91; }
+
+        #search-btn { background: #27ae60; }
+        #search-btn:active { transform: scale(0.95); background: #219653; }
 
         .instructions {
             margin-top: auto;
@@ -387,7 +395,10 @@
             </div>
         </div>
 
-        <button id="external-speaker-btn" onclick="playCurrentAudio()">🔊 Hear German</button>
+        <div class="card-controls">
+            <button id="external-speaker-btn" class="action-btn" onclick="playCurrentAudio()">🔊 Hear</button>
+            <button id="search-btn" class="action-btn" onclick="searchWord()">🔍 Meaning</button>
+        </div>
 
         <div class="instructions">
             <strong>Swipe Up / Tap Card</strong> to reveal translation<br>
@@ -563,7 +574,7 @@
             }
         }
 
-        // --- AUDIO LOGIC ---
+        // --- AUDIO & SEARCH LOGIC ---
         function toggleAudio() {
             isAudioAuto = !isAudioAuto;
             const btn = document.getElementById('audio-btn');
@@ -597,6 +608,15 @@
             const utterance = new SpeechSynthesisUtterance(text);
             utterance.lang = 'de-DE';
             window.speechSynthesis.speak(utterance);
+        }
+
+        // NEW SEARCH FUNCTION
+        function searchWord() {
+            if (currentCard && currentCard.de) {
+                // Creates a clean URL: "word meaning"
+                const query = encodeURIComponent(currentCard.de + " meaning");
+                window.open(`https://www.google.com/search?q=${query}`, '_blank');
+            }
         }
 
         // --- TIMER LOGIC ---
@@ -711,7 +731,6 @@
         }
 
         function loadNextCard() {
-            // FIX: Instantly stop the old timer and reset UI the moment a new card is requested
             clearInterval(timerInterval);
             timerBadge.textContent = `⏱️ 5s`;
             timerBadge.style.background = '#e74c3c';
@@ -774,7 +793,7 @@
             if (Math.abs(currentX) > Math.abs(currentY)) {
                 if (currentX > thresholdX) {
                     // SWIPE RIGHT
-                    clearInterval(timerInterval); // Stop timer immediately
+                    clearInterval(timerInterval); 
                     currentCard.seen = true; 
                     
                     if (!isTimeUp) {
@@ -786,7 +805,7 @@
                     setTimeout(loadNextCard, 300);
                 } else if (currentX < -thresholdX) {
                     // SWIPE LEFT
-                    clearInterval(timerInterval); // Stop timer immediately
+                    clearInterval(timerInterval); 
                     currentCard.seen = true; 
                     currentCard.weight += 5; 
                     
