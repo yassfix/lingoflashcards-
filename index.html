@@ -403,6 +403,8 @@
         let currentMode = 'de-en'; 
         let currentListType = ''; 
         let isDeckLocked = false; 
+        let recentCards = [];
+
 
         // UI Elements
         const card = document.getElementById('card');
@@ -608,23 +610,47 @@
             isFlipped = false;
 
             let activePool = flashcards;
+    
+            // Filter if the deck is locked
             if (isDeckLocked) {
-                // Only show words that exist in the progress database or have been seen
                 activePool = flashcards.filter(c => cloudWeights[c.de] !== undefined || c.seen);
-                if(activePool.length === 0) activePool = flashcards;
+                if (activePool.length === 0) activePool = flashcards;
             }
 
-            const totalWeight = activePool.reduce((sum, card) => sum + card.weight, 0);
+            // Determine a safe cooldown size (Max 50, but never more than 80% of the active pool)
+            const maxCooldown = Math.min(50, Math.floor(activePool.length * 0.8));
+
+            // Trim the recent history if it exceeds our safe cooldown size
+            while (recentCards.length > maxCooldown) {
+                recentCards.shift();
+            }
+
+            // Filter out recently seen cards
+            let availablePool = activePool.filter(c => !recentCards.includes(c.de));
+    
+            // Fallback just in case available pool becomes empty
+            if (availablePool.length === 0) {
+                availablePool = activePool;
+            }
+
+            // Weighted random selection from the available pool
+            const totalWeight = availablePool.reduce((sum, card) => sum + card.weight, 0);
             let random = Math.random() * totalWeight;
-            
+    
             let sum = 0;
-            for (let item of activePool) {
+            for (let item of availablePool) {
                 sum += item.weight;
                 if (random <= sum) {
                     currentCard = item;
                     break;
                 }
             }
+
+            // Add the newly picked card to our recent history
+            if (currentCard) {
+                recentCards.push(currentCard.de);
+            }
+
             setTimeout(() => { updateCardText(); }, 100); 
         }
 
