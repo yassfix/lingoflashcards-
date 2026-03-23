@@ -212,22 +212,58 @@
         }
 
         /* Add these new styles for the notes field */
+        /* --- Ultra-Minimalist Note Field --- */
         .card-note {
-            width: 90%;
-            margin-top: 15px;
-            padding: 8px 12px;
-            font-size: 1rem;
-            color: #555;
-            background: rgba(0, 0, 0, 0.04);
-            border: 1px dashed #bdc3c7;
-            border-radius: 10px;
+            width: 85%;
+            margin-top: 8px;
+            padding: 0;
+    
+            /* Text Styling */
+            font-size: 0.85rem;
+            font-weight: 300;
             text-align: center;
-            resize: none;
-            outline: none;
             font-family: inherit;
-            font-weight: normal;
-            transition: all 0.2s;
-            display: none; /* Hidden until a card loads */
+    
+            /* The "Invisible" look */
+            background: transparent;
+            border: none;
+            outline: none;
+            resize: none;
+            overflow: hidden;
+    
+            /* Default state: Very faded */
+            color: rgba(44, 62, 80, 0.2); 
+            transition: color 0.4s ease, opacity 0.4s ease;
+        }
+
+        /* Back of card (on blue background) */
+        .back .card-note {
+            color: rgba(255, 255, 255, 0.25);
+        }
+
+        /* Hide the field almost entirely if it's empty and not focused */
+        .card-note:placeholder-shown:not(:focus) {
+            opacity: 0.1;
+        }
+
+        /* Hover: subtle hint that you can click here */
+        .card-note:hover {
+            color: rgba(44, 62, 80, 0.5);
+        }
+
+        .back .card-note:hover {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Focus: reveal the text clearly while typing */
+        .card-note:focus {
+            color: rgba(44, 62, 80, 0.8) !important;
+            opacity: 1 !important;
+        }
+
+        .back .card-note:focus {
+            color: rgba(255, 255, 255, 1) !important;
+            opacity: 1 !important;
         }
 
         .card-note:focus {
