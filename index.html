@@ -198,7 +198,7 @@
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
             display: flex;
-            flex-direction: column; /* <-- Added this line */
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             border-radius: 20px;
@@ -211,7 +211,6 @@
             user-select: none;
         }
 
-        /* Add these new styles for the notes field */
         /* --- Ultra-Minimalist Note Field --- */
         .card-note {
             width: 85%;
@@ -231,44 +230,39 @@
             resize: none;
             overflow: hidden;
     
-            /* Default state: Very faded */
-            color: rgba(44, 62, 80, 0.2); 
+            /* Default state: Readable but subtle */
+            color: rgba(44, 62, 80, 0.6); 
             transition: color 0.4s ease, opacity 0.4s ease;
         }
 
         /* Back of card (on blue background) */
         .back .card-note {
-            color: rgba(255, 255, 255, 0.25);
+            color: rgba(255, 255, 255, 0.75);
         }
 
-        /* Hide the field almost entirely if it's empty and not focused */
+        /* Hide the field partially if it's empty, but keep it visible enough to know it's there */
         .card-note:placeholder-shown:not(:focus) {
-            opacity: 0.1;
+            opacity: 0.5;
         }
 
         /* Hover: subtle hint that you can click here */
         .card-note:hover {
-            color: rgba(44, 62, 80, 0.5);
+            color: rgba(44, 62, 80, 0.8);
         }
 
         .back .card-note:hover {
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(255, 255, 255, 0.9);
         }
 
         /* Focus: reveal the text clearly while typing */
         .card-note:focus {
-            color: rgba(44, 62, 80, 0.8) !important;
+            color: rgba(44, 62, 80, 1) !important;
             opacity: 1 !important;
         }
 
         .back .card-note:focus {
             color: rgba(255, 255, 255, 1) !important;
             opacity: 1 !important;
-        }
-
-        .card-note:focus {
-            background: rgba(0, 0, 0, 0.08);
-            border-color: #3498db;
         }
 
         .front { background-color: white; color: #2c3e50; }
@@ -528,7 +522,7 @@
         let timerInterval = null;
         let isTimeUp = false;
         
-        // NEW: History Buffer to space out words
+        // History Buffer to space out words
         let recentCards = []; 
 
         // UI Elements
@@ -601,17 +595,13 @@
         // ==========================================
         // 3. DATABASE / LOCAL STORAGE LOGIC
         // ==========================================
-        // --- Add these to your Global State variables at the top ---
-        
-
-        // --- Update your existing loadCloudProgress function ---
         async function loadCloudProgress() {
             try {
                 const docRef = db.collection('users').doc(currentUser.uid);
                 const docSnap = await docRef.get();
                 if (docSnap.exists) { 
                     cloudWeights = docSnap.data().weights || {}; 
-                    userNotes = docSnap.data().notes || {}; // Load cloud notes
+                    userNotes = docSnap.data().notes || {}; 
                 } else { 
                     cloudWeights = {}; 
                     userNotes = {};
@@ -619,25 +609,34 @@
             } catch (error) { console.error("Error fetching progress:", error); }
         }
 
-        // --- Update your existing loadLocalProgress function ---
         function loadLocalProgress() {
             try {
                 cloudWeights = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || {};
-                userNotes = JSON.parse(localStorage.getItem(LOCAL_NOTES_KEY)) || {}; // Load local notes
+                userNotes = JSON.parse(localStorage.getItem(LOCAL_NOTES_KEY)) || {};
             } catch (error) {
                 cloudWeights = {};
                 userNotes = {};
             }
         }
 
-        // --- Add this NEW function to save notes ---
-        async function saveNote(word, noteText) {
-            userNotes[word] = noteText;
+        async function saveNote(word, lang, noteText) {
+            // Check if there is already a note object, or if it's an old string format
+            let noteObj = userNotes[word];
+            if (typeof noteObj === 'string') {
+                noteObj = { de: noteObj, en: noteObj }; // Convert old format safely
+            }
+            if (!noteObj) {
+                noteObj = { de: '', en: '' };
+            }
+
+            // Save the note to the specific language (de or en)
+            noteObj[lang] = noteText;
+            userNotes[word] = noteObj;
 
             if (currentUser) {
                 try {
                     await db.collection('users').doc(currentUser.uid).set({
-                        notes: { [word]: noteText }
+                        notes: { [word]: noteObj }
                     }, { merge: true });
                 } catch (error) { console.error("Error saving note:", error); }
             } else {
@@ -807,17 +806,17 @@
             badgeKnown.textContent = knownCount;
         }
 
-       // --- Update your existing updateCardText function ---
         function updateCardText() {
             if (!currentCard) return;
             let showDeOnFront = true;
             if (currentMode === 'en-de') showDeOnFront = false;
             else if (currentMode === 'random') showDeOnFront = Math.random() > 0.5;
 
-            // Retrieve the saved note for this word
-            const currentNoteText = userNotes[currentCard.de] || "";
-            frontNote.value = currentNoteText;
-            backNote.value = currentNoteText;
+            // Retrieve the saved note object for this word
+            let noteObj = userNotes[currentCard.de];
+            if (typeof noteObj === 'string') noteObj = { de: noteObj, en: noteObj };
+            if (!noteObj) noteObj = { de: '', en: '' };
+
             frontNote.style.display = 'block';
             backNote.style.display = 'block';
 
@@ -826,26 +825,39 @@
                 backText.textContent = currentCard.en;
                 backLabel.textContent = "English";
                 isDeOnFront = true;
+                
+                // Assign the correct language note to the front and back
+                frontNote.value = noteObj.de || "";
+                backNote.value = noteObj.en || "";
+
                 if (isAudioAuto) speakGerman(currentCard.de);
             } else {
                 frontText.textContent = currentCard.en;
                 backText.textContent = currentCard.de;
                 backLabel.textContent = "German";
                 isDeOnFront = false;
+
+                // Assign the correct language note to the front and back
+                frontNote.value = noteObj.en || "";
+                backNote.value = noteObj.de || "";
             }
         }
 
-        // --- ADD THESE NEW EVENT LISTENERS to handle typing and prevent swiping ---
         function handleNoteInput(e) {
             if (!currentCard) return;
             const newNote = e.target.value;
-    
-            // Keep both the front and back text areas in sync
-            frontNote.value = newNote; 
-            backNote.value = newNote;
+            const isFrontNote = e.target.id === 'front-note';
+            
+            // Determine which language the user is currently adding a note to
+            let langToSave;
+            if (isDeOnFront) {
+                langToSave = isFrontNote ? 'de' : 'en';
+            } else {
+                langToSave = isFrontNote ? 'en' : 'de';
+            }
     
             // Save to Firebase/Local Storage
-            saveNote(currentCard.de, newNote);
+            saveNote(currentCard.de, langToSave, newNote);
         }
 
         // Apply listeners to both front and back notes
@@ -875,12 +887,10 @@
                 if(activePool.length === 0) activePool = flashcards;
             }
 
-            // NEW: History Buffer Filter
-            // Blocks up to 50 of the most recently seen cards (or 60% of your deck, whichever is smaller)
+            // History Buffer Filter
             let maxHistory = Math.min(50, Math.floor(activePool.length * 0.6));
             let availablePool = activePool.filter(c => !recentCards.includes(c.de));
             
-            // Fallback: If we filtered out everything, just ensure we don't show the EXACT same card twice in a row
             if (availablePool.length === 0) {
                 availablePool = activePool.filter(c => currentCard ? c.de !== currentCard.de : true);
                 if (availablePool.length === 0) availablePool = activePool;
@@ -898,11 +908,10 @@
                 }
             }
 
-            // Add new card to the History Buffer
             if (currentCard) {
                 recentCards.push(currentCard.de);
                 if (recentCards.length > maxHistory) {
-                    recentCards.shift(); // Remove oldest card from buffer
+                    recentCards.shift(); 
                 }
             }
 
@@ -914,6 +923,9 @@
 
         // --- Swipe Logic ---
         card.addEventListener('pointerdown', (e) => {
+            // Prevent swiping if clicking inside the textarea
+            if (e.target.tagName.toLowerCase() === 'textarea') return;
+
             isDragging = true;
             startX = e.clientX;
             startY = e.clientY;
