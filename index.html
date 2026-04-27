@@ -393,7 +393,7 @@
             background: white;
             width: 90%;
             max-width: 400px;
-            max-height: 70vh;
+            max-height: 85vh;
             border-radius: 20px;
             padding: 20px;
             display: flex;
@@ -463,11 +463,17 @@
                 font-size: 0.95rem;
             }
 
-            .settings-group input[type="file"], .settings-group input[type="number"], .settings-group input[type="color"] {
+            .settings-group input[type="file"], .settings-group input[type="number"], .settings-group input[type="color"], .settings-group select {
                 width: 100%;
                 padding: 8px;
                 border: 1px solid #ccc;
                 border-radius: 8px;
+                box-sizing: border-box;
+                font-family: inherit;
+            }
+
+            .settings-group input[type="range"] {
+                width: 100%;
                 box-sizing: border-box;
             }
 
@@ -534,6 +540,7 @@
             background-color: #050508; /* Default */
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             background-blend-mode: overlay; /* Allows image + color tinting */
             z-index: 200;
             flex-direction: column;
@@ -668,20 +675,42 @@
             </div>
             <div style="overflow-y: auto; flex-grow: 1; margin-top: 10px;">
                 <div class="settings-group">
-                    <label>Soundtrack (Loops Automatically)</label>
-                    <input type="file" id="sleep-audio-upload" accept="audio/*">
+                    <label>Soundtrack (Single file or Playlist)</label>
+                    <input type="file" id="sleep-audio-upload" accept="audio/*" multiple>
+                </div>
+                <div class="settings-group" style="display: flex; gap: 10px;">
+                    <div style="flex:1;">
+                        <label>Soundtrack Vol.</label>
+                        <input type="range" id="sleep-audio-volume" min="0" max="1" step="0.1" value="0.3">
+                    </div>
+                    <div style="flex:1;">
+                        <label>Speech Vol.</label>
+                        <input type="range" id="sleep-speech-volume" min="0" max="1" step="0.1" value="1">
+                    </div>
+                </div>
+                <div class="settings-group">
+                    <label>Word Count Limit (Leave blank for infinite)</label>
+                    <input type="number" id="sleep-word-limit" placeholder="E.g., 50" min="1">
+                </div>
+                <div class="settings-group">
+                    <label>Delay Between Words (Seconds)</label>
+                    <input type="number" id="sleep-delay-input" value="1.5" min="0" step="0.5">
                 </div>
                 <div class="settings-group">
                     <label>Background Color</label>
                     <input type="color" id="sleep-bg-color" value="#050508">
                 </div>
                 <div class="settings-group">
-                    <label>Background Image (Optional)</label>
+                    <label>Background Image</label>
                     <input type="file" id="sleep-img-upload" accept="image/*">
                 </div>
                 <div class="settings-group">
-                    <label>Delay Between Words (Seconds)</label>
-                    <input type="number" id="sleep-delay-input" value="1.5" min="0" step="0.5">
+                    <label>Image Fit (If uploaded)</label>
+                    <select id="sleep-img-fit">
+                        <option value="cover">Cover (Fill screen, crop if needed)</option>
+                        <option value="contain">Contain (Fit inside screen, no crop)</option>
+                        <option value="100% 100%">Stretch (Fill screen exactly)</option>
+                    </select>
                 </div>
             </div>
             <button class="view-all-btn" onclick="closeSleepSettings()" style="margin-top: 15px;">Save & Close</button>
@@ -1218,10 +1247,15 @@
         const sleepSettingsModal = document.getElementById('sleep-settings-modal');
 
         let sleepConfig = {
-            audioUrl: null, // Will default to the original src if null
+            audioUrls: [],
+            currentAudioIndex: 0,
+            audioVolume: 0.3,
+            speechVolume: 1.0,
             bgColor: "#050508",
             bgImageUrl: null,
-            delayMs: 1500
+            bgImageFit: "cover",
+            delayMs: 1500,
+            wordLimit: 0
         };
 
         function openSleepSettings() {
@@ -1232,26 +1266,60 @@
             sleepSettingsModal.classList.remove('show');
             sleepConfig.bgColor = document.getElementById('sleep-bg-color').value;
 
+            // Volumes
+            sleepConfig.audioVolume = parseFloat(document.getElementById('sleep-audio-volume').value);
+            sleepConfig.speechVolume = parseFloat(document.getElementById('sleep-speech-volume').value);
+            document.getElementById('bg-audio').volume = sleepConfig.audioVolume;
+
             // Get delay value and convert to milliseconds
             const delayInput = parseFloat(document.getElementById('sleep-delay-input').value);
             sleepConfig.delayMs = (!isNaN(delayInput) && delayInput >= 0) ? delayInput * 1000 : 1500;
+
+            // Word limit
+            const limitInput = parseInt(document.getElementById('sleep-word-limit').value);
+            sleepConfig.wordLimit = (!isNaN(limitInput) && limitInput > 0) ? limitInput : 0;
+
+            // Image fit
+            sleepConfig.bgImageFit = document.getElementById('sleep-img-fit').value;
         }
 
         sleepSettingsModal.addEventListener('click', (e) => {
             if (e.target === sleepSettingsModal) closeSleepSettings();
         });
 
-        // Handle File Uploads via Object URLs directly in browser
+        // Handle File Uploads via Object URLs (Supports Multiple / Playlists)
         document.getElementById('sleep-audio-upload').addEventListener('change', function (e) {
-            const file = e.target.files[0];
-            if (file) {
-                if (sleepConfig.audioUrl && sleepConfig.audioUrl.startsWith('blob:')) {
-                    URL.revokeObjectURL(sleepConfig.audioUrl);
+            const files = e.target.files;
+            if (files.length > 0) {
+                // Revoke old blob URLs to prevent memory leaks
+                sleepConfig.audioUrls.forEach(url => {
+                    if (url.startsWith('blob:')) URL.revokeObjectURL(url);
+                });
+
+                sleepConfig.audioUrls = [];
+                for (let i = 0; i < files.length; i++) {
+                    sleepConfig.audioUrls.push(URL.createObjectURL(files[i]));
                 }
-                sleepConfig.audioUrl = URL.createObjectURL(file);
+
+                sleepConfig.currentAudioIndex = 0;
+
                 const bgAudio = document.getElementById('bg-audio');
-                bgAudio.src = sleepConfig.audioUrl;
+                bgAudio.src = sleepConfig.audioUrls[0];
                 bgAudio.load();
+            }
+        });
+
+        // Smart Looping / Playlist progression
+        document.getElementById('bg-audio').addEventListener('ended', function () {
+            if (sleepConfig.audioUrls.length > 1) {
+                // Move to next track in playlist
+                sleepConfig.currentAudioIndex = (sleepConfig.currentAudioIndex + 1) % sleepConfig.audioUrls.length;
+                this.src = sleepConfig.audioUrls[sleepConfig.currentAudioIndex];
+                this.play();
+            } else {
+                // If single custom file or default audio, loop it by resetting time
+                this.currentTime = 0;
+                this.play();
             }
         });
 
@@ -1272,8 +1340,11 @@
                 if (!('speechSynthesis' in window)) return resolve();
                 window.speechSynthesis.cancel();
                 const utterance = new SpeechSynthesisUtterance(text);
-                utterance.lang = lang; utterance.rate = rate;
-                utterance.onend = resolve; utterance.onerror = resolve;
+                utterance.lang = lang;
+                utterance.rate = rate;
+                utterance.volume = sleepConfig.speechVolume; // Apply custom speech volume
+                utterance.onend = resolve;
+                utterance.onerror = resolve;
                 window.speechSynthesis.speak(utterance);
             });
         }
@@ -1288,16 +1359,21 @@
             const autoView = document.getElementById('auto-mode-view');
             autoView.style.display = 'flex';
 
-            // Apply Sleep Configurations (Color and optional Image overlay)
+            // Apply Sleep Configurations
             autoView.style.backgroundColor = sleepConfig.bgColor;
             if (sleepConfig.bgImageUrl) {
                 autoView.style.backgroundImage = `url('${sleepConfig.bgImageUrl}')`;
+                autoView.style.backgroundSize = sleepConfig.bgImageFit;
             } else {
                 autoView.style.backgroundImage = 'none';
             }
 
             const bgAudio = document.getElementById('bg-audio');
-            bgAudio.volume = 0.3;
+            bgAudio.volume = sleepConfig.audioVolume;
+
+            // Turn off native loop attribute so our smart "ended" listener handles custom looping/playlists
+            bgAudio.loop = false;
+
             bgAudio.play().catch(e => console.log("Audio blocked by browser until user interaction:", e));
 
             runAutoLoop();
@@ -1315,8 +1391,30 @@
             const enTextEl = document.getElementById('auto-en-text');
             const deTextEl = document.getElementById('auto-de-text');
 
+            let wordsPlayed = 0;
+
+            // Determine actual limit based on user input and available words
+            let actualLimit = Infinity;
+            if (sleepConfig.wordLimit > 0) {
+                // If they enter a number bigger than available words, it caps at available words
+                actualLimit = Math.min(sleepConfig.wordLimit, flashcards.length);
+            }
+
+            // Shuffle queue to ensure we don't just loop the same words early if a limit is set
+            let playQueue = [...flashcards].sort(() => Math.random() - 0.5);
+
             while (isAutoModeActive) {
-                const card = flashcards[Math.floor(Math.random() * flashcards.length)];
+                if (wordsPlayed >= actualLimit) {
+                    stopAutoMode();
+                    break;
+                }
+
+                // If running infinitely, refill queue when empty
+                if (playQueue.length === 0) {
+                    playQueue = [...flashcards].sort(() => Math.random() - 0.5);
+                }
+
+                const card = playQueue.pop();
 
                 // 1. Reset screen
                 enTextEl.style.opacity = 0; deTextEl.style.opacity = 0;
@@ -1347,6 +1445,8 @@
 
                 // 5. Keep the final word on screen for 4 seconds before looping back
                 await delay(4000);
+
+                wordsPlayed++;
             }
         }
 
@@ -1358,7 +1458,7 @@
         <div id="auto-de-text">Deutsch</div>
     </div>
 
-    <audio id="bg-audio" loop>
+    <audio id="bg-audio">
         <source src="https://cdn.pixabay.com/download/audio/2021/08/04/audio_0625c1539c.mp3?filename=heavy-rain-nature-sounds-8186.mp3" type="audio/mpeg">
     </audio>
 
