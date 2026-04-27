@@ -43,11 +43,22 @@
             transition: background 0.2s;
         }
 
-        .auth-btn:hover { background: #2980b9; }
-        .auth-btn.logout { background: #e74c3c; }
-        .auth-btn.logout:hover { background: #c0392b; }
+            .auth-btn:hover {
+                background: #2980b9;
+            }
 
-        #user-info { font-size: 0.9rem; font-weight: 500; }
+            .auth-btn.logout {
+                background: #e74c3c;
+            }
+
+                .auth-btn.logout:hover {
+                    background: #c0392b;
+                }
+
+        #user-info {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
 
         #guest-warning {
             background: #f39c12;
@@ -69,7 +80,7 @@
             max-width: 400px;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; 
+            flex-wrap: wrap;
             gap: 10px;
             margin-top: 15px;
             padding: 0 20px;
@@ -89,10 +100,17 @@
             flex: 1 1 auto;
         }
 
-        .mode-btn.active {
-            background: #3498db;
-            color: white;
-            box-shadow: 0 2px 5px rgba(52, 152, 219, 0.4);
+            .mode-btn.active {
+                background: #3498db;
+                color: white;
+                box-shadow: 0 2px 5px rgba(52, 152, 219, 0.4);
+            }
+
+        /* New Wrapper for Sleep Buttons */
+        .sleep-btn-group {
+            display: flex;
+            gap: 5px;
+            flex: 1 1 auto;
         }
 
         /* --- Stats Navbar --- */
@@ -121,21 +139,30 @@
             gap: 8px;
         }
 
-        .stat-btn:active { transform: scale(0.95); }
-        .stat-btn.weak { color: #e74c3c; }
-        .stat-btn.known { color: #2ecc71; }
+            .stat-btn:active {
+                transform: scale(0.95);
+            }
+
+            .stat-btn.weak {
+                color: #e74c3c;
+            }
+
+            .stat-btn.known {
+                color: #2ecc71;
+            }
 
         #lock-btn {
             background: #ecf0f1;
             color: #7f8c8d;
             transition: all 0.3s ease;
         }
-        #lock-btn.locked {
-            background: #f39c12;
-            color: white;
-            box-shadow: 0 4px 10px rgba(243, 156, 18, 0.4);
-        }
-        
+
+            #lock-btn.locked {
+                background: #f39c12;
+                color: white;
+                box-shadow: 0 4px 10px rgba(243, 156, 18, 0.4);
+            }
+
         .badge {
             background: #eee;
             padding: 2px 8px;
@@ -150,14 +177,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            display: none; 
+            display: none;
         }
 
         #card-container {
             perspective: 1000px;
             width: 85%;
             max-width: 400px;
-            height: 50%; 
+            height: 50%;
             position: relative;
             margin-top: 15px;
         }
@@ -187,10 +214,14 @@
             cursor: grab;
         }
 
-        #card:active { cursor: grabbing; }
-        #card.flipped { transform: rotateX(180deg); }
+            #card:active {
+                cursor: grabbing;
+            }
 
-        /* Update the existing .face class to stack items vertically */
+            #card.flipped {
+                transform: rotateX(180deg);
+            }
+
         .face {
             position: absolute;
             width: 100%;
@@ -211,41 +242,31 @@
             user-select: none;
         }
 
-        /* --- Ultra-Minimalist Note Field --- */
         .card-note {
             width: 85%;
             margin-top: 8px;
             padding: 0;
-    
-            /* Text Styling */
             font-size: 0.85rem;
             font-weight: 300;
             text-align: center;
             font-family: inherit;
-    
-            /* The "Invisible" look */
             background: transparent;
             border: none;
             outline: none;
             resize: none;
             overflow: hidden;
-    
-            /* Default state: Readable but subtle */
-            color: rgba(44, 62, 80, 0.6); 
+            color: rgba(44, 62, 80, 0.6);
             transition: color 0.4s ease, opacity 0.4s ease;
         }
 
-        /* Back of card (on blue background) */
         .back .card-note {
             color: rgba(255, 255, 255, 0.75);
         }
 
-        /* Hide the field partially if it's empty, but keep it visible enough to know it's there */
         .card-note:placeholder-shown:not(:focus) {
             opacity: 0.5;
         }
 
-        /* Hover: subtle hint that you can click here */
         .card-note:hover {
             color: rgba(44, 62, 80, 0.8);
         }
@@ -254,7 +275,6 @@
             color: rgba(255, 255, 255, 0.9);
         }
 
-        /* Focus: reveal the text clearly while typing */
         .card-note:focus {
             color: rgba(44, 62, 80, 1) !important;
             opacity: 1 !important;
@@ -265,8 +285,16 @@
             opacity: 1 !important;
         }
 
-        .front { background-color: white; color: #2c3e50; }
-        .back { background-color: #3498db; color: white; transform: rotateX(180deg); }
+        .front {
+            background-color: white;
+            color: #2c3e50;
+        }
+
+        .back {
+            background-color: #3498db;
+            color: white;
+            transform: rotateX(180deg);
+        }
 
         .word-type {
             font-size: 1rem;
@@ -298,11 +326,23 @@
             gap: 8px;
         }
 
-        #external-speaker-btn { background: #8e44ad; }
-        #external-speaker-btn:active { transform: scale(0.95); background: #732d91; }
+        #external-speaker-btn {
+            background: #8e44ad;
+        }
 
-        #search-btn { background: #27ae60; }
-        #search-btn:active { transform: scale(0.95); background: #219653; }
+            #external-speaker-btn:active {
+                transform: scale(0.95);
+                background: #732d91;
+            }
+
+        #search-btn {
+            background: #27ae60;
+        }
+
+            #search-btn:active {
+                transform: scale(0.95);
+                background: #219653;
+            }
 
         .instructions {
             margin-top: auto;
@@ -314,13 +354,25 @@
         }
 
         /* --- Animations --- */
-        .fly-left { transform: translateX(-150%) rotate(-30deg) !important; opacity: 0; transition: transform 0.4s ease-out, opacity 0.4s ease-out; }
-        .fly-right { transform: translateX(150%) rotate(30deg) !important; opacity: 0; transition: transform 0.4s ease-out, opacity 0.4s ease-out; }
+        .fly-left {
+            transform: translateX(-150%) rotate(-30deg) !important;
+            opacity: 0;
+            transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+        }
 
-        /* --- Modals for Word Lists --- */
+        .fly-right {
+            transform: translateX(150%) rotate(30deg) !important;
+            opacity: 0;
+            transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+        }
+
+        /* --- Modals for Word Lists & Settings --- */
         .modal {
             position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background: rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(3px);
             display: flex;
@@ -332,7 +384,10 @@
             transition: opacity 0.3s;
         }
 
-        .modal.show { opacity: 1; pointer-events: auto; }
+            .modal.show {
+                opacity: 1;
+                pointer-events: auto;
+            }
 
         .modal-content {
             background: white;
@@ -346,63 +401,127 @@
             box-shadow: 0 15px 30px rgba(0,0,0,0.2);
         }
 
-        .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 10px; }
-        .modal-header h2 { margin: 0; font-size: 1.5rem; color: #333; }
-        .close-btn { background: none; border: none; font-size: 2rem; cursor: pointer; color: #888; }
-        .word-list { list-style: none; padding: 0; margin: 0; overflow-y: auto; flex-grow: 1; }
-        .word-list li { padding: 12px 0; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; font-size: 1.1rem; }
-        .word-list li .de { font-weight: bold; color: #2c3e50; }
-        .word-list li .en { color: #888; font-size: 0.95rem; }
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+            .modal-header h2 {
+                margin: 0;
+                font-size: 1.5rem;
+                color: #333;
+            }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #888;
+        }
+
+        .word-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+
+            .word-list li {
+                padding: 12px 0;
+                border-bottom: 1px solid #f0f0f0;
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.1rem;
+            }
+
+                .word-list li .de {
+                    font-weight: bold;
+                    color: #2c3e50;
+                }
+
+                .word-list li .en {
+                    color: #888;
+                    font-size: 0.95rem;
+                }
+
+        /* Settings Modal specific */
+        .settings-group {
+            margin-bottom: 15px;
+        }
+
+            .settings-group label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: #2c3e50;
+                font-size: 0.95rem;
+            }
+
+            .settings-group input[type="file"], .settings-group input[type="number"], .settings-group input[type="color"] {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                box-sizing: border-box;
+            }
+
+            .settings-group input[type="color"] {
+                height: 40px;
+                padding: 2px;
+                cursor: pointer;
+            }
 
         /* --- Full Page List View --- */
         #full-list-view {
-            display: none; 
-            width: 100%; 
-            height: 100%; 
-            flex-direction: column; 
-            background: white; 
-            z-index: 50; 
-            position: absolute; 
-            top: 0; 
+            display: none;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            background: white;
+            z-index: 50;
+            position: absolute;
+            top: 0;
             left: 0;
         }
-        
+
         .full-list-header {
-            padding: 15px 20px; 
-            background: #2c3e50; 
-            color: white; 
-            display: flex; 
-            align-items: center; 
+            padding: 15px 20px;
+            background: #2c3e50;
+            color: white;
+            display: flex;
+            align-items: center;
             gap: 15px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         .back-btn {
-            background: none; 
-            border: none; 
-            color: white; 
-            font-size: 1.1rem; 
+            background: rgba(255,255,255,0.1);
+            border: none;
+            color: white;
+            font-size: 1.1rem;
             cursor: pointer;
             padding: 5px 10px;
-            background: rgba(255,255,255,0.1);
             border-radius: 10px;
         }
 
         .view-all-btn {
-            background: #3498db; 
-            color: white; 
-            border: none; 
-            padding: 12px; 
-            border-radius: 10px; 
-            cursor: pointer; 
-            font-weight: bold; 
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
             width: 100%;
             margin-top: 10px;
             font-size: 1rem;
         }
-
-
-
 
         /* --- Auto Mode (Sleep / YouTube View) --- */
         #auto-mode-view {
@@ -412,31 +531,34 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: #050508; /* Deep cinematic black */
+            background-color: #050508; /* Default */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay; /* Allows image + color tinting */
             z-index: 200;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
         #auto-en-text {
             font-size: 3rem;
-            color: rgba(255, 255, 255, 0.5); /* Muted white for English */
+            color: rgba(255, 255, 255, 0.5);
             font-weight: 300;
             margin-bottom: 20px;
             opacity: 0;
             transition: opacity 1.5s ease-in-out;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
         }
 
         #auto-de-text {
             font-size: 5rem;
-            color: #ffffff; /* Crisp white for German */
+            color: #ffffff;
             font-weight: bold;
             opacity: 0;
             transition: opacity 1.5s ease-in-out;
-            text-shadow: 0 0 30px rgba(255, 255, 255, 0.15); /* Soft glow */
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.3), 0 2px 10px rgba(0, 0, 0, 0.8);
         }
 
         .exit-auto-btn {
@@ -451,16 +573,13 @@
             cursor: pointer;
             font-size: 1rem;
             transition: background 0.3s;
-            opacity: 0.3; /* Keep it subtle so it doesn't distract on YouTube */
+            opacity: 0.3;
         }
 
-        .exit-auto-btn:hover { 
-            background: rgba(255, 255, 255, 0.3); 
-            opacity: 1;
-        }     
-
-
-
+            .exit-auto-btn:hover {
+                background: rgba(255, 255, 255, 0.3);
+                opacity: 1;
+            }
     </style>
 </head>
 <body>
@@ -483,7 +602,11 @@
             <button id="btn-en-de" class="mode-btn" onclick="setMode('en-de')">EN ➔ DE</button>
             <button id="btn-random" class="mode-btn" onclick="setMode('random')">Random</button>
             <button id="audio-btn" class="mode-btn" onclick="toggleAudio()" style="background:#bdc3c7; color:#333;">🔇 Auto: Off</button>
-            <button id="btn-auto" class="mode-btn" style="background:#8e44ad; color:white;" onclick="startAutoMode()">🌙 Sleep Mode</button>
+
+            <div class="sleep-btn-group">
+                <button id="btn-auto" class="mode-btn" style="background:#8e44ad; color:white; border-radius: 15px 0 0 15px; flex-grow: 1;" onclick="startAutoMode()">🌙 Sleep</button>
+                <button class="mode-btn" style="background:#732d91; color:white; border-radius: 0 15px 15px 0; padding: 8px 12px; flex-grow: 0;" onclick="openSleepSettings()">⚙️</button>
+            </div>
         </div>
 
         <div class="stats-nav">
@@ -534,6 +657,34 @@
                 <button class="close-btn" onclick="closeModal()">&times;</button>
             </div>
             <ul id="modal-list" class="word-list"></ul>
+        </div>
+    </div>
+
+    <div id="sleep-settings-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Sleep Settings</h2>
+                <button class="close-btn" onclick="closeSleepSettings()">&times;</button>
+            </div>
+            <div style="overflow-y: auto; flex-grow: 1; margin-top: 10px;">
+                <div class="settings-group">
+                    <label>Soundtrack (Loops Automatically)</label>
+                    <input type="file" id="sleep-audio-upload" accept="audio/*">
+                </div>
+                <div class="settings-group">
+                    <label>Background Color</label>
+                    <input type="color" id="sleep-bg-color" value="#050508">
+                </div>
+                <div class="settings-group">
+                    <label>Background Image (Optional)</label>
+                    <input type="file" id="sleep-img-upload" accept="image/*">
+                </div>
+                <div class="settings-group">
+                    <label>Delay Between Words (Seconds)</label>
+                    <input type="number" id="sleep-delay-input" value="1.5" min="0" step="0.5">
+                </div>
+            </div>
+            <button class="view-all-btn" onclick="closeSleepSettings()" style="margin-top: 15px;">Save & Close</button>
         </div>
     </div>
 
@@ -682,16 +833,14 @@
         }
 
         async function saveNote(word, lang, noteText) {
-            // Check if there is already a note object, or if it's an old string format
             let noteObj = userNotes[word];
             if (typeof noteObj === 'string') {
-                noteObj = { de: noteObj, en: noteObj }; // Convert old format safely
+                noteObj = { de: noteObj, en: noteObj };
             }
             if (!noteObj) {
                 noteObj = { de: '', en: '' };
             }
 
-            // Save the note to the specific language (de or en)
             noteObj[lang] = noteText;
             userNotes[word] = noteObj;
 
@@ -734,7 +883,6 @@
             }
         }
 
-        // --- AUDIO & SEARCH LOGIC ---
         function toggleAudio() {
             isAudioAuto = !isAudioAuto;
             const btn = document.getElementById('audio-btn');
@@ -757,9 +905,7 @@
         }
 
         function playCurrentAudio() {
-            if (currentCard && currentCard.de) {
-                speakGerman(currentCard.de);
-            }
+            if (currentCard && currentCard.de) speakGerman(currentCard.de);
         }
 
         function speakGerman(text) {
@@ -777,7 +923,6 @@
             }
         }
 
-        // --- TIMER LOGIC ---
         function startTimer() {
             clearInterval(timerInterval);
             timeLeft = 5;
@@ -843,12 +988,7 @@
 
                 if (deWord && enWord) {
                     const weight = cloudWeights[deWord] !== undefined ? cloudWeights[deWord] : 10;
-                    flashcards.push({
-                        de: deWord,
-                        en: enWord,
-                        weight: weight,
-                        seen: cloudWeights[deWord] !== undefined
-                    });
+                    flashcards.push({ de: deWord, en: enWord, weight: weight, seen: cloudWeights[deWord] !== undefined });
                 }
             }
             if (flashcards.length > 0) {
@@ -874,7 +1014,6 @@
             if (currentMode === 'en-de') showDeOnFront = false;
             else if (currentMode === 'random') showDeOnFront = Math.random() > 0.5;
 
-            // Retrieve the saved note object for this word
             let noteObj = userNotes[currentCard.de];
             if (typeof noteObj === 'string') noteObj = { de: noteObj, en: noteObj };
             if (!noteObj) noteObj = { de: '', en: '' };
@@ -887,19 +1026,14 @@
                 backText.textContent = currentCard.en;
                 backLabel.textContent = "English";
                 isDeOnFront = true;
-
-                // Assign the correct language note to the front and back
                 frontNote.value = noteObj.de || "";
                 backNote.value = noteObj.en || "";
-
                 if (isAudioAuto) speakGerman(currentCard.de);
             } else {
                 frontText.textContent = currentCard.en;
                 backText.textContent = currentCard.de;
                 backLabel.textContent = "German";
                 isDeOnFront = false;
-
-                // Assign the correct language note to the front and back
                 frontNote.value = noteObj.en || "";
                 backNote.value = noteObj.de || "";
             }
@@ -909,24 +1043,12 @@
             if (!currentCard) return;
             const newNote = e.target.value;
             const isFrontNote = e.target.id === 'front-note';
-
-            // Determine which language the user is currently adding a note to
-            let langToSave;
-            if (isDeOnFront) {
-                langToSave = isFrontNote ? 'de' : 'en';
-            } else {
-                langToSave = isFrontNote ? 'en' : 'de';
-            }
-
-            // Save to Firebase/Local Storage
+            let langToSave = isDeOnFront ? (isFrontNote ? 'de' : 'en') : (isFrontNote ? 'en' : 'de');
             saveNote(currentCard.de, langToSave, newNote);
         }
 
-        // Apply listeners to both front and back notes
         [frontNote, backNote].forEach(noteEl => {
             noteEl.addEventListener('input', handleNoteInput);
-
-            // CRITICAL: Stop pointer events from reaching the card so typing doesn't swipe or flip it
             noteEl.addEventListener('pointerdown', e => e.stopPropagation());
             noteEl.addEventListener('pointermove', e => e.stopPropagation());
             noteEl.addEventListener('pointerup', e => e.stopPropagation());
@@ -949,7 +1071,6 @@
                 if (activePool.length === 0) activePool = flashcards;
             }
 
-            // History Buffer Filter
             let maxHistory = Math.min(50, Math.floor(activePool.length * 0.6));
             let availablePool = activePool.filter(c => !recentCards.includes(c.de));
 
@@ -964,41 +1085,27 @@
             let sum = 0;
             for (let item of availablePool) {
                 sum += item.weight;
-                if (random <= sum) {
-                    currentCard = item;
-                    break;
-                }
+                if (random <= sum) { currentCard = item; break; }
             }
 
             if (currentCard) {
                 recentCards.push(currentCard.de);
-                if (recentCards.length > maxHistory) {
-                    recentCards.shift();
-                }
+                if (recentCards.length > maxHistory) recentCards.shift();
             }
 
-            setTimeout(() => {
-                updateCardText();
-                startTimer();
-            }, 100);
+            setTimeout(() => { updateCardText(); startTimer(); }, 100);
         }
 
         // --- Swipe Logic ---
         card.addEventListener('pointerdown', (e) => {
-            // Prevent swiping if clicking inside the textarea
             if (e.target.tagName.toLowerCase() === 'textarea') return;
-
-            isDragging = true;
-            startX = e.clientX;
-            startY = e.clientY;
-            card.style.transition = 'none';
-            card.setPointerCapture(e.pointerId);
+            isDragging = true; startX = e.clientX; startY = e.clientY;
+            card.style.transition = 'none'; card.setPointerCapture(e.pointerId);
         });
 
         card.addEventListener('pointermove', (e) => {
             if (!isDragging) return;
-            currentX = e.clientX - startX;
-            currentY = e.clientY - startY;
+            currentX = e.clientX - startX; currentY = e.clientY - startY;
             const rotate = currentX * 0.05;
             if (isFlipped) { card.style.transform = `translate(${currentX}px, ${currentY}px) rotateX(180deg) rotateZ(${rotate}deg)`; }
             else { card.style.transform = `translate(${currentX}px, ${currentY}px) rotate(${rotate}deg)`; }
@@ -1006,57 +1113,33 @@
 
         card.addEventListener('pointerup', (e) => {
             if (!isDragging) return;
-            isDragging = false;
-            card.style.transition = 'transform 0.4s ease';
+            isDragging = false; card.style.transition = 'transform 0.4s ease';
             card.releasePointerCapture(e.pointerId);
 
-            const thresholdX = 100;
-            const thresholdY = -80;
+            const thresholdX = 100; const thresholdY = -80;
 
             if (Math.abs(currentX) > Math.abs(currentY)) {
                 if (currentX > thresholdX) {
-                    // SWIPE RIGHT
-                    clearInterval(timerInterval);
-                    currentCard.seen = true;
-
-                    if (!isTimeUp) {
-                        currentCard.weight = Math.max(1, currentCard.weight - 5);
-                    }
-
+                    clearInterval(timerInterval); currentCard.seen = true;
+                    if (!isTimeUp) currentCard.weight = Math.max(1, currentCard.weight - 5);
                     saveProgress(currentCard.de, currentCard.weight);
-                    card.classList.add('fly-right');
-                    setTimeout(loadNextCard, 300);
+                    card.classList.add('fly-right'); setTimeout(loadNextCard, 300);
                 } else if (currentX < -thresholdX) {
-                    // SWIPE LEFT
-                    clearInterval(timerInterval);
-                    currentCard.seen = true;
-                    currentCard.weight += 5;
-
+                    clearInterval(timerInterval); currentCard.seen = true; currentCard.weight += 5;
                     saveProgress(currentCard.de, currentCard.weight);
-                    card.classList.add('fly-left');
-                    setTimeout(loadNextCard, 300);
-                } else {
-                    resetCardPosition();
-                }
+                    card.classList.add('fly-left'); setTimeout(loadNextCard, 300);
+                } else { resetCardPosition(); }
             } else {
-                if (currentY < thresholdY) {
-                    toggleFlip();
-                    resetCardPosition();
-                } else if (Math.abs(currentX) < 10 && Math.abs(currentY) < 10) {
-                    toggleFlip();
-                    resetCardPosition();
-                } else {
-                    resetCardPosition();
-                }
+                if (currentY < thresholdY) { toggleFlip(); resetCardPosition(); }
+                else if (Math.abs(currentX) < 10 && Math.abs(currentY) < 10) { toggleFlip(); resetCardPosition(); }
+                else { resetCardPosition(); }
             }
-            currentX = 0;
-            currentY = 0;
+            currentX = 0; currentY = 0;
         });
 
         function toggleFlip() {
             isFlipped = !isFlipped;
             isFlipped ? card.classList.add('flipped') : card.classList.remove('flipped');
-
             if (isAudioAuto && isFlipped && !isDeOnFront) speakGerman(currentCard.de);
             if (isAudioAuto && !isFlipped && isDeOnFront) speakGerman(currentCard.de);
         }
@@ -1066,20 +1149,16 @@
         }
 
         // ==========================================
-        // 5. MODAL & FULL PAGE LOGIC
+        // 5. MODALS & UI FUNCTIONS
         // ==========================================
         function openModal(type) {
-            currentListType = type;
-            modalList.innerHTML = '';
+            currentListType = type; modalList.innerHTML = '';
             let filteredCards = [];
-
             if (type === 'weak') {
-                modalTitle.textContent = "Weak Words";
-                modalTitle.style.color = "#e74c3c";
+                modalTitle.textContent = "Weak Words"; modalTitle.style.color = "#e74c3c";
                 filteredCards = flashcards.filter(c => c.weight >= 15).sort((a, b) => b.weight - a.weight);
             } else {
-                modalTitle.textContent = "Known Words";
-                modalTitle.style.color = "#2ecc71";
+                modalTitle.textContent = "Known Words"; modalTitle.style.color = "#2ecc71";
                 filteredCards = flashcards.filter(c => {
                     const hasBeenSeen = cloudWeights[c.de] !== undefined || c.seen;
                     return hasBeenSeen && c.weight < 15;
@@ -1095,10 +1174,8 @@
                     li.innerHTML = `<span class="de">${card.de}</span> <span class="en">${card.en}</span>`;
                     modalList.appendChild(li);
                 });
-
                 if (filteredCards.length > 8) {
-                    const btnLi = document.createElement('li');
-                    btnLi.style.borderBottom = 'none';
+                    const btnLi = document.createElement('li'); btnLi.style.borderBottom = 'none';
                     btnLi.innerHTML = `<button class=\"view-all-btn\" onclick=\"openFullList()\">View All (${filteredCards.length})</button>`;
                     modalList.appendChild(btnLi);
                 }
@@ -1110,10 +1187,8 @@
         modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 
         function openFullList() {
-            closeModal();
-            fullListContent.innerHTML = '';
+            closeModal(); fullListContent.innerHTML = '';
             let filteredCards = [];
-
             if (currentListType === 'weak') {
                 fullListTitle.textContent = "Weak Words";
                 filteredCards = flashcards.filter(c => c.weight >= 15).sort((a, b) => b.weight - a.weight);
@@ -1130,75 +1205,108 @@
                 li.innerHTML = `<span class=\"de\">${card.de}</span> <span class=\"en\">${card.en}</span>`;
                 fullListContent.appendChild(li);
             });
-
-            mainAppContent.style.display = 'none';
-            fullListView.style.display = 'flex';
+            mainAppContent.style.display = 'none'; fullListView.style.display = 'flex';
         }
 
-        function closeFullList() {
-            fullListView.style.display = 'none';
-            mainAppContent.style.display = 'flex';
-        }
+        function closeFullList() { fullListView.style.display = 'none'; mainAppContent.style.display = 'flex'; }
 
 
         // ==========================================
-        // 6. AUTO MODE (SLEEP / YOUTUBE) LOGIC
+        // 6. AUTO MODE & SLEEP SETTINGS LOGIC
         // ==========================================
         let isAutoModeActive = false;
+        const sleepSettingsModal = document.getElementById('sleep-settings-modal');
 
-        // Helper function to pause execution for X milliseconds
-        function delay(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
+        let sleepConfig = {
+            audioUrl: null, // Will default to the original src if null
+            bgColor: "#050508",
+            bgImageUrl: null,
+            delayMs: 1500
+        };
+
+        function openSleepSettings() {
+            sleepSettingsModal.classList.add('show');
         }
 
-        // Wrapper for Speech Synthesis that returns a Promise so we can await it perfectly
+        function closeSleepSettings() {
+            sleepSettingsModal.classList.remove('show');
+            sleepConfig.bgColor = document.getElementById('sleep-bg-color').value;
+
+            // Get delay value and convert to milliseconds
+            const delayInput = parseFloat(document.getElementById('sleep-delay-input').value);
+            sleepConfig.delayMs = (!isNaN(delayInput) && delayInput >= 0) ? delayInput * 1000 : 1500;
+        }
+
+        sleepSettingsModal.addEventListener('click', (e) => {
+            if (e.target === sleepSettingsModal) closeSleepSettings();
+        });
+
+        // Handle File Uploads via Object URLs directly in browser
+        document.getElementById('sleep-audio-upload').addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            if (file) {
+                if (sleepConfig.audioUrl && sleepConfig.audioUrl.startsWith('blob:')) {
+                    URL.revokeObjectURL(sleepConfig.audioUrl);
+                }
+                sleepConfig.audioUrl = URL.createObjectURL(file);
+                const bgAudio = document.getElementById('bg-audio');
+                bgAudio.src = sleepConfig.audioUrl;
+                bgAudio.load();
+            }
+        });
+
+        document.getElementById('sleep-img-upload').addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            if (file) {
+                if (sleepConfig.bgImageUrl && sleepConfig.bgImageUrl.startsWith('blob:')) {
+                    URL.revokeObjectURL(sleepConfig.bgImageUrl);
+                }
+                sleepConfig.bgImageUrl = URL.createObjectURL(file);
+            }
+        });
+
+        function delay(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
+
         function speakAsync(text, lang, rate = 1.0) {
             return new Promise(resolve => {
                 if (!('speechSynthesis' in window)) return resolve();
-
-                window.speechSynthesis.cancel(); // Clear queue
-
+                window.speechSynthesis.cancel();
                 const utterance = new SpeechSynthesisUtterance(text);
-                utterance.lang = lang;
-                utterance.rate = rate;
-
-                // Resolve the promise when speech finishes or fails
-                utterance.onend = resolve;
-                utterance.onerror = resolve;
-
+                utterance.lang = lang; utterance.rate = rate;
+                utterance.onend = resolve; utterance.onerror = resolve;
                 window.speechSynthesis.speak(utterance);
             });
         }
 
         async function startAutoMode() {
             if (flashcards.length === 0) {
-                alert("Please wait for words to load first!");
-                return;
+                alert("Please wait for words to load first!"); return;
             }
 
             isAutoModeActive = true;
-
-            // Hide main app, show auto mode
             document.getElementById('main-app-content').style.display = 'none';
-            document.getElementById('auto-mode-view').style.display = 'flex';
+            const autoView = document.getElementById('auto-mode-view');
+            autoView.style.display = 'flex';
 
-            // Start background audio (Set volume to 30% so it doesn't overpower speech)
+            // Apply Sleep Configurations (Color and optional Image overlay)
+            autoView.style.backgroundColor = sleepConfig.bgColor;
+            if (sleepConfig.bgImageUrl) {
+                autoView.style.backgroundImage = `url('${sleepConfig.bgImageUrl}')`;
+            } else {
+                autoView.style.backgroundImage = 'none';
+            }
+
             const bgAudio = document.getElementById('bg-audio');
             bgAudio.volume = 0.3;
             bgAudio.play().catch(e => console.log("Audio blocked by browser until user interaction:", e));
 
-            // Start the sequence loop
             runAutoLoop();
         }
 
         function stopAutoMode() {
             isAutoModeActive = false;
-
-            // Stop Audio & Speech
             document.getElementById('bg-audio').pause();
             window.speechSynthesis.cancel();
-
-            // Restore UI
             document.getElementById('auto-mode-view').style.display = 'none';
             document.getElementById('main-app-content').style.display = 'flex';
         }
@@ -1208,36 +1316,33 @@
             const deTextEl = document.getElementById('auto-de-text');
 
             while (isAutoModeActive) {
-                // Pick a random card from your deck
                 const card = flashcards[Math.floor(Math.random() * flashcards.length)];
 
-                // 1. Reset screen to black
-                enTextEl.style.opacity = 0;
-                deTextEl.style.opacity = 0;
-                await delay(1500); // 1.5 seconds of black screen between words
+                // 1. Reset screen
+                enTextEl.style.opacity = 0; deTextEl.style.opacity = 0;
+                await delay(1500);
 
-                if (!isAutoModeActive) break; // Check if user exited during delay
+                if (!isAutoModeActive) break;
 
                 // 2. Show & Speak English
-                enTextEl.textContent = card.en;
-                enTextEl.style.opacity = 1;
-                await delay(500); // Brief pause before speaking
+                enTextEl.textContent = card.en; enTextEl.style.opacity = 1;
+                await delay(500);
                 await speakAsync(card.en, 'en-US', 1.0);
-                await delay(1500); // Wait 1.5s after English
+
+                // --- Dynamic Configurable Delay Between Languages ---
+                await delay(sleepConfig.delayMs);
 
                 if (!isAutoModeActive) break;
 
                 // 3. Show & Speak German (Normal Speed)
-                deTextEl.textContent = card.de;
-                deTextEl.style.opacity = 1;
+                deTextEl.textContent = card.de; deTextEl.style.opacity = 1;
                 await delay(500);
                 await speakAsync(card.de, 'de-DE', 1.0);
-                await delay(1500); // Wait 1.5s
+                await delay(1500);
 
                 if (!isAutoModeActive) break;
 
                 // 4. Speak German (Slow Speed)
-                // Note: 0.6 rate is usually the sweet spot; 0.5 can sound a bit too robotic
                 await speakAsync(card.de, 'de-DE', 0.6);
 
                 // 5. Keep the final word on screen for 4 seconds before looping back
@@ -1245,26 +1350,7 @@
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </script>
-
-
-
 
     <div id="auto-mode-view">
         <button class="exit-auto-btn" onclick="stopAutoMode()">Exit</button>
