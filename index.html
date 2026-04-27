@@ -525,7 +525,6 @@
             cursor: pointer;
             font-weight: bold;
             width: 100%;
-            margin-top: 10px;
             font-size: 1rem;
         }
 
@@ -551,7 +550,7 @@
 
         #auto-en-text {
             font-size: 3rem;
-            color: rgba(255, 255, 255, 0.5);
+            color: #808080;
             font-weight: 300;
             margin-bottom: 20px;
             opacity: 0;
@@ -664,6 +663,7 @@
                 <button class="close-btn" onclick="closeModal()">&times;</button>
             </div>
             <ul id="modal-list" class="word-list"></ul>
+            <button class="view-all-btn" onclick="openFullList()" style="margin-top: 10px;">View All</button>
         </div>
     </div>
 
@@ -673,7 +673,7 @@
                 <h2>Sleep Settings</h2>
                 <button class="close-btn" onclick="closeSleepSettings()">&times;</button>
             </div>
-            <div style="overflow-y: auto; flex-grow: 1; margin-top: 10px;">
+            <div style="overflow-y: auto; flex-grow: 1; margin-top: 10px; padding-right: 5px;">
                 <div class="settings-group">
                     <label>Soundtrack (Single file or Playlist)</label>
                     <input type="file" id="sleep-audio-upload" accept="audio/*" multiple>
@@ -689,13 +689,39 @@
                     </div>
                 </div>
                 <div class="settings-group">
-                    <label>Word Count Limit (Leave blank for infinite)</label>
-                    <input type="number" id="sleep-word-limit" placeholder="E.g., 50" min="1">
+                    <label>Word Count Limit</label>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <input type="checkbox" id="sleep-word-all" checked onchange="toggleWordLimitInput()" style="width: auto;">
+                        <label for="sleep-word-all" style="margin:0; font-weight:normal;">All words</label>
+                        <input type="number" id="sleep-word-limit" placeholder="E.g., 50" min="1" disabled style="flex:1;">
+                    </div>
                 </div>
                 <div class="settings-group">
                     <label>Delay Between Words (Seconds)</label>
                     <input type="number" id="sleep-delay-input" value="1.5" min="0" step="0.5">
                 </div>
+
+                <div class="settings-group" style="display: flex; gap: 10px;">
+                    <div style="flex:1;">
+                        <label>EN Size (rem)</label>
+                        <input type="number" id="sleep-en-size" min="1" max="10" step="0.5" value="3">
+                    </div>
+                    <div style="flex:1;">
+                        <label>EN Color</label>
+                        <input type="color" id="sleep-en-color" value="#808080">
+                    </div>
+                </div>
+                <div class="settings-group" style="display: flex; gap: 10px;">
+                    <div style="flex:1;">
+                        <label>DE Size (rem)</label>
+                        <input type="number" id="sleep-de-size" min="1" max="10" step="0.5" value="5">
+                    </div>
+                    <div style="flex:1;">
+                        <label>DE Color</label>
+                        <input type="color" id="sleep-de-color" value="#ffffff">
+                    </div>
+                </div>
+
                 <div class="settings-group">
                     <label>Background Color</label>
                     <input type="color" id="sleep-bg-color" value="#050508">
@@ -713,7 +739,11 @@
                     </select>
                 </div>
             </div>
-            <button class="view-all-btn" onclick="closeSleepSettings()" style="margin-top: 15px;">Save & Close</button>
+
+            <div style="display: flex; gap: 10px; margin-top: 15px;">
+                <button class="view-all-btn" onclick="resetSleepSettings()" style="background: #e74c3c; flex: 1;">Reset Defaults</button>
+                <button class="view-all-btn" onclick="closeSleepSettings()" style="flex: 2;">Save & Close</button>
+            </div>
         </div>
     </div>
 
@@ -812,6 +842,7 @@
                 mainAppContent.style.display = 'flex';
 
                 await loadCloudProgress();
+                await loadSleepSettings();
                 loadWordsFromFile();
             } else {
                 currentUser = null;
@@ -823,6 +854,7 @@
                 fullListView.style.display = 'none';
 
                 loadLocalProgress();
+                loadSleepSettings();
                 loadWordsFromFile();
             }
         });
@@ -1203,11 +1235,6 @@
                     li.innerHTML = `<span class="de">${card.de}</span> <span class="en">${card.en}</span>`;
                     modalList.appendChild(li);
                 });
-                if (filteredCards.length > 8) {
-                    const btnLi = document.createElement('li'); btnLi.style.borderBottom = 'none';
-                    btnLi.innerHTML = `<button class=\"view-all-btn\" onclick=\"openFullList()\">View All (${filteredCards.length})</button>`;
-                    modalList.appendChild(btnLi);
-                }
             }
             modal.classList.add('show');
         }
@@ -1245,20 +1272,110 @@
         // ==========================================
         let isAutoModeActive = false;
         const sleepSettingsModal = document.getElementById('sleep-settings-modal');
+        const LOCAL_SETTINGS_KEY = 'german_app_sleep_settings';
 
-        let sleepConfig = {
-            audioUrls: [],
-            currentAudioIndex: 0,
+        // Default Object to fallback to
+        const DEFAULT_SLEEP_CONFIG = {
             audioVolume: 0.3,
             speechVolume: 1.0,
             bgColor: "#050508",
-            bgImageUrl: null,
             bgImageFit: "cover",
             delayMs: 1500,
-            wordLimit: 0
+            isAllWords: true,
+            wordLimit: 50,
+            enSize: 3,
+            enColor: "#808080",
+            deSize: 5,
+            deColor: "#ffffff"
         };
 
+        // Current runtime config
+        let sleepConfig = {
+            ...DEFAULT_SLEEP_CONFIG,
+            audioUrls: [],
+            currentAudioIndex: 0,
+            bgImageUrl: null
+        };
+
+        // --- Load & Save Preferences ---
+        async function loadSleepSettings() {
+            if (currentUser) {
+                try {
+                    const docSnap = await db.collection('users').doc(currentUser.uid).get();
+                    if (docSnap.exists && docSnap.data().sleepSettings) {
+                        sleepConfig = { ...sleepConfig, ...docSnap.data().sleepSettings };
+                    }
+                } catch (e) { console.error("Error loading settings", e); }
+            } else {
+                const localSettings = JSON.parse(localStorage.getItem(LOCAL_SETTINGS_KEY));
+                if (localSettings) {
+                    sleepConfig = { ...sleepConfig, ...localSettings };
+                }
+            }
+            applySettingsToInputs();
+        }
+
+        async function saveSleepSettings() {
+            // Save only standard settings (files/blobs not saved across sessions)
+            const settingsToSave = {
+                audioVolume: sleepConfig.audioVolume,
+                speechVolume: sleepConfig.speechVolume,
+                bgColor: sleepConfig.bgColor,
+                bgImageFit: sleepConfig.bgImageFit,
+                delayMs: sleepConfig.delayMs,
+                isAllWords: sleepConfig.isAllWords,
+                wordLimit: sleepConfig.wordLimit,
+                enSize: sleepConfig.enSize,
+                enColor: sleepConfig.enColor,
+                deSize: sleepConfig.deSize,
+                deColor: sleepConfig.deColor
+            };
+
+            if (currentUser) {
+                try {
+                    await db.collection('users').doc(currentUser.uid).set({
+                        sleepSettings: settingsToSave
+                    }, { merge: true });
+                } catch (e) { console.error("Error saving settings", e); }
+            } else {
+                localStorage.setItem(LOCAL_SETTINGS_KEY, JSON.stringify(settingsToSave));
+            }
+        }
+
+        // --- UI Setting Controls ---
+        function applySettingsToInputs() {
+            document.getElementById('sleep-audio-volume').value = sleepConfig.audioVolume;
+            document.getElementById('sleep-speech-volume').value = sleepConfig.speechVolume;
+            document.getElementById('sleep-delay-input').value = sleepConfig.delayMs / 1000;
+            document.getElementById('sleep-bg-color').value = sleepConfig.bgColor;
+            document.getElementById('sleep-img-fit').value = sleepConfig.bgImageFit;
+
+            document.getElementById('sleep-word-all').checked = sleepConfig.isAllWords;
+            document.getElementById('sleep-word-limit').value = sleepConfig.wordLimit;
+            document.getElementById('sleep-word-limit').disabled = sleepConfig.isAllWords;
+
+            document.getElementById('sleep-en-size').value = sleepConfig.enSize;
+            document.getElementById('sleep-en-color').value = sleepConfig.enColor;
+            document.getElementById('sleep-de-size').value = sleepConfig.deSize;
+            document.getElementById('sleep-de-color').value = sleepConfig.deColor;
+
+            document.getElementById('bg-audio').volume = sleepConfig.audioVolume;
+        }
+
+        function toggleWordLimitInput() {
+            const isAll = document.getElementById('sleep-word-all').checked;
+            document.getElementById('sleep-word-limit').disabled = isAll;
+        }
+
+        function resetSleepSettings() {
+            sleepConfig = { ...sleepConfig, ...DEFAULT_SLEEP_CONFIG };
+            applySettingsToInputs();
+            saveSleepSettings();
+            alert("Settings reset to defaults!");
+        }
+
         function openSleepSettings() {
+            applySettingsToInputs(); // Ensure UI matches state before opening
             sleepSettingsModal.classList.add('show');
         }
 
@@ -1271,16 +1388,23 @@
             sleepConfig.speechVolume = parseFloat(document.getElementById('sleep-speech-volume').value);
             document.getElementById('bg-audio').volume = sleepConfig.audioVolume;
 
-            // Get delay value and convert to milliseconds
+            // Delay
             const delayInput = parseFloat(document.getElementById('sleep-delay-input').value);
             sleepConfig.delayMs = (!isNaN(delayInput) && delayInput >= 0) ? delayInput * 1000 : 1500;
 
-            // Word limit
+            // Word Limit logic
+            sleepConfig.isAllWords = document.getElementById('sleep-word-all').checked;
             const limitInput = parseInt(document.getElementById('sleep-word-limit').value);
-            sleepConfig.wordLimit = (!isNaN(limitInput) && limitInput > 0) ? limitInput : 0;
+            sleepConfig.wordLimit = (!isNaN(limitInput) && limitInput > 0) ? limitInput : 50;
 
-            // Image fit
+            // Visuals
             sleepConfig.bgImageFit = document.getElementById('sleep-img-fit').value;
+            sleepConfig.enSize = parseFloat(document.getElementById('sleep-en-size').value) || 3;
+            sleepConfig.enColor = document.getElementById('sleep-en-color').value;
+            sleepConfig.deSize = parseFloat(document.getElementById('sleep-de-size').value) || 5;
+            sleepConfig.deColor = document.getElementById('sleep-de-color').value;
+
+            saveSleepSettings();
         }
 
         sleepSettingsModal.addEventListener('click', (e) => {
@@ -1291,7 +1415,6 @@
         document.getElementById('sleep-audio-upload').addEventListener('change', function (e) {
             const files = e.target.files;
             if (files.length > 0) {
-                // Revoke old blob URLs to prevent memory leaks
                 sleepConfig.audioUrls.forEach(url => {
                     if (url.startsWith('blob:')) URL.revokeObjectURL(url);
                 });
@@ -1312,12 +1435,10 @@
         // Smart Looping / Playlist progression
         document.getElementById('bg-audio').addEventListener('ended', function () {
             if (sleepConfig.audioUrls.length > 1) {
-                // Move to next track in playlist
                 sleepConfig.currentAudioIndex = (sleepConfig.currentAudioIndex + 1) % sleepConfig.audioUrls.length;
                 this.src = sleepConfig.audioUrls[sleepConfig.currentAudioIndex];
                 this.play();
             } else {
-                // If single custom file or default audio, loop it by resetting time
                 this.currentTime = 0;
                 this.play();
             }
@@ -1342,7 +1463,7 @@
                 const utterance = new SpeechSynthesisUtterance(text);
                 utterance.lang = lang;
                 utterance.rate = rate;
-                utterance.volume = sleepConfig.speechVolume; // Apply custom speech volume
+                utterance.volume = sleepConfig.speechVolume;
                 utterance.onend = resolve;
                 utterance.onerror = resolve;
                 window.speechSynthesis.speak(utterance);
@@ -1359,7 +1480,7 @@
             const autoView = document.getElementById('auto-mode-view');
             autoView.style.display = 'flex';
 
-            // Apply Sleep Configurations
+            // Apply Visual Sleep Configurations
             autoView.style.backgroundColor = sleepConfig.bgColor;
             if (sleepConfig.bgImageUrl) {
                 autoView.style.backgroundImage = `url('${sleepConfig.bgImageUrl}')`;
@@ -1368,12 +1489,17 @@
                 autoView.style.backgroundImage = 'none';
             }
 
+            // Apply Font Configs
+            const enTextEl = document.getElementById('auto-en-text');
+            const deTextEl = document.getElementById('auto-de-text');
+            enTextEl.style.fontSize = sleepConfig.enSize + 'rem';
+            enTextEl.style.color = sleepConfig.enColor;
+            deTextEl.style.fontSize = sleepConfig.deSize + 'rem';
+            deTextEl.style.color = sleepConfig.deColor;
+
             const bgAudio = document.getElementById('bg-audio');
             bgAudio.volume = sleepConfig.audioVolume;
-
-            // Turn off native loop attribute so our smart "ended" listener handles custom looping/playlists
             bgAudio.loop = false;
-
             bgAudio.play().catch(e => console.log("Audio blocked by browser until user interaction:", e));
 
             runAutoLoop();
@@ -1393,14 +1519,7 @@
 
             let wordsPlayed = 0;
 
-            // Determine actual limit based on user input and available words
-            let actualLimit = Infinity;
-            if (sleepConfig.wordLimit > 0) {
-                // If they enter a number bigger than available words, it caps at available words
-                actualLimit = Math.min(sleepConfig.wordLimit, flashcards.length);
-            }
-
-            // Shuffle queue to ensure we don't just loop the same words early if a limit is set
+            let actualLimit = sleepConfig.isAllWords ? Infinity : Math.min(sleepConfig.wordLimit, flashcards.length);
             let playQueue = [...flashcards].sort(() => Math.random() - 0.5);
 
             while (isAutoModeActive) {
@@ -1409,7 +1528,6 @@
                     break;
                 }
 
-                // If running infinitely, refill queue when empty
                 if (playQueue.length === 0) {
                     playQueue = [...flashcards].sort(() => Math.random() - 0.5);
                 }
@@ -1427,7 +1545,6 @@
                 await delay(500);
                 await speakAsync(card.en, 'en-US', 1.0);
 
-                // --- Dynamic Configurable Delay Between Languages ---
                 await delay(sleepConfig.delayMs);
 
                 if (!isAutoModeActive) break;
