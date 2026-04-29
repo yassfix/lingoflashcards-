@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Lingo Flashcards Pro (Cloud)</title>
+    <title>Lalalingo Flashcards</title>
     <link rel="icon" type="image/x-icon" href="asset/favicon.ico">
     <style>
         body {
@@ -620,12 +620,20 @@
 <body>
 
     <div class="auth-nav">
-        <span id="user-info">Lingo Flashcards Pro</span>
+        <div class="brand-container" style="display: flex; align-items: center; gap: 10px;">
+            <img src="asset/lalalingo-logo.png" alt="Lalalingo" style="width: 32px; height: 32px; border-radius: 8px; object-fit: contain;">
+            <span id="user-info">Lalalingo Flashcards</span>
+        </div>
+
         <div class="auth-controls">
-            <select id="lang-select" class="lang-select" onchange="changeLanguage()">
-                <option value="de">🇩🇪 German</option>
-                <option value="es">🇪🇸 Spanish</option>
-            </select>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img id="lang-flag" src="asset/de.png" alt="DE" style="width: 24px; height: 18px; border-radius: 3px; box-shadow: 0 1px 3px rgba(0,0,0,0.2);">
+                <select id="lang-select" class="lang-select" onchange="changeLanguage()">
+                    <option value="de">German</option>
+                    <option value="es">Spanish</option>
+                </select>
+            </div>
+
             <button id="login-btn" class="auth-btn" onclick="signIn()">Login</button>
             <button id="logout-btn" class="auth-btn logout" style="display:none;" onclick="signOut()">Logout</button>
         </div>
@@ -883,7 +891,7 @@
                 loadWordsFromFile();
             } else {
                 currentUser = null;
-                userInfo.textContent = "Lingo Flashcards Pro";
+                userInfo.textContent = "Lalalingo Flashcards";
                 loginBtn.style.display = 'inline-block';
                 logoutBtn.style.display = 'none';
                 guestWarning.style.display = 'block';
@@ -908,6 +916,10 @@
         // ==========================================
         async function changeLanguage() {
             currentLang = document.getElementById('lang-select').value;
+
+            // Update the Flag dynamically
+            document.getElementById('lang-flag').src = `asset/${currentLang}.png`;
+            document.getElementById('lang-flag').alt = currentLang.toUpperCase();
 
             // Update UI buttons based on language
             const langCodeUpper = currentLang.toUpperCase();
