@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>German Flashcards Pro (Cloud)</title>
+    <title>Lingo Flashcards Pro (Cloud)</title>
     <link rel="icon" type="image/x-icon" href="asset/favicon.ico">
     <style>
         body {
@@ -30,6 +30,23 @@
             box-sizing: border-box;
             z-index: 20;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .auth-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .lang-select {
+            background: #ecf0f1;
+            color: #2c3e50;
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
         }
 
         .auth-btn {
@@ -106,7 +123,6 @@
                 box-shadow: 0 2px 5px rgba(52, 152, 219, 0.4);
             }
 
-        /* New Wrapper for Sleep Buttons */
         .sleep-btn-group {
             display: flex;
             gap: 5px;
@@ -366,7 +382,7 @@
             transition: transform 0.4s ease-out, opacity 0.4s ease-out;
         }
 
-        /* --- Modals for Word Lists & Settings --- */
+        /* --- Modals --- */
         .modal {
             position: fixed;
             top: 0;
@@ -440,7 +456,7 @@
                 font-size: 1.1rem;
             }
 
-                .word-list li .de {
+                .word-list li .target-word {
                     font-weight: bold;
                     color: #2c3e50;
                 }
@@ -450,7 +466,6 @@
                     font-size: 0.95rem;
                 }
 
-        /* Settings Modal specific */
         .settings-group {
             margin-bottom: 15px;
         }
@@ -481,6 +496,21 @@
                 height: 40px;
                 padding: 2px;
                 cursor: pointer;
+            }
+
+        .btn-small {
+            background: #95a5a6;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+            .btn-small:hover {
+                background: #7f8c8d;
             }
 
         /* --- Full Page List View --- */
@@ -536,11 +566,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #050508; /* Default */
+            background-color: #050508;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-blend-mode: overlay; /* Allows image + color tinting */
             z-index: 200;
             flex-direction: column;
             justify-content: center;
@@ -558,7 +587,7 @@
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
         }
 
-        #auto-de-text {
+        #auto-target-text {
             font-size: 5rem;
             color: #ffffff;
             font-weight: bold;
@@ -591,8 +620,12 @@
 <body>
 
     <div class="auth-nav">
-        <span id="user-info">German Flashcards Pro</span>
-        <div>
+        <span id="user-info">Lingo Flashcards Pro</span>
+        <div class="auth-controls">
+            <select id="lang-select" class="lang-select" onchange="changeLanguage()">
+                <option value="de">🇩🇪 German</option>
+                <option value="es">🇪🇸 Spanish</option>
+            </select>
             <button id="login-btn" class="auth-btn" onclick="signIn()">Login</button>
             <button id="logout-btn" class="auth-btn logout" style="display:none;" onclick="signOut()">Logout</button>
         </div>
@@ -604,8 +637,8 @@
 
     <div id="main-app-content">
         <div class="mode-nav">
-            <button id="btn-de-en" class="mode-btn active" onclick="setMode('de-en')">DE ➔ EN</button>
-            <button id="btn-en-de" class="mode-btn" onclick="setMode('en-de')">EN ➔ DE</button>
+            <button id="btn-target-en" class="mode-btn active" onclick="setMode('target-en')">DE ➔ EN</button>
+            <button id="btn-en-target" class="mode-btn" onclick="setMode('en-target')">EN ➔ DE</button>
             <button id="btn-random" class="mode-btn" onclick="setMode('random')">Random</button>
             <button id="audio-btn" class="mode-btn" onclick="toggleAudio()" style="background:#bdc3c7; color:#333;">🔇 Auto: Off</button>
 
@@ -619,11 +652,9 @@
             <button class="stat-btn weak" onclick="openModal('weak')">
                 Weak <span class="badge" id="badge-weak">0</span>
             </button>
-
             <button id="lock-btn" class="stat-btn" onclick="toggleLock()">
                 🔓 Unlocked
             </button>
-
             <button class="stat-btn known" onclick="openModal('known')">
                 Known <span class="badge" id="badge-known">0</span>
             </button>
@@ -713,12 +744,12 @@
                 </div>
                 <div class="settings-group" style="display: flex; gap: 10px;">
                     <div style="flex:1;">
-                        <label>DE Size (rem)</label>
-                        <input type="number" id="sleep-de-size" min="1" max="10" step="0.5" value="5">
+                        <label>Target Size (rem)</label>
+                        <input type="number" id="sleep-target-size" min="1" max="10" step="0.5" value="5">
                     </div>
                     <div style="flex:1;">
-                        <label>DE Color</label>
-                        <input type="color" id="sleep-de-color" value="#ffffff">
+                        <label>Target Color</label>
+                        <input type="color" id="sleep-target-color" value="#ffffff">
                     </div>
                 </div>
 
@@ -729,6 +760,7 @@
                 <div class="settings-group">
                     <label>Background Image</label>
                     <input type="file" id="sleep-img-upload" accept="image/*">
+                    <button class="btn-small" onclick="clearSleepImage()">Clear Image (Use Color)</button>
                 </div>
                 <div class="settings-group">
                     <label>Image Fit (If uploaded)</label>
@@ -777,24 +809,27 @@
         const auth = firebase.auth();
         const db = firebase.firestore();
 
+        // ==========================================
+        // MULTI-LANGUAGE STATE
+        // ==========================================
+        let currentLang = 'de';
+        const VOICE_MAP = { 'de': 'de-DE', 'es': 'es-ES' };
+
         // Global State
-        const LOCAL_STORAGE_KEY = 'german_app_guest_progress';
         let currentUser = null;
         let cloudWeights = {};
+        let userNotes = {};
         let flashcards = [];
         let currentCard = null;
-        let currentMode = 'de-en';
+        let currentMode = 'target-en';
         let currentListType = '';
         let isDeckLocked = false;
 
-        // New Audio & Timer State
         let isAudioAuto = false;
-        let isDeOnFront = true;
+        let isTargetOnFront = true;
         let timeLeft = 5;
         let timerInterval = null;
         let isTimeUp = false;
-
-        // History Buffer to space out words
         let recentCards = [];
 
         // UI Elements
@@ -811,23 +846,25 @@
         const userInfo = document.getElementById('user-info');
         const loginBtn = document.getElementById('login-btn');
         const logoutBtn = document.getElementById('logout-btn');
+        const btnTargetEn = document.getElementById('btn-target-en');
+        const btnEnTarget = document.getElementById('btn-en-target');
 
         const modal = document.getElementById('word-modal');
         const modalList = document.getElementById('modal-list');
         const modalTitle = document.getElementById('modal-title');
-
         const fullListView = document.getElementById('full-list-view');
         const fullListContent = document.getElementById('full-list-content');
         const fullListTitle = document.getElementById('full-list-title');
-
-        const LOCAL_NOTES_KEY = 'german_app_guest_notes';
-        let userNotes = {};
         const frontNote = document.getElementById('front-note');
         const backNote = document.getElementById('back-note');
 
         let isDragging = false;
         let startX = 0, startY = 0, currentX = 0, currentY = 0;
         let isFlipped = false;
+
+        // Dynamic Storage Keys
+        const getLocalKey = () => `lingo_app_progress_${currentLang}`;
+        const getNotesKey = () => `lingo_app_notes_${currentLang}`;
 
         // ==========================================
         // 2. AUTHENTICATION LOGIC
@@ -846,7 +883,7 @@
                 loadWordsFromFile();
             } else {
                 currentUser = null;
-                userInfo.textContent = "German Flashcards Pro";
+                userInfo.textContent = "Lingo Flashcards Pro";
                 loginBtn.style.display = 'inline-block';
                 logoutBtn.style.display = 'none';
                 guestWarning.style.display = 'block';
@@ -867,6 +904,32 @@
         function signOut() { auth.signOut(); }
 
         // ==========================================
+        // LANGUAGE SWITCHING
+        // ==========================================
+        async function changeLanguage() {
+            currentLang = document.getElementById('lang-select').value;
+
+            // Update UI buttons based on language
+            const langCodeUpper = currentLang.toUpperCase();
+            btnTargetEn.innerText = `${langCodeUpper} ➔ EN`;
+            btnEnTarget.innerText = `EN ➔ ${langCodeUpper}`;
+
+            // Reset deck state
+            flashcards = [];
+            currentCard = null;
+            recentCards = [];
+            frontText.textContent = "Loading Data...";
+            backText.textContent = "...";
+
+            if (currentUser) {
+                await loadCloudProgress();
+            } else {
+                loadLocalProgress();
+            }
+            loadWordsFromFile();
+        }
+
+        // ==========================================
         // 3. DATABASE / LOCAL STORAGE LOGIC
         // ==========================================
         async function loadCloudProgress() {
@@ -874,8 +937,8 @@
                 const docRef = db.collection('users').doc(currentUser.uid);
                 const docSnap = await docRef.get();
                 if (docSnap.exists) {
-                    cloudWeights = docSnap.data().weights || {};
-                    userNotes = docSnap.data().notes || {};
+                    cloudWeights = docSnap.data()[`weights_${currentLang}`] || {};
+                    userNotes = docSnap.data()[`notes_${currentLang}`] || {};
                 } else {
                     cloudWeights = {};
                     userNotes = {};
@@ -885,8 +948,8 @@
 
         function loadLocalProgress() {
             try {
-                cloudWeights = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || {};
-                userNotes = JSON.parse(localStorage.getItem(LOCAL_NOTES_KEY)) || {};
+                cloudWeights = JSON.parse(localStorage.getItem(getLocalKey())) || {};
+                userNotes = JSON.parse(localStorage.getItem(getNotesKey())) || {};
             } catch (error) {
                 cloudWeights = {};
                 userNotes = {};
@@ -896,11 +959,9 @@
         async function saveNote(word, lang, noteText) {
             let noteObj = userNotes[word];
             if (typeof noteObj === 'string') {
-                noteObj = { de: noteObj, en: noteObj };
+                noteObj = { target: noteObj, en: noteObj };
             }
-            if (!noteObj) {
-                noteObj = { de: '', en: '' };
-            }
+            if (!noteObj) noteObj = { target: '', en: '' };
 
             noteObj[lang] = noteText;
             userNotes[word] = noteObj;
@@ -908,11 +969,11 @@
             if (currentUser) {
                 try {
                     await db.collection('users').doc(currentUser.uid).set({
-                        notes: { [word]: noteObj }
+                        [`notes_${currentLang}`]: userNotes
                     }, { merge: true });
                 } catch (error) { console.error("Error saving note:", error); }
             } else {
-                localStorage.setItem(LOCAL_NOTES_KEY, JSON.stringify(userNotes));
+                localStorage.setItem(getNotesKey(), JSON.stringify(userNotes));
             }
         }
 
@@ -922,11 +983,11 @@
             if (currentUser) {
                 try {
                     await db.collection('users').doc(currentUser.uid).set({
-                        weights: { [word]: newWeight }
+                        [`weights_${currentLang}`]: cloudWeights
                     }, { merge: true });
                 } catch (error) { console.error("Error saving progress:", error); }
             } else {
-                localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(cloudWeights));
+                localStorage.setItem(getLocalKey(), JSON.stringify(cloudWeights));
             }
             updateUIStats();
         }
@@ -955,8 +1016,8 @@
                 let unlock = new SpeechSynthesisUtterance('');
                 window.speechSynthesis.speak(unlock);
 
-                if (!isFlipped && isDeOnFront) speakGerman(currentCard.de);
-                if (isFlipped && !isDeOnFront) speakGerman(currentCard.de);
+                if (!isFlipped && isTargetOnFront) speakTarget(currentCard.target);
+                if (isFlipped && !isTargetOnFront) speakTarget(currentCard.target);
             } else {
                 btn.innerHTML = "🔇 Auto: Off";
                 btn.style.background = "#bdc3c7";
@@ -966,20 +1027,20 @@
         }
 
         function playCurrentAudio() {
-            if (currentCard && currentCard.de) speakGerman(currentCard.de);
+            if (currentCard && currentCard.target) speakTarget(currentCard.target);
         }
 
-        function speakGerman(text) {
+        function speakTarget(text) {
             if (!('speechSynthesis' in window) || !text) return;
             window.speechSynthesis.cancel();
             const utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = 'de-DE';
+            utterance.lang = VOICE_MAP[currentLang] || 'en-US';
             window.speechSynthesis.speak(utterance);
         }
 
         function searchWord() {
-            if (currentCard && currentCard.de) {
-                const query = encodeURIComponent(currentCard.de + " meaning");
+            if (currentCard && currentCard.target) {
+                const query = encodeURIComponent(currentCard.target + " meaning");
                 window.open(`https://www.google.com/search?q=${query}`, '_blank');
             }
         }
@@ -1006,7 +1067,7 @@
         }
 
         function toggleLock() {
-            const learnedCards = flashcards.filter(c => cloudWeights[c.de] !== undefined || c.seen);
+            const learnedCards = flashcards.filter(c => cloudWeights[c.target] !== undefined || c.seen);
 
             if (!isDeckLocked && learnedCards.length === 0) {
                 alert("You haven't swiped any words yet! Swipe some cards first to lock your deck.");
@@ -1014,13 +1075,10 @@
             }
 
             isDeckLocked = !isDeckLocked;
-
             if (isDeckLocked) {
-                lockBtn.classList.add('locked');
-                lockBtn.innerHTML = "🔒 Locked";
+                lockBtn.classList.add('locked'); lockBtn.innerHTML = "🔒 Locked";
             } else {
-                lockBtn.classList.remove('locked');
-                lockBtn.innerHTML = "🔓 Unlocked";
+                lockBtn.classList.remove('locked'); lockBtn.innerHTML = "🔓 Unlocked";
             }
 
             if (currentCard && isFlipped) toggleFlip();
@@ -1029,12 +1087,13 @@
 
         async function loadWordsFromFile() {
             try {
-                const response = await fetch('words.txt');
-                if (!response.ok) throw new Error('Network ok');
+                // Dynamically fetch based on language selection (e.g. de.txt, es.txt)
+                const response = await fetch(`${currentLang}.txt`);
+                if (!response.ok) throw new Error('Network Error');
                 const text = await response.text();
                 parseTextData(text);
             } catch (error) {
-                frontText.textContent = "Error loading words.txt";
+                frontText.textContent = `Error loading ${currentLang}.txt`;
                 frontText.style.fontSize = "1.5rem";
             }
         }
@@ -1043,13 +1102,13 @@
             flashcards = [];
             const lines = text.split(/\r?\n/);
             for (let i = 0; i < lines.length; i += 3) {
-                let deWord = lines[i] ? lines[i].trim() : '';
+                let targetWord = lines[i] ? lines[i].trim() : '';
                 let enWord = lines[i + 1] ? lines[i + 1].trim() : '';
-                deWord = deWord.replace(/\\s*/g, '');
+                targetWord = targetWord.replace(/\s*/g, '');
 
-                if (deWord && enWord) {
-                    const weight = cloudWeights[deWord] !== undefined ? cloudWeights[deWord] : 10;
-                    flashcards.push({ de: deWord, en: enWord, weight: weight, seen: cloudWeights[deWord] !== undefined });
+                if (targetWord && enWord) {
+                    const weight = cloudWeights[targetWord] !== undefined ? cloudWeights[targetWord] : 10;
+                    flashcards.push({ target: targetWord, en: enWord, weight: weight, seen: cloudWeights[targetWord] !== undefined });
                 }
             }
             if (flashcards.length > 0) {
@@ -1061,7 +1120,7 @@
         function updateUIStats() {
             const weakCount = flashcards.filter(c => c.weight >= 15).length;
             const knownCount = flashcards.filter(c => {
-                const hasBeenSeen = cloudWeights[c.de] !== undefined || c.seen;
+                const hasBeenSeen = cloudWeights[c.target] !== undefined || c.seen;
                 return hasBeenSeen && c.weight < 15;
             }).length;
 
@@ -1071,32 +1130,32 @@
 
         function updateCardText() {
             if (!currentCard) return;
-            let showDeOnFront = true;
-            if (currentMode === 'en-de') showDeOnFront = false;
-            else if (currentMode === 'random') showDeOnFront = Math.random() > 0.5;
+            let showTargetOnFront = true;
+            if (currentMode === 'en-target') showTargetOnFront = false;
+            else if (currentMode === 'random') showTargetOnFront = Math.random() > 0.5;
 
-            let noteObj = userNotes[currentCard.de];
-            if (typeof noteObj === 'string') noteObj = { de: noteObj, en: noteObj };
-            if (!noteObj) noteObj = { de: '', en: '' };
+            let noteObj = userNotes[currentCard.target];
+            if (typeof noteObj === 'string') noteObj = { target: noteObj, en: noteObj };
+            if (!noteObj) noteObj = { target: '', en: '' };
 
             frontNote.style.display = 'block';
             backNote.style.display = 'block';
 
-            if (showDeOnFront) {
-                frontText.textContent = currentCard.de;
+            if (showTargetOnFront) {
+                frontText.textContent = currentCard.target;
                 backText.textContent = currentCard.en;
                 backLabel.textContent = "English";
-                isDeOnFront = true;
-                frontNote.value = noteObj.de || "";
+                isTargetOnFront = true;
+                frontNote.value = noteObj.target || "";
                 backNote.value = noteObj.en || "";
-                if (isAudioAuto) speakGerman(currentCard.de);
+                if (isAudioAuto) speakTarget(currentCard.target);
             } else {
                 frontText.textContent = currentCard.en;
-                backText.textContent = currentCard.de;
-                backLabel.textContent = "German";
-                isDeOnFront = false;
+                backText.textContent = currentCard.target;
+                backLabel.textContent = currentLang.toUpperCase();
+                isTargetOnFront = false;
                 frontNote.value = noteObj.en || "";
-                backNote.value = noteObj.de || "";
+                backNote.value = noteObj.target || "";
             }
         }
 
@@ -1104,8 +1163,8 @@
             if (!currentCard) return;
             const newNote = e.target.value;
             const isFrontNote = e.target.id === 'front-note';
-            let langToSave = isDeOnFront ? (isFrontNote ? 'de' : 'en') : (isFrontNote ? 'en' : 'de');
-            saveNote(currentCard.de, langToSave, newNote);
+            let langToSave = isTargetOnFront ? (isFrontNote ? 'target' : 'en') : (isFrontNote ? 'en' : 'target');
+            saveNote(currentCard.target, langToSave, newNote);
         }
 
         [frontNote, backNote].forEach(noteEl => {
@@ -1128,15 +1187,15 @@
 
             let activePool = flashcards;
             if (isDeckLocked) {
-                activePool = flashcards.filter(c => cloudWeights[c.de] !== undefined || c.seen);
+                activePool = flashcards.filter(c => cloudWeights[c.target] !== undefined || c.seen);
                 if (activePool.length === 0) activePool = flashcards;
             }
 
             let maxHistory = Math.min(50, Math.floor(activePool.length * 0.6));
-            let availablePool = activePool.filter(c => !recentCards.includes(c.de));
+            let availablePool = activePool.filter(c => !recentCards.includes(c.target));
 
             if (availablePool.length === 0) {
-                availablePool = activePool.filter(c => currentCard ? c.de !== currentCard.de : true);
+                availablePool = activePool.filter(c => currentCard ? c.target !== currentCard.target : true);
                 if (availablePool.length === 0) availablePool = activePool;
             }
 
@@ -1150,7 +1209,7 @@
             }
 
             if (currentCard) {
-                recentCards.push(currentCard.de);
+                recentCards.push(currentCard.target);
                 if (recentCards.length > maxHistory) recentCards.shift();
             }
 
@@ -1183,11 +1242,11 @@
                 if (currentX > thresholdX) {
                     clearInterval(timerInterval); currentCard.seen = true;
                     if (!isTimeUp) currentCard.weight = Math.max(1, currentCard.weight - 5);
-                    saveProgress(currentCard.de, currentCard.weight);
+                    saveProgress(currentCard.target, currentCard.weight);
                     card.classList.add('fly-right'); setTimeout(loadNextCard, 300);
                 } else if (currentX < -thresholdX) {
                     clearInterval(timerInterval); currentCard.seen = true; currentCard.weight += 5;
-                    saveProgress(currentCard.de, currentCard.weight);
+                    saveProgress(currentCard.target, currentCard.weight);
                     card.classList.add('fly-left'); setTimeout(loadNextCard, 300);
                 } else { resetCardPosition(); }
             } else {
@@ -1201,8 +1260,8 @@
         function toggleFlip() {
             isFlipped = !isFlipped;
             isFlipped ? card.classList.add('flipped') : card.classList.remove('flipped');
-            if (isAudioAuto && isFlipped && !isDeOnFront) speakGerman(currentCard.de);
-            if (isAudioAuto && !isFlipped && isDeOnFront) speakGerman(currentCard.de);
+            if (isAudioAuto && isFlipped && !isTargetOnFront) speakTarget(currentCard.target);
+            if (isAudioAuto && !isFlipped && isTargetOnFront) speakTarget(currentCard.target);
         }
 
         function resetCardPosition() {
@@ -1221,7 +1280,7 @@
             } else {
                 modalTitle.textContent = "Known Words"; modalTitle.style.color = "#2ecc71";
                 filteredCards = flashcards.filter(c => {
-                    const hasBeenSeen = cloudWeights[c.de] !== undefined || c.seen;
+                    const hasBeenSeen = cloudWeights[c.target] !== undefined || c.seen;
                     return hasBeenSeen && c.weight < 15;
                 }).sort((a, b) => a.weight - b.weight);
             }
@@ -1232,7 +1291,7 @@
                 const topCards = filteredCards.slice(0, 8);
                 topCards.forEach(card => {
                     const li = document.createElement('li');
-                    li.innerHTML = `<span class="de">${card.de}</span> <span class="en">${card.en}</span>`;
+                    li.innerHTML = `<span class="target-word">${card.target}</span> <span class="en">${card.en}</span>`;
                     modalList.appendChild(li);
                 });
             }
@@ -1251,14 +1310,14 @@
             } else {
                 fullListTitle.textContent = "Known Words";
                 filteredCards = flashcards.filter(c => {
-                    const hasBeenSeen = cloudWeights[c.de] !== undefined || c.seen;
+                    const hasBeenSeen = cloudWeights[c.target] !== undefined || c.seen;
                     return hasBeenSeen && c.weight < 15;
                 }).sort((a, b) => a.weight - b.weight);
             }
 
             filteredCards.forEach(card => {
                 const li = document.createElement('li');
-                li.innerHTML = `<span class=\"de\">${card.de}</span> <span class=\"en\">${card.en}</span>`;
+                li.innerHTML = `<span class=\"target-word\">${card.target}</span> <span class=\"en\">${card.en}</span>`;
                 fullListContent.appendChild(li);
             });
             mainAppContent.style.display = 'none'; fullListView.style.display = 'flex';
@@ -1266,15 +1325,13 @@
 
         function closeFullList() { fullListView.style.display = 'none'; mainAppContent.style.display = 'flex'; }
 
-
         // ==========================================
         // 6. AUTO MODE & SLEEP SETTINGS LOGIC
         // ==========================================
         let isAutoModeActive = false;
         const sleepSettingsModal = document.getElementById('sleep-settings-modal');
-        const LOCAL_SETTINGS_KEY = 'german_app_sleep_settings';
+        const LOCAL_SETTINGS_KEY = 'lingo_app_sleep_settings';
 
-        // Default Object to fallback to
         const DEFAULT_SLEEP_CONFIG = {
             audioVolume: 0.3,
             speechVolume: 1.0,
@@ -1285,11 +1342,10 @@
             wordLimit: 50,
             enSize: 3,
             enColor: "#808080",
-            deSize: 5,
-            deColor: "#ffffff"
+            targetSize: 5,
+            targetColor: "#ffffff"
         };
 
-        // Current runtime config
         let sleepConfig = {
             ...DEFAULT_SLEEP_CONFIG,
             audioUrls: [],
@@ -1297,7 +1353,6 @@
             bgImageUrl: null
         };
 
-        // --- Load & Save Preferences ---
         async function loadSleepSettings() {
             if (currentUser) {
                 try {
@@ -1316,7 +1371,6 @@
         }
 
         async function saveSleepSettings() {
-            // Save only standard settings (files/blobs not saved across sessions)
             const settingsToSave = {
                 audioVolume: sleepConfig.audioVolume,
                 speechVolume: sleepConfig.speechVolume,
@@ -1327,8 +1381,8 @@
                 wordLimit: sleepConfig.wordLimit,
                 enSize: sleepConfig.enSize,
                 enColor: sleepConfig.enColor,
-                deSize: sleepConfig.deSize,
-                deColor: sleepConfig.deColor
+                targetSize: sleepConfig.targetSize,
+                targetColor: sleepConfig.targetColor
             };
 
             if (currentUser) {
@@ -1342,7 +1396,6 @@
             }
         }
 
-        // --- UI Setting Controls ---
         function applySettingsToInputs() {
             document.getElementById('sleep-audio-volume').value = sleepConfig.audioVolume;
             document.getElementById('sleep-speech-volume').value = sleepConfig.speechVolume;
@@ -1356,8 +1409,8 @@
 
             document.getElementById('sleep-en-size').value = sleepConfig.enSize;
             document.getElementById('sleep-en-color').value = sleepConfig.enColor;
-            document.getElementById('sleep-de-size').value = sleepConfig.deSize;
-            document.getElementById('sleep-de-color').value = sleepConfig.deColor;
+            document.getElementById('sleep-target-size').value = sleepConfig.targetSize;
+            document.getElementById('sleep-target-color').value = sleepConfig.targetColor;
 
             document.getElementById('bg-audio').volume = sleepConfig.audioVolume;
         }
@@ -1374,35 +1427,36 @@
             alert("Settings reset to defaults!");
         }
 
+        function clearSleepImage() {
+            sleepConfig.bgImageUrl = null;
+            document.getElementById('sleep-img-upload').value = "";
+            alert("Image cleared. Solid color will now be used.");
+        }
+
         function openSleepSettings() {
-            applySettingsToInputs(); // Ensure UI matches state before opening
+            applySettingsToInputs();
             sleepSettingsModal.classList.add('show');
         }
 
         function closeSleepSettings() {
             sleepSettingsModal.classList.remove('show');
             sleepConfig.bgColor = document.getElementById('sleep-bg-color').value;
-
-            // Volumes
             sleepConfig.audioVolume = parseFloat(document.getElementById('sleep-audio-volume').value);
             sleepConfig.speechVolume = parseFloat(document.getElementById('sleep-speech-volume').value);
             document.getElementById('bg-audio').volume = sleepConfig.audioVolume;
 
-            // Delay
             const delayInput = parseFloat(document.getElementById('sleep-delay-input').value);
             sleepConfig.delayMs = (!isNaN(delayInput) && delayInput >= 0) ? delayInput * 1000 : 1500;
 
-            // Word Limit logic
             sleepConfig.isAllWords = document.getElementById('sleep-word-all').checked;
             const limitInput = parseInt(document.getElementById('sleep-word-limit').value);
             sleepConfig.wordLimit = (!isNaN(limitInput) && limitInput > 0) ? limitInput : 50;
 
-            // Visuals
             sleepConfig.bgImageFit = document.getElementById('sleep-img-fit').value;
             sleepConfig.enSize = parseFloat(document.getElementById('sleep-en-size').value) || 3;
             sleepConfig.enColor = document.getElementById('sleep-en-color').value;
-            sleepConfig.deSize = parseFloat(document.getElementById('sleep-de-size').value) || 5;
-            sleepConfig.deColor = document.getElementById('sleep-de-color').value;
+            sleepConfig.targetSize = parseFloat(document.getElementById('sleep-target-size').value) || 5;
+            sleepConfig.targetColor = document.getElementById('sleep-target-color').value;
 
             saveSleepSettings();
         }
@@ -1411,7 +1465,6 @@
             if (e.target === sleepSettingsModal) closeSleepSettings();
         });
 
-        // Handle File Uploads via Object URLs (Supports Multiple / Playlists)
         document.getElementById('sleep-audio-upload').addEventListener('change', function (e) {
             const files = e.target.files;
             if (files.length > 0) {
@@ -1425,20 +1478,18 @@
                 }
 
                 sleepConfig.currentAudioIndex = 0;
-
                 const bgAudio = document.getElementById('bg-audio');
                 bgAudio.src = sleepConfig.audioUrls[0];
                 bgAudio.load();
             }
         });
 
-        // Smart Looping / Playlist progression
         document.getElementById('bg-audio').addEventListener('ended', function () {
             if (sleepConfig.audioUrls.length > 1) {
                 sleepConfig.currentAudioIndex = (sleepConfig.currentAudioIndex + 1) % sleepConfig.audioUrls.length;
                 this.src = sleepConfig.audioUrls[sleepConfig.currentAudioIndex];
                 this.play();
-            } else {
+            } else if (sleepConfig.audioUrls.length === 1) {
                 this.currentTime = 0;
                 this.play();
             }
@@ -1480,27 +1531,30 @@
             const autoView = document.getElementById('auto-mode-view');
             autoView.style.display = 'flex';
 
-            // Apply Visual Sleep Configurations
-            autoView.style.backgroundColor = sleepConfig.bgColor;
+            // Background Fix: Priority to Image, transparent color if image exists
             if (sleepConfig.bgImageUrl) {
                 autoView.style.backgroundImage = `url('${sleepConfig.bgImageUrl}')`;
                 autoView.style.backgroundSize = sleepConfig.bgImageFit;
+                autoView.style.backgroundColor = 'transparent';
             } else {
                 autoView.style.backgroundImage = 'none';
+                autoView.style.backgroundColor = sleepConfig.bgColor;
             }
 
-            // Apply Font Configs
             const enTextEl = document.getElementById('auto-en-text');
-            const deTextEl = document.getElementById('auto-de-text');
+            const targetTextEl = document.getElementById('auto-target-text');
             enTextEl.style.fontSize = sleepConfig.enSize + 'rem';
             enTextEl.style.color = sleepConfig.enColor;
-            deTextEl.style.fontSize = sleepConfig.deSize + 'rem';
-            deTextEl.style.color = sleepConfig.deColor;
+            targetTextEl.style.fontSize = sleepConfig.targetSize + 'rem';
+            targetTextEl.style.color = sleepConfig.targetColor;
 
+            // Audio default disabled: only play if they uploaded one
             const bgAudio = document.getElementById('bg-audio');
-            bgAudio.volume = sleepConfig.audioVolume;
-            bgAudio.loop = false;
-            bgAudio.play().catch(e => console.log("Audio blocked by browser until user interaction:", e));
+            if (sleepConfig.audioUrls.length > 0) {
+                bgAudio.volume = sleepConfig.audioVolume;
+                bgAudio.loop = false;
+                bgAudio.play().catch(e => console.log("Audio blocked by browser until user interaction:", e));
+            }
 
             runAutoLoop();
         }
@@ -1515,12 +1569,14 @@
 
         async function runAutoLoop() {
             const enTextEl = document.getElementById('auto-en-text');
-            const deTextEl = document.getElementById('auto-de-text');
+            const targetTextEl = document.getElementById('auto-target-text');
 
             let wordsPlayed = 0;
-
             let actualLimit = sleepConfig.isAllWords ? Infinity : Math.min(sleepConfig.wordLimit, flashcards.length);
             let playQueue = [...flashcards].sort(() => Math.random() - 0.5);
+
+            // dynamically get voice logic for current lang
+            const voiceCode = VOICE_MAP[currentLang] || 'en-US';
 
             while (isAutoModeActive) {
                 if (wordsPlayed >= actualLimit) {
@@ -1534,13 +1590,11 @@
 
                 const card = playQueue.pop();
 
-                // 1. Reset screen
-                enTextEl.style.opacity = 0; deTextEl.style.opacity = 0;
+                enTextEl.style.opacity = 0; targetTextEl.style.opacity = 0;
                 await delay(1500);
 
                 if (!isAutoModeActive) break;
 
-                // 2. Show & Speak English
                 enTextEl.textContent = card.en; enTextEl.style.opacity = 1;
                 await delay(500);
                 await speakAsync(card.en, 'en-US', 1.0);
@@ -1549,18 +1603,14 @@
 
                 if (!isAutoModeActive) break;
 
-                // 3. Show & Speak German (Normal Speed)
-                deTextEl.textContent = card.de; deTextEl.style.opacity = 1;
+                targetTextEl.textContent = card.target; targetTextEl.style.opacity = 1;
                 await delay(500);
-                await speakAsync(card.de, 'de-DE', 1.0);
+                await speakAsync(card.target, voiceCode, 1.0);
                 await delay(1500);
 
                 if (!isAutoModeActive) break;
 
-                // 4. Speak German (Slow Speed)
-                await speakAsync(card.de, 'de-DE', 0.6);
-
-                // 5. Keep the final word on screen for 4 seconds before looping back
+                await speakAsync(card.target, voiceCode, 0.6);
                 await delay(4000);
 
                 wordsPlayed++;
@@ -1572,12 +1622,10 @@
     <div id="auto-mode-view">
         <button class="exit-auto-btn" onclick="stopAutoMode()">Exit</button>
         <div id="auto-en-text">English</div>
-        <div id="auto-de-text">Deutsch</div>
+        <div id="auto-target-text">Translation</div>
     </div>
 
-    <audio id="bg-audio">
-        <source src="https://cdn.pixabay.com/download/audio/2021/08/04/audio_0625c1539c.mp3?filename=heavy-rain-nature-sounds-8186.mp3" type="audio/mpeg">
-    </audio>
+    <audio id="bg-audio"></audio>
 
 </body>
 </html>
