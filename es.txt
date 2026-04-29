@@ -1,3413 +1,3412 @@
-0
 cero
+0
 
-1
 uno
+1
 
-2
 dos
+2
 
-3
 tres
+3
 
-4
 cuatro
+4
 
-5
 cinco
+5
 
-6
 seis
+6
 
-7
 siete
+7
 
-8
 ocho
+8
 
-9
 nueve
+9
 
-10
 diez
+10
 
-11
 once
+11
 
-12
 doce
+12
 
-13
 trece
+13
 
-14
 catorce
+14
 
-15
 quince
+15
 
-16
 dieciséis
+16
 
-17
 diecisiete
+17
 
-18
 dieciocho
+18
 
-19
 diecinueve
+19
 
-20
 veinte
+20
 
-21
 veintiuno
+21
 
-22
 veintidos
+22
 
-23
 veintitres
+23
 
-24
 veinticuatro
+24
 
-30
 treinta
+30
 
-31
 treinta y uno
+31
 
-32
 treinta y dos
+32
 
-40
 cuarenta
+40
 
-48
 cuarenta y ocho
+48
 
-50
 cincuenta
+50
 
-60
 sesenta
+60
 
-70
 setenta
+70
 
-80
 ochenta
+80
 
-90
 noventa
+90
 
-100
 cien
+100
 
-101
 ciento uno
+101
 
-153
 ciento cincuenta y tres
+153
 
-200
 doscientos
+200
 
-1000
 mil
+1000
 
-10000
 diez mil
+10000
 
-100000
 cien mil
+100000
 
-1000000
 milion
+1000000
 
 
 punto
 
-. com
 punto com
+. com
 
-/
 barra
+/
 
 
 dos puntos
 
-@
 arroba
+@
 
-a little
 poco
+a little
 
-a lot
 mucho
+a lot
 
-abdomen
 el abdomen
+abdomen
 
-abortion
 aborto
+abortion
 
-about
 sobre, más o menos
+about
 
-about to do sthg
 estar a punto de
+about to do sthg
 
-above
 encima de, arriba
+above
 
-abroad
 ir al extranjero
+abroad
 
-absent
 ausente
+absent
 
-absent-minded
 distraído
+absent-minded
 
-absolutely
 absolutamente
+absolutely
 
-abuse
 abusar de
+abuse
 
-accelerator
 el acelerador
+accelerator
 
-accent
 acento
+accent
 
-accept
 aceptar, admitir
+accept
 
-access
 tener acceso a…
+access
 
-accident
 accidente
+accident
 
-accommodation
 alojamiento
+accommodation
 
-accompany
 acompañar
+accompany
 
-accomplish
 conseguir, lograr
+accomplish
 
-according
 según
+according
 
-account
 la cuenta
+account
 
-accountant
 contable
+accountant
 
-accurate
 preciso
+accurate
 
-accuse
 acusar a alguien de algo
+accuse
 
-ache
 el dolor, me duele
+ache
 
-acid
 ácido
+acid
 
-action
 acción
+action
 
-active
 activo
+active
 
-activity
 actividad
+activity
 
-actor/ actress
 actor/ actriz
+actor/ actress
 
-adaptor
 adaptador
+adaptor
 
-add
 añadir
+add
 
-addicted
 ser adicto a
+addicted
 
-address
 la dirección
+address
 
-advertisement
 anuncio
+advertisement
 
-adjust
 ajustar
+adjust
 
-admission
 admisión
+admission
 
-admit
 confesar
+admit
 
-adolescent
 adolescente
+adolescent
 
-adopt
 adoptar
+adopt
 
-adult
 adulto
+adult
 
-adultery
 adulterio
+adultery
 
-advance
 por adelantado
+advance
 
-advanced
 avanzado
+advanced
 
+ventaja
 advantage
-ventaja
 
-adventure
 aventura
+adventure
 
-advice
 consejo, aviso
+advice
 
-advise
 aconsejar, dar consejo
+advise
 
-aerial
 antena
+aerial
 
-affect
 afectar
+affect
 
-affection
 el cariño
+affection
 
-afford
 poder permitirse algo
+afford
 
-afraid
 asustado, con miedo
-
 afraid
+
 tener miedo de
+afraid
 
-after
 después  de , que
-
 after
+
 después de todo
+after
 
-afternoon
 tarde, de la tarde
+afternoon
 
-afterwards
 después
+afterwards
 
-again
 otra vez, de nuevo
+again
 
-against
 contra, contra de
+against
 
-age
 edad
+age
 
-agency
 agencia, buró
+agency
 
-agent
 agente
+agent
 
-aggressive
 agresivo
+aggressive
 
-ago
 hace una semana
+ago
 
-agree
 estar de acuerdo
+agree
 
-aim
 objetivo
+aim
 
-air
 el aire
+air
 
-air base
 base aérea
+air base
 
-air filter
 el filtro
+air filter
 
-air force
 fuerza aérea
+air force
 
-air mail
 correo aéreo
+air mail
 
-air-conditioning
 el aire acondicionado
+air-conditioning
 
-airline
 línea aérea
+airline
 
-airplane
 el avión
+airplane
 
-airport
 aeropuerto
+airport
 
-aisle
 el pasillo
+aisle
 
-alarm
 alarma
+alarm
 
-alarm clock
 el despertador
+alarm clock
 
-album
 álbum
+album
 
 alcohol
 alcohol
 
-alcoholic
 alcohólico
+alcoholic
 
-algebra
 el álgebra
+algebra
 
-alibi
 coartada, excusa
+alibi
 
-alien
 el extraterrestre, el extranjero
+alien
 
-alive
 vivo. estar vivo
+alive
 
-all
 todo, todos
+all
 
-all right
 ¿de acuerdo?¿está bien? está bien
+all right
 
-allergic to
 alérgico a
+allergic to
 
-allergy
 alergia
+allergy
 
-alligator
 el caimán
+alligator
 
-allow
 permitir, autorizar
+allow
 
-almonds
 almendras
+almonds
 
-almost
 casi, apenas
+almost
 
-alone
 solo, único
+alone
 
-aloud
 en voz alta
+aloud
 
-alphabet
 alfabeto, abecé
+alphabet
 
-already
 ya
+already
 
-alright
 bien, como se debe
+alright
 
-also
 también, además
+also
 
-although
 aunque
+although
 
-always
 siempre
+always
 
-ambassador
 embajador
+ambassador
 
-ambition
 ambición
+ambition
 
-ambitious
 ambicioso
+ambitious
 
-ambulance
 la ambulancia
+ambulance
 
-American
 americano
+American
 
-amount
 cantidad, suma
+amount
 
-amusing
 divertido
+amusing
 
-analyze
 analizar
+analyze
 
-ancestors
 antepasados
+ancestors
 
-anchor
 ancla
+anchor
 
-and
 y
+and
 
-angel
 ángel
+angel
 
-angle
 ángulo
+angle
 
-angry
 colérico, airado. enfadado
+angry
 
-animal
 animal, bestia
+animal
 
-ankle
 el tobillo
+ankle
 
-announce
 anunciar
+announce
 
-annoy
 molestar, irritar
+annoy
 
-annoying
 pesado
+annoying
 
-answer
 respuesta, contestación
-
 answer
+
 responder, contestar
+answer
 
-answering machine
 contestador automático
+answering machine
 
-ant
 la hormiga
+ant
 
-antenna
 la antena
+antenna
 
-antler
 el cuerno
+antler
 
-any
 cualquier. alguno/a
+any
 
-anybody
 cualquiera, alguien
+anybody
 
-anything
 cualquier cosa, nada
+anything
 
-anyway
 de todos modos
+anyway
 
-anywhere
 dondequiera
+anywhere
 
-apartment
 apartamento, cuarto
+apartment
 
-apartment building
 los apartamentos
+apartment building
 
-appear
 aparecer
+appear
 
-appearance
 apariencia
+appearance
 
-appetite
 apetito, gana, deseo
+appetite
 
-appetizer
 el aperitivo
+appetizer
 
-applaud
 aplaudir
+applaud
 
-apple
 la manzana
+apple
 
-application
 aplicación, pedido
+application
 
-apply
 aplicar
+apply
 
-appointment
 cita
+appointment
 
-apprentice
 aprendiz
+apprentice
 
-apricot
 el albaricoque
+apricot
 
-April
 abril
+April
 
+árabe
 Arab
-árabe
 
+árabe
 Arabic
-árabe
 
-architect
 el arquitecto
+architect
 
-Argentina
 argentina
+Argentina
 
-arm
 el brazo
+arm
 
-armchair
 la butaca
+armchair
 
-armrest
 el descanso brazo, el apoyabrazos
+armrest
 
-arms
 armas
+arms
 
-army
 ejército, armada
+army
 
-around
 alrededor de
+around
 
-arrange
 organizar
+arrange
 
-arrest
 detener
+arrest
 
-arrival
 la llegada
+arrival
 
-arrive
 llegar, venir
+arrive
 
-arrogant
 arrogante
+arrogant
 
-art
 el arte
+art
 
-art gallery
 galería de arte
+art gallery
 
-artichoke
 la alcachofa
+artichoke
 
-as
 como, tan
-
 as
+
 como si
+as
 
-as much/many... as
 tanto
+as much/many... as
 
-as...as
 tan...como
+as...as
 
+avergonzado
 ashamed
-avergonzado
 
-ashtray
 cenicero
+ashtray
 
-ask
 preguntar, pedir
+ask
 
-asparagus
 los espárragos
+asparagus
 
-ass
 asno, borrico, buro
+ass
 
-asset
 ventaja
+asset
 
-asshole
 idiota, estúpido. pendejo
+asshole
 
-asterisk
 asterisco
+asterisk
 
-asteroid
 el asteroide
+asteroid
 
-asthma
 asma
+asthma
 
-astronaut
 la astronauta
-
 astronaut
+
 el astronauta
+astronaut
 
-at
 en, a. en casa
+at
 
-athlete
 la deportista
-
 athlete
+
 el deportista
+athlete
 
-athletic supporter
 el suspensorio
+athletic supporter
 
-ATM
 cajeros automáticos
+ATM
 
-attach
 adjuntar
+attach
 
-attention
 la atención
+attention
 
-attitude
 actitud
+attitude
 
-attorney
 el abogado
+attorney
 
-attractive
 guapo
+attractive
 
-august
 agosto
+august
 
-aunt
 la tía
+aunt
 
-Australia
 australia
+Australia
 
-author
 autor, escritor
+author
 
-authorization
 la autorización
+authorization
 
-autumn
 otoño
+autumn
 
-available
 disponible
+available
 
-avenue
 avenida
+avenue
 
-avocado
 aguacate
+avocado
 
-avoid
 evitar
+avoid
 
-awesome
 impresionante
+awesome
 
-awful
 espantoso
+awful
 
-ax
 hacha
+ax
 
-baby
 el bebé, el niño, nene
+baby
 
-babysitter
 la canguro
+babysitter
 
-back
 atrás, detrás
-
 back
+
 la espalda
+back
 
-backpack
 la mochila
+backpack
 
-backyard
 jardín trasero
+backyard
 
-bacon
 el tocino, el beicon
+bacon
 
-bad
 mal, malo, gente mala
+bad
 
-bad weather
 mal tiempo
+bad weather
 
-badge
 la insignia
+badge
 
-badly
 mal
+badly
 
-bag
 la bolsa, saco
+bag
 
-baggage
 el equipaje
+baggage
 
-bake
 cocer al horno
+bake
 
-baker's
 panadería
+baker's
 
+la panadería
 bakery
-la panadería
 
-balcony
 balcón
+balcony
 
-bald
 calvo
+bald
 
-ball
 el balón, la pelota
+ball
 
-balloon
 globo
+balloon
 
-banana
 el plátano, la banana
+banana
 
-band
 grupo
+band
 
-band aid
 la curita
+band aid
 
-bandage
 venda
+bandage
 
-bank
 el banco
+bank
 
-bank statement
 extracto bancario
+bank statement
 
-banker
 el banquero
+banker
 
-bar
 el bar
-
 bar
+
 barra
+bar
 
-barber
 el barbero
+barber
 
-barefoot
 descalzo
+barefoot
 
-barely
 apenas
+barely
 
-bargain
 ganga, baratillo
-
 bargain
+
 negociar, discutir el precio
+bargain
 
-bark
 ladrar
+bark
 
-barrel
 tonel, barril
+barrel
 
-barren
 yermo
+barren
 
-baseball
 el béisbol
+baseball
 
-basic
 básico, primario
+basic
 
-basically
 en principio
+basically
 
-basket
 cesta
+basket
 
-basketball
 el baloncesto
+basketball
 
-basketball hoop
 una canasta
+basketball hoop
 
-bat
 el murciélago
-
 bat
+
 un bate
+bat
 
-bath
 bañarse, tomar un baño
+bath
 
-bathing suit
 un traje de baño
+bathing suit
 
-bathroom
 el cuarto de baño, servicio
+bathroom
 
-bathtub
 la bañera
+bathtub
 
-battery
 la pila, la batería
+battery
 
-bay
 la bahía
+bay
 
-be
 ser, estar, existir
+be
 
-beach
 la playa
+beach
 
-beak
 el pico
+beak
 
-beans
 las habas
-
 beans
+
 los frijoles / las judías verdes
-
 beans
+
 los frijoles, las alubias
+beans
 
-bear
 el oso
-
 bear
+
 soportar
+bear
 
-beard
 barba
+beard
 
-beat
 golpear, dar de golpes
+beat
 
-beautiful
 bello, hermoso
+beautiful
 
-beauty
 belleza
+beauty
 
-beaver
 castor
+beaver
 
-because
 porque, puesto que
+because
 
-become
 hacerse, volverse
+become
 
-bed
 la cama
+bed
 
-bedroom
 el dormitorio, la recámara, alcoba
+bedroom
 
-bedtime
 hora de acostarse
+bedtime
 
-bee
 la abeja
+bee
 
-beef
 la carne de res / vaca
+beef
 
-beer
 cerveza
+beer
 
-beet
 la remolacha
+beet
 
-beetle
 el escarabajo
+beetle
 
-before
 antes, antes de, delante de
+before
 
-beg
 mendigar. pedir
+beg
 
-beggar
 mendigo
+beggar
 
-begin
 empezar, comenzar
+begin
 
-beginner
 principiante
+beginner
 
-beginning
 comienzo
+beginning
 
-behave
 comportarse
+behave
 
-behavior
 comportamiento, conducta
+behavior
 
-behind
 detrás de
+behind
 
-belief
 creencia
+belief
 
-believe
 creer, creer en
+believe
 
-believer
 creyente
+believer
 
-bell
 campana, timbre
+bell
 
-belong to
 pertenecer a
+belong to
 
-below, under
 debajo
+below, under
 
-belt
 el cinturón
+belt
 
-bench
 la banca
+bench
 
-bend
 doblar
+bend
 
-beret
 la boina
+beret
 
-beside
 al lado de
+beside
 
-besides
 además
+besides
 
-best
 el mejor, lo / la mejor
+best
 
-bet
 apostar
+bet
 
-betray
 traicionar. engañar
+betray
 
-better
 mejor
+better
 
-between
 entre, en medio
+between
 
-beverages
 las bebidas
+beverages
 
-bib
 el babero
+bib
 
-bible
 biblia
+bible
 
-bicycle
 bicicleta
+bicycle
 
-big
 grande, gordo
+big
 
-bill
 cuenta, factura. pico
+bill
 
-bin
 cubo
+bin
 
-binoculars
 prismáticos
+binoculars
 
-bird
 el pájaro, ave
+bird
 
-birth
 nacimiento
+birth
 
-birthday
 cumpleaños
+birthday
 
-birthday card
 la tarjeta de cumpleaños
+birthday card
 
-biscuit
 galleta
+biscuit
 
-bison
 el bisonte
+bison
 
-bit
 un poco de
+bit
 
-bitch
 zorra
+bitch
 
-bite
 mordisco, picada
-
 bite
+
 morder, picar
+bite
 
-bitter
 amargo
+bitter
 
-black
 negro
+black
 
-black eye
 el ojo morado
+black eye
 
-black hole
 el agujero negro
+black hole
 
-blackberry
 la zarzamora
+blackberry
 
-blackmail
 chantajear
+blackmail
 
-blade
 cuchilla, lama
+blade
 
-blame
 culpar
+blame
 
-blanket
 la manta, la cobija, el cobertor
+blanket
 
-bleach
 lejía
+bleach
 
-bleed
 sangrar
+bleed
 
-blender
 licuadora
+blender
 
-blind
 ciego
+blind
 
-blocked
 cortado
+blocked
 
-blocks
 los bloques
+blocks
 
-blood
 sangre
+blood
 
-blood group
 grupo sanguíneo
+blood group
 
-blouse
 la blusa
+blouse
 
-blue
 azul, de color azul
+blue
 
-boast
 jactarse
+boast
 
-boat
 barco
+boat
 
-body
 cuerpo, cuerpo humano
+body
 
-bodyguard
 guardaespaldas
+bodyguard
 
-boil
 hervir
+boil
 
-boiled eggs
 huevos cocido
+boiled eggs
 
-Bolivia
 bolivia
+Bolivia
 
-bomb
 bomba
-
 bomb
+
 bombardear
+bomb
 
-bone
 hueso
+bone
 
-book
 el libro, tomo
-
 book
+
 reservar,hacer una reservación
+book
 
-bookcase
 el estante para libros
+bookcase
 
-bookstore
 la librería
+bookstore
 
-boots
 las botas
+boots
 
-border
 borde, frontera
+border
 
+aburrido
 bored
-aburrido
 
+aburrido
 boring
-aburrido
 
-borrow
 pedir prestado
+borrow
 
-boss
 jefe, manager
+boss
 
-botany
 la botánica
+botany
 
-both
 ambos, ambas
+both
 
-bother
 molestar
+bother
 
-bottle
 la bnotella, frasco, jarro, biberón
+bottle
 
-bowl
 escudilla
+bowl
 
-box
 la caja, el cofre
+box
 
-boxing
 el boxeo
+boxing
 
-boy
 el chico, niño, muchacho
+boy
 
-boyfriend
 novio
+boyfriend
 
-bra
 sujetador, sostén
+bra
 
-bracelet
 la pulsera
+bracelet
 
-brackets
 corchete
+brackets
 
-brain
 cerebro
+brain
 
-brake
 el freno
+brake
 
-brand
 marka
+brand
 
-brand-new
 completamente nuevo
+brand-new
 
-brave
 valiente
+brave
 
-bread
 el pan
+bread
 
-bread shop
 la panadería
+bread shop
 
-break
 romper, fraccionar
+break
 
-breakable
 frágil
+breakable
 
-breakdown
 avería
+breakdown
 
-breakfast
 el desayuno
+breakfast
 
-breast
 seno, pecho
+breast
 
-breath
 respiración, aliento
+breath
 
-breathe
 respirar
+breathe
 
-breeze
 una brisa
+breeze
 
-bricks
 ladrillos
+bricks
 
-bride
 novia, desposada
+bride
 
-bridegroom
 novio, prometido
+bridegroom
 
-bridge
 puente
+bridge
 
-briefcase
 cartera
+briefcase
 
-bring
 traer
+bring
 
-Britain
 gran bretaña
+Britain
 
-British
 británico
+British
 
-broad
 ancho
+broad
 
-broccoli
 el brócoli
+broccoli
 
-brochure
 folleto
+brochure
 
-broke
 arruinado
+broke
 
-broken
 roto, quebrado
+broken
 
-broom
 la escoba
+broom
 
-brother
 el hermano
+brother
 
-brother-in-law
 cuñado
+brother-in-law
 
-brown
 marrón, pardo, castaño
+brown
 
-bruises
 golpes
+bruises
 
-brush
 el cepillo
+brush
 
-bucket
 el cubo
+bucket
 
-bud
 el botón
+bud
 
-buddy
 amigote
+buddy
 
-budget
 presupuesto
+budget
 
-buffet
 cafetería
+buffet
 
-bug
 bicho
+bug
 
-build
 construir, edificar
+build
 
-building
 el edificio, la construcción
+building
 
-bulb
 la bombilla, el bulbo
+bulb
 
-bull
 el toro
+bull
 
-bullet
 bala
+bullet
 
-bullfighter
 torero
+bullfighter
 
-bullshit
 gilipollez
+bullshit
 
-burden
 carga
+burden
 
-burn
 la quemadura
-
 burn
+
 quemar
+burn
 
-burp
 eructar
+burp
 
-bus
 el autobús,el bus
+bus
 
-bus stop
 la parada de autobús
+bus stop
 
-bush
 el arbusto
+bush
 
-business
 los negocios
+business
 
-business man
 hombre de negocios
+business man
 
-busy
 ocupado, activo
+busy
 
-but
 pero, sino
+but
 
-butcher's
 la carnicería
+butcher's
 
-butt
 trasero
+butt
 
-butter
 la mantequilla
+butter
 
-butterfly
 la mariposa
+butterfly
 
-buttocks
 las nalgas
+buttocks
 
-button
 botón
+button
 
-buy
 comprar
+buy
 
-by
 de memoria
-
 by
+
 por, cerca de
+by
 
-by bicycle
 en bicicleta
+by bicycle
 
-by boat
 en barco
+by boat
 
-by bus
 en autobús
+by bus
 
-by car
 en coche
+by car
 
-by motorcycle
 en motocicleta
+by motorcycle
 
-by plane
 en avión
+by plane
 
-by subway
 en metro
+by subway
 
-by taxi
 en taxi
+by taxi
 
-by train
 en tren
+by train
 
-bye
 adiós
+bye
 
-cabbage
 la col
+cabbage
 
+el gabinete
 cabinet
-el gabinete
 
-cable
 el cable
+cable
 
-cactus
 el cactus
+cactus
 
-café
 el café, la cantina
-
-cage
-jaula , prisión
-
-cake
-pastel, tarta
-
-cake shop
-la pastelería
-
-calculator
-calculadora
-
-calf
-el becerro, ternero, pantorilla
-
-call
-llamada, --telefónica
-
-call
-llamar, -- por teléfono
-
-calm
-calmo, tranquilo
-
-calm
-calmar, acallar
-
-camcorder
-vídeo-cámara
-
-camel
-camello
-
-camera
-cámara, --fotográfica
-
-camisole
-el bustillo
-
-camping
-ir de campada
-
-can
-la lata, bidón
-
-can
-poder, poderse
-
-can opener
-abrelatas
-
-Canada
-canadá
-
-cancel
-cancelar , anular
-
-cancer
-cáncer
-
-candle
-candela, bujía
-
-candy
-los dulces, caramelo
-
-candy store
-la confitería, la dulcería
-
-canned goods
-los productos enlatados
-
-cap
-la gorra
-
-capital
-capital. mayúsculo
-
-car
-el carro
-
-caravan
-caravana
-
-card
-tarjeta
-
-card
-el naipe, carta
-
-cardinal
-el cardenal
-
-care
-cuidado, atención
-
-care
-importar, concernirse
-
-career
-carrera
-
-careful
-cuidadoso, cauteloso
-
-carpenter
-el carpintero
-
-carpet
-la alfombra, moqueta
-
-carrot
-la zanahoria
-
-carry
-llevar, cargar, transportar
-
-carry-on
-el bolso de mano
-
-cart
-carrito
-
-carton
-el cartón
-
-cartoon
-caricatura
-
-carve
-tallar
-
-case
-asunto. caso
-
-case
-por si. en caso de
-
-cash
-dinero en efectivo
-
-cash
-cobrar en efectivo
-
-cashier
-cajero
-
-casino
-casino
-
-cassette
-casete
-
-cast
-el enyesado
-
-castle
-castillo
-
-casual-dress
-ropa informal
-
-cat
-el gato
-
-catch
-coger, agarrar, atrapar
-
-catch up on
-recuperar
-
-category
-categoría
-
-caterpillar
-el gusano de seda
-
-catholic
-católico
-
-cauliflower
-la coliflor
-
-cause
-provocar
-
-caution
-prudencia
-
-cautious
-prudente
-
-cave
-cueva
-
-ceiling
-el techo
-
-celebrate
-celebrar, festejar
-
-celery
-el apio
-
-cell phone
-un teléfono celular
-
-cement
-pegamento, cemento
-
-cemetery
-cementerio
-
-center
-centro
-
-central heating
-calefacción central
-
-century
-siglo
-
-cereals
-los cereales
-
-certain
-cierto, seguro
-
-certainly
-naturalmente! ciertamente
-
-certificate
-certificado
-
-chain
-la cadena
-
-chair
-la silla, el asiento
-
-chameleon
-el camaleón
-
-champion
-la campeona
-
-champion
-el campeón
-
-championship
-el campeonato
-
-chance
-la oportunidad, ocasión
-
-chance
-por casualidad
-
-chandelier
-el candil
-
-change
-el cambio, modificación
-
-change
-suelto
-
-change
-cambiar, modificar
-
-channel
-canal
-
-charge
-el coste
-
-charge
-cobrar
-
-charger
-cargador
-
-charming
-encantador
-
-cheap
-barato, de bajo precio
-
-check
-cheque
-
-check
-el cheque
-
-check
-verificar, revisar
-
-check in
-registrarse
-
-check out
-dejar el hotel
-
-checklist
-lista de verificación
-
-cheek
-la mejilla
-
-cheerful
-alegre
-
-cheers!
-salud!
-
-cheese
-el queso
-
-chemistry
-la química
-
-cherries
-cerezas
-
-chess
-ajedrez
-
-chest
-el pecho
-
-chest of drawers
-el gavetero, la cómoda
-
-chestnut
-castaña
-
-chewing gum
-chicle
-
-chicken
-el pollo, gallina
-
-child
-chico, hijo, niño
-
-childhood
-infancia, niñez
-
-children
-los niños, chicos
-
-Chile
-chile
-
-chimney
-la chimenea
-
-china
-china, la loza
-
-china cabinet
-el chinero, el aparador
-
-chipmunk
-la ardillita
-
-chips
-las patatas fritas
-
-chisel
-el formón
-
-chocolate
-chocolate
-
-choose
-escoger, elegir, selección
-
-choose!
-elige!
-
-chops
-las chuletas
-
-Christian
-cristiano
-
-Christianity
-cristiandad
-
-Christmas
-navidad
-
-church
-iglesia, casa de dios
-
-cigarettes
-cigarrillos
-
-cinema
-cine, cinema
-
-circus
-circo
-
-citizenship
-ciudadanía, nacionalidad
-
-city
-ciudad
-
-clamp
-el tornillo
-
-clams
-almejas
-
-classroom
-aula, clase
-
-clean
-limpio
-
-clean
-limpiar, lavar
-
-cleanliness
-la limpieza
-
-cleansing cream
-crema limpiadora
-
-clear
-claro, brillante
-
-clearly
-claramente
-
-cleats
-unos zapatos de fútbol
-
-clerk
-dependiente, empleado
-
-clever
-listo, ágil de mente
-
-click!
-haz clic!
-
-climb
-subir
-
-clock
-reloj, reloj de pared
-
-close
-cerrar
-
-close to
-cerca, junto. cercano
-
-closed
-cerrado
-
-closet
-el armario
-
-clothes
-los vestidos, las ropas, el traje
-
-clothes hanger
-el gancho
-
-clothing
-la ropa
-
-clothing store
-la ropería
-
-clouds
-nubes
-
-cloudy
-está nublado. hace nubes
-
-club
-club, asociación
-
-clutch
-el embrague
-
-coach
-autocar
-
-coast
-la costa
-
-coat
-chaqueta, manto, el abrigo
-
-cockroach
-la cucaracha
-
-coconut
-el coco
-
-cocoon
-el capullo
-
-coffee
 café
 
-coffee table
+jaula , prisión
+cage
+
+pastel, tarta
+cake
+
+la pastelería
+cake shop
+
+calculadora
+calculator
+
+el becerro, ternero, pantorilla
+calf
+
+llamada, --telefónica
+call
+
+llamar, -- por teléfono
+call
+
+calmo, tranquilo
+calm
+
+calmar, acallar
+calm
+
+vídeo-cámara
+camcorder
+
+camello
+camel
+
+cámara, --fotográfica
+camera
+
+el bustillo
+camisole
+
+ir de campada
+camping
+
+la lata, bidón
+can
+
+poder, poderse
+can
+
+abrelatas
+can opener
+
+canadá
+Canada
+
+cancelar , anular
+cancel
+
+cáncer
+cancer
+
+candela, bujía
+candle
+
+los dulces, caramelo
+candy
+
+la confitería, la dulcería
+candy store
+
+los productos enlatados
+canned goods
+
+la gorra
+cap
+
+capital. mayúsculo
+capital
+
+el carro
+car
+
+caravana
+caravan
+
+tarjeta
+card
+
+el naipe, carta
+card
+
+el cardenal
+cardinal
+
+cuidado, atención
+care
+
+importar, concernirse
+care
+
+carrera
+career
+
+cuidadoso, cauteloso
+careful
+
+el carpintero
+carpenter
+
+la alfombra, moqueta
+carpet
+
+la zanahoria
+carrot
+
+llevar, cargar, transportar
+carry
+
+el bolso de mano
+carry-on
+
+carrito
+cart
+
+el cartón
+carton
+
+caricatura
+cartoon
+
+tallar
+carve
+
+asunto. caso
+case
+
+por si. en caso de
+case
+
+dinero en efectivo
+cash
+
+cobrar en efectivo
+cash
+
+cajero
+cashier
+
+casino
+casino
+
+casete
+cassette
+
+el enyesado
+cast
+
+castillo
+castle
+
+ropa informal
+casual-dress
+
+el gato
+cat
+
+coger, agarrar, atrapar
+catch
+
+recuperar
+catch up on
+
+categoría
+category
+
+el gusano de seda
+caterpillar
+
+católico
+catholic
+
+la coliflor
+cauliflower
+
+provocar
+cause
+
+prudencia
+caution
+
+prudente
+cautious
+
+cueva
+cave
+
+el techo
+ceiling
+
+celebrar, festejar
+celebrate
+
+el apio
+celery
+
+un teléfono celular
+cell phone
+
+pegamento, cemento
+cement
+
+cementerio
+cemetery
+
+centro
+center
+
+calefacción central
+central heating
+
+siglo
+century
+
+los cereales
+cereals
+
+cierto, seguro
+certain
+
+naturalmente! ciertamente
+certainly
+
+certificado
+certificate
+
+la cadena
+chain
+
+la silla, el asiento
+chair
+
+el camaleón
+chameleon
+
+la campeona
+champion
+
+el campeón
+champion
+
+el campeonato
+championship
+
+la oportunidad, ocasión
+chance
+
+por casualidad
+chance
+
+el candil
+chandelier
+
+el cambio, modificación
+change
+
+suelto
+change
+
+cambiar, modificar
+change
+
+canal
+channel
+
+el coste
+charge
+
+cobrar
+charge
+
+cargador
+charger
+
+encantador
+charming
+
+barato, de bajo precio
+cheap
+
+cheque
+check
+
+el cheque
+check
+
+verificar, revisar
+check
+
+registrarse
+check in
+
+dejar el hotel
+check out
+
+lista de verificación
+checklist
+
+la mejilla
+cheek
+
+alegre
+cheerful
+
+salud!
+cheers!
+
+el queso
+cheese
+
+la química
+chemistry
+
+cerezas
+cherries
+
+ajedrez
+chess
+
+el pecho
+chest
+
+el gavetero, la cómoda
+chest of drawers
+
+castaña
+chestnut
+
+chicle
+chewing gum
+
+el pollo, gallina
+chicken
+
+chico, hijo, niño
+child
+
+infancia, niñez
+childhood
+
+los niños, chicos
+children
+
+chile
+Chile
+
+la chimenea
+chimney
+
+china, la loza
+china
+
+el chinero, el aparador
+china cabinet
+
+la ardillita
+chipmunk
+
+las patatas fritas
+chips
+
+el formón
+chisel
+
+chocolate
+chocolate
+
+escoger, elegir, selección
+choose
+
+elige!
+choose!
+
+las chuletas
+chops
+
+cristiano
+Christian
+
+cristiandad
+Christianity
+
+navidad
+Christmas
+
+iglesia, casa de dios
+church
+
+cigarrillos
+cigarettes
+
+cine, cinema
+cinema
+
+circo
+circus
+
+ciudadanía, nacionalidad
+citizenship
+
+ciudad
+city
+
+el tornillo
+clamp
+
+almejas
+clams
+
+aula, clase
+classroom
+
+limpio
+clean
+
+limpiar, lavar
+clean
+
+la limpieza
+cleanliness
+
+crema limpiadora
+cleansing cream
+
+claro, brillante
+clear
+
+claramente
+clearly
+
+unos zapatos de fútbol
+cleats
+
+dependiente, empleado
+clerk
+
+listo, ágil de mente
+clever
+
+haz clic!
+click!
+
+subir
+climb
+
+reloj, reloj de pared
+clock
+
+cerrar
+close
+
+cerca, junto. cercano
+close to
+
+cerrado
+closed
+
+el armario
+closet
+
+los vestidos, las ropas, el traje
+clothes
+
+el gancho
+clothes hanger
+
+la ropa
+clothing
+
+la ropería
+clothing store
+
+nubes
+clouds
+
+está nublado. hace nubes
+cloudy
+
+club, asociación
+club
+
+el embrague
+clutch
+
+autocar
+coach
+
+la costa
+coast
+
+chaqueta, manto, el abrigo
+coat
+
+la cucaracha
+cockroach
+
+el coco
+coconut
+
+el capullo
+cocoon
+
+café
+coffee
+
 la mesita central
+coffee table
 
-coffeepot
 la cafetera
+coffeepot
 
-coins
 monedas
+coins
 
-coke
 coca-cola
+coke
 
-colander
 el colador
+colander
 
-cold
 frío
-
 cold
+
 resfriado
+cold
 
-collar
 el cuello
+collar
 
-collect call
 llamada a cobro revertido
+collect call
 
-college
 universidad
+college
 
 color
 color
 
-Columbia
 colombia
+Columbia
 
-comb
 el peine
+comb
 
-come
 venir, llegar
+come
 
-come back
 regresar, volver
+come back
 
-come in!
 entrar. pase! siga!
+come in!
 
-come on!
 vamos!
+come on!
 
-comet
 el cometa
+comet
 
-comfortable
 cómodo
+comfortable
 
-company
 compañía
+company
 
-competition
 la competición
+competition
 
-complain
 quejarse. reclamar
+complain
 
-complaint
 queja. reclamación
+complaint
 
-complementary
 complementario
+complementary
 
-complete
 completo
-
 complete
+
 completar, acabar
+complete
 
-compose
 redactar
+compose
 
-computer
 el computador
+computer
 
-conceited
 presumido
+conceited
 
-concert
 el concierto
+concert
 
-conditioner
 el suavizante
+conditioner
 
-condom
 preservativo
+condom
 
-conductor
 el conductor
-
-conference
-conferencia
-
-confirm
-confirmar
-
-congratulate
-felicitar
-
-congratulations
-congratulación, felicitación
-
-connect
-conectar
-
-conservative
-conservador
-
-constellation
-la constelación
-
-constipated
-estreñido
-
-consulate
-consulado
-
-contact
-ponerse en contacto
-
-contented
-contento
-
-continent
-el continente
-
-continue
-continuar, durar
-
-conversation
-conversación, plática
-
-cook
-el cocinero
-
-cook
-cocinar, cocer
-
-cookies
-galletas
-
-cool
-fresco. órale!!!
-
-coping saw
-la sierra de calar
-
-copper
-cobre
-
-copy
-copia, replica
-
-copy
-copiar, duplicar
-
-cord
-cordón, cuerda
-
-corn
-el maíz, grano
-
-corner
-la esquina
-
-correct
-correcto, exacto, justo
-
-correct
-corregir
-
-correctly
-correctamente
-
-cost
-costo, precio, valor
-
-cost
-costar, valer
-
-costa rica
-costa rica
-
-cotton
-algodón
-
-couch
-el diván
-
-cough
-toser, la tos
-
-count
-contar
-
-country
-el país, campo
-
-couple
-pareja
-
-coupon
-cupón
-
-court
-corte, tribunal
-
-cousin
-la prima
-
-cousin
-el primo
-
-cover
-cubierta
-
-cover
-cubrir
-
-covered
-cubierto
-
-cow
-la vaca
-
-coward
-cobarde
-
-crab
-cangrejo
-
-crackers
-la galleta
-
-cradle
-la cuna mecedora
-
-crash
-colisionar
-
-crazy
-loco
-
-cream
-crema. nata
-
-credit
-crédito
-
-credit card
-tarjeta de crédito
-
-crib
-la cuna
-
-cricket
-el grillo
-
-crime
-crimen
-
-crocodile
-el cocodrilo
-
-cross
-cruz
-
-cross
-cruzar, atravesar
-
-crosswalk
-la vía peatonal
-
-crow
-el cuervo
-
-crowded
-concurrido
-
-crude
-bruto
-
-cruel
-cruel, vicioso
-
-cruise
-crucero
-
-crutch
-la muleta
-
-cry
-grito
-
-cry
-llorar, derramar lágrimas
-
-Cuba
-cuba
-
-cucumber
-el pepino
-
-cufflinks
-las mancuernas
-
-culture
-cultura
-
-cup
-la taza, el vaso
-
-currency
-moneda circulante
-
-current
-actual
-
-curtain
-la cortina
-
-curtain rod
-el cortinero
-
-customer
-cliente
-
-customs officer
-la aduana, costumbres
-
-cut
-cortar. la cortada, cisión
-
-cute
-lindo, bonito
-
-dance
-bailar
-
-dandruff
-caspa
-
-danger
-peligro
-
-dangerous
-peligroso
-
-dark
-oscuro
-
-darling
-querida, amada
-
-dash
-raya
-
-database
-base de datos
-
-date
-fecha, cita
-
-daughter
-la hija
-
-day
-día, fecha
-
-dead
-muerto, sin vida
-
-deadline
-fecha tope
-
-dear
-querido
-
-death
-muerte
-
-decaff
-descafeinado
-
-December
-diciembre
-
-deck
-la asoleadera
-
-declare
-declarar
-
-deep
-profundo
-
-deer
-el ciervo, el venado
-
-defendant
-el acusado
-
-defrost
-descongelar
-
-delay
-retraso
-
-delete
-suprimir
-
-delicious
-delicioso
-
-den
-el gabinete
-
-dentist
-el dentista
-
-deodorant
-desodorante
-
-department store
-los grandes almacenes, el almacén
-
-departure
-la salida
-
-deposit
-depósito
-
-depth
-profundidad, fondo
-
-desert
-el desierto
-
-desk
-el escritorio
-
-dessert
-el postre
-
-details
-los detalles
-
-detergent
-detergente
-
-develop
-desarrollar
-
-devote oneself to
-dedicarse
-
-diabetic
-diabético
-
-dial
-marcar el número
-
-dialing code
-prefijo
-
-diamond
-diamante
-
-diaper
-el pañal
-
-diarrhea
-diarrea
-
-diary
-agenda
-
-dictionary
-el diccionario
-
-die
-morir
-
-diesel
-gasoil
-
-diet
-régimen
-
-difference
-diferencia
-
-different
-distinto
-
-difficult
-difícil, duro, no fácil
-
-dig
-cavar, hincar
-
-dine
-cenar, comer
-
-dining room
-el comedor
-
-dinner
-la cena, la comida
-
-directions
-indicaciones
-
-directly
-directamente
-
-director
-director, administrador
-
-dirty
-sucio, ensuciado
-
-disabled
-inválido
-
-disabled people
-personas incapacitadas
-
-disagree
-estar en desacuerdo
-
-disappear
-desaparecer
-
-disco
-discoteca
-
-discount
-descuento, rebaja
-
-discover
-descubrir, hallar
-
-discuss
-discutir
-
-dish
-el plato, el trasto de cocina
-
-dishwasher
-el lavaplatos
-
-disinfectant
-desinfectante
-
-disk
-disco
-
-disposable
-desechable
-
-distance
-distancia
-
-disturb
-perturbar, estorbar
-
-divide
-dividir, separar
-
-divided
-dividido, diviso
-
-divorce
-divorcio
-
-divorce
-divorciarse
-
-divorced
-divorciado
-
-dizzy
-mareado
-
-do
-hacer
-
-doctor
-el doctor, el medico
-
-documents
-documentos
-
-dog
-el perro
-
-doll
-muñeca
-
-donkey
-el burro, asno
-
-door
-la puerta
-
-door handle
-la manija
-
-door lock
-el seguro
-
-dope
-drogar
-
-double
-doble
-
-double bed
-cama de matrimonio
-
-dove
-la paloma
-
-down
-abajo, hacia abajo
-
-download
-bajar
-
-downstairs
-la planta baja
-
-downtown
-centro de la ciudad
-
-drag
-arrastrar
-
-dragonfly
-la libélula
-
-drain
-el desagüe
-
-drainer
-la vaporera
-
-drains
-alcantarillado
-
-draught
-la corriente
-
-draw
-dibujar
-
-drawing
-el dibujo
-
-dream
-sueño
-
-dream
-sonar ambicionar
-
-dress
-el vestido
-
-dress up
-vestirse
-
-dresser
-el tocador
-
-drink
-bebida
-
-drink
-beber
-
-drinking water
-el agua potable
-
-drive
-conducir, manejar
-
-driver
 conductor
 
-driveway
+conferencia
+conference
+
+confirmar
+confirm
+
+felicitar
+congratulate
+
+congratulación, felicitación
+congratulations
+
+conectar
+connect
+
+conservador
+conservative
+
+la constelación
+constellation
+
+estreñido
+constipated
+
+consulado
+consulate
+
+ponerse en contacto
+contact
+
+contento
+contented
+
+el continente
+continent
+
+continuar, durar
+continue
+
+conversación, plática
+conversation
+
+el cocinero
+cook
+
+cocinar, cocer
+cook
+
+galletas
+cookies
+
+fresco. órale!!!
+cool
+
+la sierra de calar
+coping saw
+
+cobre
+copper
+
+copia, replica
+copy
+
+copiar, duplicar
+copy
+
+cordón, cuerda
+cord
+
+el maíz, grano
+corn
+
+la esquina
+corner
+
+correcto, exacto, justo
+correct
+
+corregir
+correct
+
+correctamente
+correctly
+
+costo, precio, valor
+cost
+
+costar, valer
+cost
+
+costa rica
+costa rica
+
+algodón
+cotton
+
+el diván
+couch
+
+toser, la tos
+cough
+
+contar
+count
+
+el país, campo
+country
+
+pareja
+couple
+
+cupón
+coupon
+
+corte, tribunal
+court
+
+la prima
+cousin
+
+el primo
+cousin
+
+cubierta
+cover
+
+cubrir
+cover
+
+cubierto
+covered
+
+la vaca
+cow
+
+cobarde
+coward
+
+cangrejo
+crab
+
+la galleta
+crackers
+
+la cuna mecedora
+cradle
+
+colisionar
+crash
+
+loco
+crazy
+
+crema. nata
+cream
+
+crédito
+credit
+
+tarjeta de crédito
+credit card
+
+la cuna
+crib
+
+el grillo
+cricket
+
+crimen
+crime
+
+el cocodrilo
+crocodile
+
+cruz
+cross
+
+cruzar, atravesar
+cross
+
+la vía peatonal
+crosswalk
+
+el cuervo
+crow
+
+concurrido
+crowded
+
+bruto
+crude
+
+cruel, vicioso
+cruel
+
+crucero
+cruise
+
+la muleta
+crutch
+
+grito
+cry
+
+llorar, derramar lágrimas
+cry
+
+cuba
+Cuba
+
+el pepino
+cucumber
+
+las mancuernas
+cufflinks
+
+cultura
+culture
+
+la taza, el vaso
+cup
+
+moneda circulante
+currency
+
+actual
+current
+
+la cortina
+curtain
+
+el cortinero
+curtain rod
+
+cliente
+customer
+
+la aduana, costumbres
+customs officer
+
+cortar. la cortada, cisión
+cut
+
+lindo, bonito
+cute
+
+bailar
+dance
+
+caspa
+dandruff
+
+peligro
+danger
+
+peligroso
+dangerous
+
+oscuro
+dark
+
+querida, amada
+darling
+
+raya
+dash
+
+base de datos
+database
+
+fecha, cita
+date
+
+la hija
+daughter
+
+día, fecha
+day
+
+muerto, sin vida
+dead
+
+fecha tope
+deadline
+
+querido
+dear
+
+muerte
+death
+
+descafeinado
+decaff
+
+diciembre
+December
+
+la asoleadera
+deck
+
+declarar
+declare
+
+profundo
+deep
+
+el ciervo, el venado
+deer
+
+el acusado
+defendant
+
+descongelar
+defrost
+
+retraso
+delay
+
+suprimir
+delete
+
+delicioso
+delicious
+
+el gabinete
+den
+
+el dentista
+dentist
+
+desodorante
+deodorant
+
+los grandes almacenes, el almacén
+department store
+
+la salida
+departure
+
+depósito
+deposit
+
+profundidad, fondo
+depth
+
+el desierto
+desert
+
+el escritorio
+desk
+
+el postre
+dessert
+
+los detalles
+details
+
+detergente
+detergent
+
+desarrollar
+develop
+
+dedicarse
+devote oneself to
+
+diabético
+diabetic
+
+marcar el número
+dial
+
+prefijo
+dialing code
+
+diamante
+diamond
+
+el pañal
+diaper
+
+diarrea
+diarrhea
+
+agenda
+diary
+
+el diccionario
+dictionary
+
+morir
+die
+
+gasoil
+diesel
+
+régimen
+diet
+
+diferencia
+difference
+
+distinto
+different
+
+difícil, duro, no fácil
+difficult
+
+cavar, hincar
+dig
+
+cenar, comer
+dine
+
+el comedor
+dining room
+
+la cena, la comida
+dinner
+
+indicaciones
+directions
+
+directamente
+directly
+
+director, administrador
+director
+
+sucio, ensuciado
+dirty
+
+inválido
+disabled
+
+personas incapacitadas
+disabled people
+
+estar en desacuerdo
+disagree
+
+desaparecer
+disappear
+
+discoteca
+disco
+
+descuento, rebaja
+discount
+
+descubrir, hallar
+discover
+
+discutir
+discuss
+
+el plato, el trasto de cocina
+dish
+
+el lavaplatos
+dishwasher
+
+desinfectante
+disinfectant
+
+disco
+disk
+
+desechable
+disposable
+
+distancia
+distance
+
+perturbar, estorbar
+disturb
+
+dividir, separar
+divide
+
+dividido, diviso
+divided
+
+divorcio
+divorce
+
+divorciarse
+divorce
+
+divorciado
+divorced
+
+mareado
+dizzy
+
+hacer
+do
+
+el doctor, el medico
+doctor
+
+documentos
+documents
+
+el perro
+dog
+
+muñeca
+doll
+
+el burro, asno
+donkey
+
+la puerta
+door
+
+la manija
+door handle
+
+el seguro
+door lock
+
+drogar
+dope
+
+doble
+double
+
+cama de matrimonio
+double bed
+
+la paloma
+dove
+
+abajo, hacia abajo
+down
+
+bajar
+download
+
+la planta baja
+downstairs
+
+centro de la ciudad
+downtown
+
+arrastrar
+drag
+
+la libélula
+dragonfly
+
+el desagüe
+drain
+
+la vaporera
+drainer
+
+alcantarillado
+drains
+
+la corriente
+draught
+
+dibujar
+draw
+
+el dibujo
+drawing
+
+sueño
+dream
+
+sonar ambicionar
+dream
+
+el vestido
+dress
+
+vestirse
+dress up
+
+el tocador
+dresser
+
+bebida
+drink
+
+beber
+drink
+
+el agua potable
+drinking water
+
+conducir, manejar
+drive
+
+conductor
+driver
+
 la entrada de carros
+driveway
 
-driving license
 carné de conducir
+driving license
 
-drown
 ahogase
+drown
 
-drug
 droga
+drug
 
-drugstore
 la droguería
+drugstore
 
-drum
 tambor
+drum
 
-drunk
 borracho
-
 drunk
+
 emborracharse
+drunk
 
-dry
 seco, árido
-
 dry
+
 secar
+dry
 
-dry-cleaner's
 la tintorería
+dry-cleaner's
 
-dryer
 la secadora
+dryer
 
-duck
 el pato
+duck
 
-due to
 debido a
+due to
 
-dune
 la duna
+dune
 
-during
 durante
+during
 
-dust
 el polvo
-
 dust
+
 sacudir
+dust
 
-dust cloth
 el paño
+dust cloth
 
-dustpan
 el recogedor
+dustpan
 
-dusty
 cobierto de polvo
+dusty
 
-duty
 obligación
-
 duty
+
 estar de servicio
+duty
 
-e. g
 p. ej
+e. g
 
-E.U
 U.E
+E.U
 
-each
 cada, cada uno
+each
 
-eagle
 el águila
+eagle
 
-ear
 la oreja, oído
+ear
 
-earlier
 antes
+earlier
 
-early
 temprano, con tiempo
+early
 
-earn
 ganar
+earn
 
-earnings
 las ganancias
+earnings
 
-earth
 tierra, mundo
+earth
 
-earthquake
 terremoto
+earthquake
 
-easily
 fácilmente
+easily
 
-easy
 fácil, simple
+easy
 
-eat
 comer
+eat
 
-eclipse
 el eclipse
+eclipse
 
-economize
 economizar
+economize
 
-economy
 economía
+economy
 
+ecuador
 Ecuador
-ecuador
 
-edge
 borde
+edge
 
-edition
 edición
+edition
 
-educate
 educar
+educate
 
-educated
 culto
+educated
 
-education
 educación, formación
+education
 
-eel
 la anguila
+eel
 
-effect
 efecto
+effect
 
-effective
 efectivo
+effective
 
-effort
 esfuerzo
+effort
 
-egg
 huevo
+egg
 
-eggplant
 la berenjena
+eggplant
 
-egoist
 egoísta
+egoist
 
-Egypt
 egipto
+Egypt
 
-eight
 ocho
+eight
 
-eighteen
 dieciocho
+eighteen
 
-eighteenth
 décimo octavo
+eighteenth
 
-eighth
 octavo
+eighth
 
-eightieth
 octogésimo
+eightieth
 
-eighty
 ochenta
+eighty
 
-either one
 cualquiera de los dos
+either one
 
-elastic
 elástico
+elastic
 
-elbow
 el codo
+elbow
 
-election
 elección
+election
 
-electric
 eléctrico
+electric
 
-electric razor
 la maquinilla de afeitar
+electric razor
 
-electrician
 el electricista
+electrician
 
-electricity
 electricidad
+electricity
 
-elegant
 elegante
+elegant
 
-element
 elemento
+element
 
-elementary school
 escuela primaria
+elementary school
 
-elephant
 el elefante
+elephant
 
-elevator
 el ascensor
+elevator
 
-eleven
 once
+eleven
 
-eleventh
 undécimo
+eleventh
 
-eloquent
 elocuente
+eloquent
 
-else
 lo demás
+else
 
-e-mail
 correo electrónico
+e-mail
 
 embargo
 embargo
 
-embarrass
 avergonzar
+embarrass
 
-embarrassed
 avergonzado
+embarrassed
 
-embassy
 embajada
+embassy
 
-emergency
 emergencia
+emergency
 
-emergency exit
 salida de emergencia
+emergency exit
 
-emotion
 emoción
+emotion
 
-empire
 imperio
+empire
 
-employee
 empleado
+employee
 
-employer
 patrón
+employer
 
-empty
 vacío, vacante
+empty
 
-encourage
 animar
+encourage
 
-encyclopedia
 enciclopedia
+encyclopedia
 
-end
 fin, final
-
 end
+
 acabar, terminar
+end
 
-endless
 interminable
+endless
 
-enemy
 enemigo, adversario
+enemy
 
-energy
 energía
+energy
 
-engaged
 prometido
+engaged
 
-engine
 el motor
+engine
 
-engineer
 el ingeniero
+engineer
 
-England
 inglaterra
+England
 
-English
 ingles
+English
 
-enjoy
 disfrutar
+enjoy
 
-enough
 bastante
+enough
 
-enquiry desk
 información
+enquiry desk
 
-enroll
 matricularse
+enroll
 
-enter
 entrar
+enter
 
-entertain
 entretener
+entertain
 
-entertainments
 los espectáculos
+entertainments
 
-enthusiastic
 entusiasta
+enthusiastic
 
-entire
 entero
+entire
 
-entrance
 entrada
+entrance
 
-envelope
 el sobre
+envelope
 
-enviable
 envidiable
+enviable
 
-envious
 envidioso
+envious
 
-environment
 entorno, ambiente
+environment
 
-envy
 la envidia
+envy
 
-episode
 episodio
+episode
 
-equal
 igual
+equal
 
-equality
 igualdad
+equality
 
-equator
 ecuador
+equator
 
-equipment
 equipo
+equipment
 
-erase
 borrar
+erase
 
-eraser
 la goma
+eraser
 
 error
 error
 
-escalator
 escalera mecánica
+escalator
 
-escape
 escaparse
+escape
 
-especially
 especialmente
+especially
 
-espionage
 espionaje
+espionage
 
-essential
 imprescindible
+essential
 
-estimate
 estimación
+estimate
 
-Europe
 europa
+Europe
 
-evaluation
 evaluación
+evaluation
 
-even
 aun
+even
 
-evening
 tarde
+evening
 
-event
 acontecimiento
+event
 
-every
 cada, todo
+every
 
-everybody
 todos, todo el mundo
+everybody
 
 everyday
 
-
-everything
 todo
+everything
 
-everywhere
 en todas partes
+everywhere
 
-evil
 malo
+evil
 
-exact
 exacto
+exact
 
-exactly
 exactamente
+exactly
 
+exagerar
 exaggerate
-exagerar
 
-exam
 examen, prueba
+exam
 
-examine
 examinar
+examine
 
-example
 por ejemplo
+example
 
-exceed
 exceder. sobrepasar
+exceed
 
-excellent
 excelente
+excellent
 
-except
 excepto, salvo
+except
 
-exception
 excepción
+exception
 
-excess
 exceso
+excess
 
-exchange
 intercambiar
+exchange
 
-excited
 emocionado
-
 excited
+
 emocionarse
+excited
 
-exciting
 emocionante
+exciting
 
-exclude
 excluir
+exclude
 
-excursion
 excursión
+excursion
 
-excuse
 perdonar, perdón!
+excuse
 
-exercise
 ejercicio
+exercise
 
-exhausted
 muy cansado, exhausto
+exhausted
 
-exhibition
 exposición
+exhibition
 
-exist
 existir
+exist
 
+salida
 exit
-salida
 
+esperar
 expect
-esperar
 
-expenses
 gastos
+expenses
 
-expensive
 caro, valioso
+expensive
 
-experience
 experiencia
+experience
 
-experiment
 experimento
+experiment
 
-expert
 experto
+expert
 
-expire
 caducar
+expire
 
-explain
 explicar, aclarar
+explain
 
+explotar
 explode
-explotar
 
+explotar
 exploit
-explotar
 
-explore
 explorar
+explore
 
-explosion
 explosión
+explosion
 
-explosives
 explosivos
+explosives
 
-export
 exportar
+export
 
-express
 rápido
-
 express
+
 expresar
+express
 
-extend
 prorrogar
+extend
 
-extension
 extensión
+extension
 
 exterior
 exterior
 
-extinct
 extinguido
+extinct
 
-extra
 de más, adicional
+extra
 
-extract
 extraer
+extract
 
-extremely
 extremadamente
+extremely
 
-extremist
 extremista
+extremist
 
-eye
 el ojo
+eye
 
-eyebrow
 ceja
+eyebrow
 
-eyelashes
 pestañas
+eyelashes
 
-fabric
 tela
+fabric
 
-face
 la cara
+face
 
-factory
 fábrica
+factory
 
-faded
 desteñido
+faded
 
-fail
 fracasar, fallar
+fail
 
-failure
 falla, fracaso, fallo
+failure
 
-faint
 desmayarse
+faint
 
-fainted
 desmayado
+fainted
 
-fair
 rubio
-
 fair
+
 el parque de atracciones
+fair
 
+fiel
 faithful
-fiel
 
+falso
 fake
-falso
 
-fall
 caer
+fall
 
-false
 falso
+false
 
 familiar
 familiar
 
-family
 familia
+family
 
-famous
 famoso, célebre
+famous
 
-fan
 ventilador eléctrico
-
 fan
+
 aficionado
+fan
 
-fantasy
 fantasía
+fantasy
 
-far
 lejos. lejano, distante
+far
 
-far from
 lejos de
+far from
 
-fare
 precio del billete
+fare
 
-farm
 granja
+farm
 
-farmer
 granjero
+farmer
 
-fart
 tirarse un pedo. pedo
+fart
 
-fashion
 moda
+fashion
 
-fashionable
 de moda
+fashionable
 
-fast
 rápido
-
 fast
+
 ayunar
+fast
 
-fast food
 comida rápida
+fast food
 
-fat
 gordo
-
 fat
+
 grasa
+fat
 
-fate
 destino
+fate
 
-father
 el padre
+father
 
-father-in-law
 suegro
+father-in-law
 
+llave
 faucet
-llave
 
-fault
 defecto, falla
+fault
 
-favorite
 favorito, preferido
+favorite
 
 favor
 favor
@@ -3415,8549 +3414,8549 @@ favor
 fax
 fax
 
-fear
 el miedo
-
 fear
+
 temer, tener  miedo a, de
+fear
 
-feathers
 las plumas
+feathers
 
-feature
 característica
+feature
 
-February
 febrero
+February
 
-fed up
 harto
+fed up
 
-fee
 honorarios. cuota
+fee
 
-feed
 dar de comer
+feed
 
-feel
 sentirse
+feel
 
-feeling
 sentimiento
+feeling
 
-female
 hembra, femenino
+female
 
-fence
 cerca
+fence
 
-fender
 la defensa
+fender
 
-fertile
 fértil
+fertile
 
-fetus
 feto
+fetus
 
-fever
 fiebre
+fever
 
-few
 pocos, unos pocos
+few
 
-fiancé
 novio
+fiancé
 
+novia
 fiancée
-novia
 
-field
 campo
+field
 
-fifteen
 quince
+fifteen
 
-fifteenth
 décimo quinto
+fifteenth
 
-fifth
 quinto
+fifth
 
-fiftieth
 quincuagésimo
+fiftieth
 
-fifty
 cincuenta
+fifty
 
-fifty-fifty
 mitad y mitad
+fifty-fifty
 
-fig
 el higo
+fig
 
-fight
 pelea
-
 fight
+
 pelear, combatir, luchar
+fight
 
-file
 el fichero, la lima
+file
 
-fill
 llenar
+fill
 
-fill out
 rellenar
+fill out
 
-film
 película
+film
 
-filter
 filtro
+filter
 
-filth
 la suciedad
+filth
 
-fin
 la aleta
+fin
 
 final
 final
 
-financial
 financiero
+financial
 
-financially
 económicamente
+financially
 
-find
 encontrar, hallar
+find
 
-find out
 descubrir
+find out
 
-fine
 muy bien
-
 fine
+
 multa
+fine
 
-finger
 el dedo
+finger
 
-fingernail
 la uña
+fingernail
 
-fingerprint
 huella digital
+fingerprint
 
-finish
 terminar, acabar
+finish
 
-fire
 fuego. incendio
+fire
 
-fire department
 bomberos
+fire department
 
-fire escape
 el escape  de incendio
+fire escape
 
-fire truck
 el carro  de bomberos
+fire truck
 
-firecracker
 petardo
+firecracker
 
-fireman
 el bombero
+fireman
 
-fireplace
 la chimenea
+fireplace
 
-fireworks
 fuegos artificiales,pirotecnia
+fireworks
 
-first
 primero, al principio
+first
 
-first aid
 primeros auxilios
+first aid
 
-first floor
 planta baja
+first floor
 
-first name
 nombre de pila
+first name
 
-fish
 el pez, el pescado
-
 fish
+
 pescar
+fish
 
+la pescadería
 fish market
-la pescadería
 
+la pescadería
 fish shop
-la pescadería
 
-fist
 puño
+fist
 
-fit
 en forma
-
 fit
+
 quedar bien
+fit
 
-fitting room
 probador
+fitting room
 
-five
 cinco
+five
 
-fix
 arreglar, reparar
+fix
 
-fizzy
 gaseoso
+fizzy
 
-flag
 bandera
+flag
 
 flash
 flash
 
-flashlight
 linterna eléctrica
+flashlight
 
-flat
 llano, plano
+flat
 
-flavor
 sabor, aroma
+flavor
 
-flawless
 impecable
+flawless
 
-flee
 escapar. huir
+flee
 
-flesh
 carne
+flesh
 
-flight
 vuelo
+flight
 
-fling
 lanzar
+fling
 
-flippers
 las aletas
+flippers
 
-flirt
 flirtear
+flirt
 
-float
 flotar
+float
 
-flood
 inundación
+flood
 
-floor
 el piso, el suelo
+floor
 
-floppy
 disquete
+floppy
 
-floss
 hilo dental
+floss
 
-flour
 harina
+flour
 
-flower
 la flor
+flower
 
-flower shop
 la floristería
+flower shop
 
-flu
 gripe
+flu
 
-fluently
 con soltura
+fluently
 
-flute
 flauta
+flute
 
-fly
 la mosca
-
 fly
+
 volar
+fly
 
-flying saucer
 platillo volante
+flying saucer
 
-foam
 espuma
+foam
 
-focus
 concentrarse en
+focus
 
-fog
 niebla, bruma
+fog
 
-foggy
 con neblina, hay niebla, neblina
+foggy
 
-foil
 papel de aluminio
+foil
 
-fold
 doblar
+fold
 
-folder
 carpeta
+folder
 
-folk
 gente
+folk
 
-follow
 seguir, ir detrás de
+follow
 
-food
 la comida, la alimentación, el alimento
+food
 
+tonto
 fool
-tonto
 
-fool around
 hacer el tonto
+fool around
 
-foot
 el pie, pata
+foot
 
-football
 el fútbol americano
-
 football
+
 fútbol
+football
 
+paso
 footstep
-paso
 
-for
 para, por
+for
 
-for, in order, by
 para
+for, in order, by
 
-for, through, via
 por
+for, through, via
 
-forbid
 prohibir
+forbid
 
+prohibido
 forbidden
-prohibido
 
-force
 fuerza. forzar
+force
 
-forecast
 el pronóstico
+forecast
 
-forehead
 frente
+forehead
 
-foreign
 extranjero
+foreign
 
-foreigner
 extranjero, extraño
+foreigner
 
-foresee
 prever
+foresee
 
-forest
 bosque
-
 forest
+
 el bosque
+forest
 
-forever
 por siempre
+forever
 
-forge
 falsificar
+forge
 
-forget
 olvidar
+forget
 
-forgive
 perdonar, disculpar
+forgive
 
-fork
 el tenedor
+fork
 
-form
 formulario
-
 form
+
 forma
+form
 
 formal
 formal
 
-former
 antiguo
+former
 
-fornicate
 fornicar
+fornicate
 
-fortieth
 cuadragésimo
+fortieth
 
-found
 fundar
+found
 
-fountain
 la fuente
+fountain
 
-four
 cuatro
+four
 
-fourteen
 catorce
+fourteen
 
-fourteenth
 décimo cuarto
+fourteenth
 
+cuarto
 fourth
-cuarto
 
-fox
 el zorro
+fox
 
-fracture
 fractura
+fracture
 
-fragment
 fragmento
+fragment
 
-frame
 marco
+frame
 
-France
 francia
+France
 
-freak
 raro, bicho
+freak
 
-free
 libre. gratis
+free
 
-freedom
 libertad
+freedom
 
-freely
 libremente
+freely
 
-freeze
 congelar
+freeze
 
-freezer
 congelador
+freezer
 
-freezing
 helado
+freezing
 
+francés
 French
-francés
 
+francés
 Frenchman
-francés
 
-frequent
 frecuente
+frequent
 
-frequently
 frecuentemente
+frequently
 
-fresh
 fresco
+fresh
 
-fridge
 nevera, refrigerador
+fridge
 
-fried
 frito
+fried
 
-fried egg
 huevo frito
+fried egg
 
-friend
 amigo, camarada
+friend
 
-friendly
 amigable, amable
+friendly
 
-friendship
 amistad
+friendship
 
-frightened
 asustado
+frightened
 
-frog
 la rana
+frog
 
-from
 de, a partir de
+from
 
-front
 delante
+front
 
-front bumper
 la defensa delantera
+front bumper
 
-frozen
 congelado
+frozen
 
-frozen foods
 los alimentos congelados
+frozen foods
 
-fruit
 la fruta
+fruit
 
-fruit juice
 el zumo
+fruit juice
 
-fruit shop
 la frutería
+fruit shop
 
-frustrated
 frustrado
+frustrated
 
-fry
 freír, cocinar en aceite
+fry
 
-frying
 la sartén
+frying
 
-frying pan
 sartén
+frying pan
 
-fuel
 carburante
+fuel
 
-full
 lleno, completo
+full
 
-full of
 lleno de
+full of
 
-full-time
 jornada completa
+full-time
 
-fun
 diversión
-
 fun
+
 para divertirse
-
 fun
-divertirse
 
-function
+divertirse
+fun
+
 funcionar
+function
 
-funeral
 el entierro
+funeral
 
-funny
 divertido
+funny
 
-fur
 abrigo de pieles
+fur
 
-furious
 furioso
+furious
 
-furniture
 el mueble, los muebles
+furniture
 
-fuse
 el fusible
+fuse
 
-future
 futuro
+future
 
-galaxy
 la galaxia
+galaxy
 
-gallery
 galería
+gallery
 
-gambling
 juego con apuestas
+gambling
 
-game
 el juego, la partida
+game
 
-gang
 banda, bandilla
+gang
 
-garage
 el garage
+garage
 
-garbage
 la basura
+garbage
 
+el basurero
 garbage can
-el basurero
 
-garden
 el jardín, el parque
+garden
 
-gardener
 jardinero
+gardener
 
-garlic
 el ajo
+garlic
 
-garment
 la ropa
+garment
 
-gas
 gas, gasolina
+gas
 
-gas gauge
 el medidor de gasolina
+gas gauge
 
-gas station
 la gasolinera, la bomba
+gas station
 
-gasoline
 la gasolina
+gasoline
 
-gate
 puerta
+gate
 
-gather
 reunir
+gather
 
 gay
 gay
 
-geese
 gansos
+geese
 
-gel
 gomina
+gel
 
 general
 general
 
-generally
 generalmente, en general
+generally
 
-generation
 generación
+generation
 
-generous
 generoso
+generous
 
-genetics
 genética
+genetics
 
-genius
 genio
+genius
 
-gentleman
 el señor
+gentleman
 
-gently
 con delicadeza
+gently
 
-genuine
 auténtico, genuino
+genuine
 
-geography
 la geografía
+geography
 
-geometry
 la geometría
+geometry
 
-germ
 germen
+germ
 
-German
 alemán
+German
 
-Germany
 alemania
+Germany
 
-get
 conseguir, lograr, recibir
+get
 
+pasar
 get by
-pasar
 
-get down
 bajarse
+get down
 
-get in
 entrar en, subir al
+get in
 
-get off
 bajarse del
+get off
 
-get up
 levantarse. se despierta
+get up
 
-ghost
 fantasma
+ghost
 
-gift
 regalo
+gift
 
-gifted
 con talento
+gifted
 
-gipsy
 gitano
+gipsy
 
-giraffe
 la jirafa
+giraffe
 
-girl
 la chica, niña
+girl
 
-girlfriend
 novia
+girlfriend
 
-give
 dar
+give
 
-give back
 devolver
+give back
 
-give birth
 dar a luz
+give birth
 
+rendirse
 give in
-rendirse
 
-give up
 rendirse, abandonar
+give up
 
-glad
 contento, alegre, feliz
+glad
 
-glass
 el vidrio. el vaso, la copa
+glass
 
-glasses
 las gafas. los lentes
+glasses
 
-glory
 gloria
+glory
 
-gloves
 los guantes
+gloves
 
-glue
 cola, pegamento
-
 glue
-pegar
 
-go
+pegar
+glue
+
 ir, andar, marchar
+go
 
-go ahead!
 siga!
+go ahead!
 
-go back
 volver
+go back
 
+pasar
 go by
-pasar
 
+bajar
 go down
-bajar
 
-go out
 salir
+go out
 
-go up
 subir
+go up
 
-go!
 siga! adelante!
+go!
 
-go-ahead
 luz verde
+go-ahead
 
-goal
 objetivo, gol
+goal
 
-goalkeeper
 portero. arquero
+goalkeeper
 
-goat
 el chivo, la cabra
+goat
 
-God
 Dios
+God
 
-godsend
 regalo del cielo
+godsend
 
-gold
 oro
+gold
 
-golden
 de oro
+golden
 
 golf
 golf
 
-good
 buen, bueno. bien
+good
 
-good-bye
 adiós,hasta la vista,-luego
+good-bye
 
-good-for-nothing
 inútil
+good-for-nothing
 
-good-looking
 guapo
+good-looking
 
-goodness
 bondad
+goodness
 
-goods
 mercancías
+goods
 
-goose
 el ganso
+goose
 
+maravilloso
 gorgeous
-maravilloso
 
-gosh!
 caramba!
+gosh!
 
-gossip
 cotillear
+gossip
 
-government
 gobierno
+government
 
-governor
 gobernador
+governor
 
-grab
 agarrar
+grab
 
-grade
 curso
+grade
 
-gradually
 poco a poco
+gradually
 
-graduate
 licenciado
+graduate
 
+grano
 grain
-grano
 
-grammar
 gramática
+grammar
 
-granddaughter
 la nieta
+granddaughter
 
-grandfather
 el abuelo
+grandfather
 
-grandmother
 la abuela
+grandmother
 
-grandson
 el nieto
+grandson
 
-grant
 subvención
+grant
 
-grapefruit
 la toronja, el pomelo
+grapefruit
 
-grapes
 las uvas
+grapes
 
+hierba
 grass
-hierba
 
-grasshopper
 el saltamontes
+grasshopper
 
-grateful
 agradecido
+grateful
 
-gratuity
 propina
+gratuity
 
+tumba
 grave
-tumba
 
-graveyard
 cementerio
+graveyard
 
-gravity
 gravedad
+gravity
 
-gray
 gris
+gray
 
-grease
 la grasa
+grease
 
-greasy
 grasiento
+greasy
 
-great
 grande, gran
+great
 
-greater
 mayor
+greater
 
-greedy
 glotón
-
 greedy
+
 codicioso
+greedy
 
-green
 verde
+green
 
-green bean
 la habichuela
+green bean
 
-green card
 la carta verde
+green card
 
+los guisantes
 green peas
-los guisantes
 
-greet
 saludar
+greet
 
-grenade
 granada
+grenade
 
-grilled
 a la parrilla
+grilled
 
-grind
 moler
+grind
 
-groceries
 comestibles
+groceries
 
-grocery store
 la tienda de ultramarinos
+grocery store
 
-ground
 suelo
+ground
 
-ground beef
 la carne molida
+ground beef
 
-ground floor
 el piso bajo, la planta baja
+ground floor
 
-ground meat
 carne picada
+ground meat
 
-group
 grupo
+group
 
-grow
 aumentar de tamaño
+grow
 
-grow up
 crecer
+grow up
 
-grown-up
 adulto
+grown-up
 
-guarantee
 garantía. garantizar
+guarantee
 
-guess
 adivinar
+guess
 
-guest
 huésped
-
 guest
+
 invitado, visitante
+guest
 
-guide
 guía
-
 guide
+
 guiar, conducir, dirigir
+guide
 
-guilty
 culpable
+guilty
 
-guitar
 guitarra
+guitar
 
-gulf
 el golfo
+gulf
 
-gulp
 trago
+gulp
 
-gum
 chicle. encía
+gum
 
-gun
 pistola, arma
+gun
 
+tipo
 guy
-tipo
 
+gimnasio
 gym
-gimnasio
 
-habit
 hábito, costumbre
+habit
 
-hacker
 pirata informático
+hacker
 
-hacksaw
 la sierra para metales
+hacksaw
 
-hair
 el pelo, el cabello
+hair
 
-hair spray
 laca
+hair spray
 
-haircut
 el corte del pelo
+haircut
 
-hairdresser
 peluquero
+hairdresser
 
-half
 medio
+half
 
-hall
 el pasillo
+hall
 
-ham
 el jamón
+ham
 
-hamburger
 hamburguesa
+hamburger
 
-hammer
 el martillo
+hammer
 
-hand
 la mano
+hand
 
-handbag
 la bolsa, la cartera
+handbag
 
-handcuffs
 las esposas
+handcuffs
 
-handicapped
 minusválido
+handicapped
 
-handkerchief
 pañuelo
+handkerchief
 
-handle
 manilla
+handle
 
-handlebars
 los manubrios
+handlebars
 
-hand-made
 hecho a mano
+hand-made
 
-handsome
 guapo. atractivo
+handsome
 
-hang
 colgar
+hang
 
-hang up
 colgar el teléfono
+hang up
 
-hanger
 colgador, gancho
+hanger
 
-happen
 pasar
+happen
 
-happiness
 la felicidad
+happiness
 
-happy
 feliz, alegre, contento
+happy
 
-happy birthday
 feliz cumpleaños
+happy birthday
 
-happy new year
 feliz año nuevo
+happy new year
 
+puerto
 harbor
-puerto
 
-hard
 duro, difícil
+hard
 
-hardly
 apenas
+hardly
 
+trabajador
 hard-working
-trabajador
 
-harmless
 inofensivo
+harmless
 
-harmony
 armonía
+harmony
 
-harvest
 cosecha
+harvest
 
-hat
 el sombrero, la gorra, el gorro
+hat
 
-hate
 odiar, detestar, repugnar
+hate
 
-have
 tener, poseer
+have
 
-have just+
 acabar de +
+have just+
 
-have to
 tener que
+have to
 
-hawk
 el halcón
+hawk
 
-he
 Él
+he
 
-head
 la cabeza
+head
 
-headache
 dolor de cabeza
+headache
 
-headlights
 las luces delanteras
+headlights
 
-headphones
 auriculares, audífonos
+headphones
 
-heal
 curar
+heal
 
-health
 salud, sanidad
+health
 
-health club
 gimnasio
+health club
 
-health insurance
 seguro de enfermedad
+health insurance
 
-hear
 oír
+hear
 
-heart
 corazón, alma
+heart
 
-heart attack
 el infarto
+heart attack
 
-heart failure
 paro cardíaco
+heart failure
 
-heat
 calor
+heat
 
+calentar
 heat up
-calentar
 
-heating
 calefacción
+heating
 
+cielo
 heaven
-cielo
 
-heavy
 pesado
+heavy
 
-Hebrew
 hebreo
+Hebrew
 
-heel
 talón
+heel
 
-height
 altura
+height
 
-helicopter
 helicóptero
+helicopter
 
-hell
 infierno
+hell
 
-hello
 hola! saludo
+hello
 
-helmet
 el casco
+helmet
 
-help
 ayuda, socorro
-
 help
+
 ayudar, asistir
+help
 
-help!
 socorro!
+help!
 
+Útil
 helpful
-Útil
 
-her
 su, de ella, a ella. la
+her
 
-herb
 hierba
+herb
 
-herbs
 las hierbas
+herbs
 
-here
 aquí, acá
+here
 
-hero
 héroe
+hero
 
-heroin
 heroína
+heroin
 
-hesitate
 dudar, vacilar
+hesitate
 
-hiccup
 hipo
+hiccup
 
-hide
 esconder
+hide
 
-hide & seek
 escondite
+hide & seek
 
-high
 alto, de mucha altura
-
 high
-alto
 
-high blood pressure
+alto
+high
+
 alta presión sanguínea
+high blood pressure
 
-high heels
 los zapatos de tacón alto
+high heels
 
-high school
 escuela secundaria, colegio
+high school
 
-high tide
 la marea alta
+high tide
 
+autopista
 highway
-autopista
 
-hiking
 senderismo
+hiking
 
-hill
 colina
+hill
 
-him
 le, lo, a él
+him
 
-hint
 pista
+hint
 
-hip
 la cadera
+hip
 
-hippopotamus
 el hipopótamo
+hippopotamus
 
-hire
 contratar, alquilar …
+hire
 
-his
 su, sus
+his
 
-historical
 histórico
+historical
 
-history
 la historia
+history
 
-hit
 golpear, chocar
+hit
 
-hitchhiking
 hacer auto-stop
+hitchhiking
 
+pasatiempo
 hobby
-pasatiempo
 
-hockey
 el hockey
+hockey
 
+el cerdo
 hog
-el cerdo
 
-hold
 sostener, contener
+hold
 
+esperar
 hold on
-esperar
 
-hole
 hueco, abertura. agujero
+hole
 
-holiday
 día de fiesta, vacaciones
+holiday
 
+santo
 holy
-santo
 
-home
 casa, domicilio, hogar
+home
 
-homeless
 sin casa
+homeless
 
-homepage
 página principal
+homepage
 
-homework
 deberes
+homework
 
 homosexual
 homosexual
 
-honest
 honesto, sincero, honrado
+honest
 
-honey
 miel, dulzura
+honey
 
-honeymoon
 la luna de miel
+honeymoon
 
 honor
 honor
 
-hood
 la capota
+hood
 
-hoof
 casco
+hoof
 
-hook
 anzuelo
+hook
 
+esperar
 hope
-esperar
 
+optimista
 hopeful
-optimista
 
 horizontal
 horizontal
 
-horn
 cuerno
+horn
 
-horny
 cachondo
+horny
 
 horrible
 horrible
 
-horse
 el caballo
+horse
 
 hospital
 hospital
 
-host
 anfitrión
+host
 
-hostage
 rehén
+hostage
 
-hostel
 albergue
+hostel
 
-hostile
 agresivo
+hostile
 
-hot
 caliente, cálido, caluroso
-
 hot
-hace calor
 
-hot dog
+hace calor
+hot
+
 perrito caliente
+hot dog
 
-hotel
 hotel, motel
+hotel
 
-hour
 hora
+hour
 
-house
 la casa, la habitación, la morada
+house
 
-housewife
 el ama de casa
+housewife
 
-how far?
 hasta donde? cuanto hay?
+how far?
 
-how many?
 cuántos?
+how many?
 
-how much?
 cuánto?
+how much?
 
-how?
 cómo
+how?
 
-hubcap
 el tapón
+hubcap
 
-hug
 abrazo
+hug
 
-human being
 humano
+human being
 
-humanity
 humanidad
+humanity
 
-humid
 húmido
+humid
 
-humidity
 humedad
+humidity
 
-hummingbird
 el colibrí
+hummingbird
 
 humor
 humor
 
-hundred
 cien
+hundred
 
-hundredth
 centésimo
+hundredth
 
-hungry
 tiene hambre
+hungry
 
-hunt
 cazar
+hunt
 
-hunter
 cazador
+hunter
 
-hurricane
 huracán
+hurricane
 
-hurry up!
 date prisa!
+hurry up!
 
-hurt
 herir, dañar
+hurt
 
-hurt oneself
 lastimarse
+hurt oneself
 
-husband
 el marido/ el esposo
+husband
 
-hut
 cabaña
+hut
 
-hymn
 himno
+hymn
 
-I
 yo
+I
 
-ice
 hielo
+ice
 
-ice cream
 el helado
+ice cream
 
-ice cream shop
 le heladería
+ice cream shop
 
-ID
 carné de identidad
+ID
 
-idea
 idea, concepto
+idea
 
 ideal
 ideal
 
-idol
 Ídolo
+idol
 
-if
 si, en caso de
+if
 
-ignorant
 ignorante, iletrado
+ignorant
 
-ignore
 ignorar
+ignore
 
-iguana
 la iguana
+iguana
 
+enfermo
 ill
-enfermo
 
-illegal
 ilegal
+illegal
 
-illiterate
 analfabeto
+illiterate
 
-illness
 enfermedad
+illness
 
-illusion
 ilusión
+illusion
 
-image
 imagen
+image
 
-imaginary
 imaginario
+imaginary
 
-imagination
 imaginación
+imagination
 
-imagine
 imaginarse
+imagine
 
-imitate
 imitar
+imitate
 
-immediately
 inmediatamente, ahora
+immediately
 
-immigrant
 inmigrante, extranjero
+immigrant
 
-immigrate
 inmigrar
+immigrate
 
-immigration
 inmigración
+immigration
 
-immoral
 inmoral
+immoral
 
-immune system
 sistema inmunológico
+immune system
 
-impatient
 impaciente
+impatient
 
+importar
 import
-importar
 
-important
 importante
+important
 
-impossible
 imposible
+impossible
 
-impress
 impresionar
+impress
 
+impresión
 impression
-impresión
 
+impresión
 imprint
-impresión
 
-improve
 mejorar
+improve
 
-in
 en, dentro, dentro de
-
 in
-en
 
-in front of
+en
+in
+
 delante de
+in front of
 
-in order to
 para, a fin de
+in order to
 
-inch
 pulgada
+inch
 
-include
 incluir
+include
 
-included
 incluido
+included
 
-income
 ingresos
+income
 
-inconvenience
 inconveniencia
+inconvenience
 
-increase
 aumentar
+increase
 
-indeed
 ciertamente
+indeed
 
-indeed!
 de veras
+indeed!
 
-independent
 independiente
+independent
 
-index
 Índice
+index
 
-India
 india
+India
 
 individual
 individual
 
-indoor
 de interior
+indoor
 
-industry
 industria
+industry
 
 inevitable
 inevitable
 
-infect
 infectar
+infect
 
-infection
 infección
+infection
 
-infinite
 infinito
+infinite
 
-influence
 influencia
+influence
 
-inform
 informar
+inform
 
-information
 información, aviso
+information
 
-ingredient
 ingrediente
+ingredient
 
-inhaler
 inhalador
+inhaler
 
-inherit
 heredar
+inherit
 
-initial
 inicial
+initial
 
-inject
 inyectar
+inject
 
-injection
 inyección
+injection
 
-injured
 herido
+injured
 
+herida
 injury
-herida
 
-ink
 la tinta
+ink
 
-in-laws
 familia política
+in-laws
 
-innocent
 inocente
+innocent
 
-insect
 insecto
+insect
 
-inside
 dentro, en, dentro de
+inside
 
-insist
 insistir
+insist
 
-inspire
 inspirar
+inspire
 
-install
 instalar
+install
 
-instead of
 en lugar de
+instead of
 
-instinct
 instinto
+instinct
 
-institute
 instituto
+institute
 
-instructions
 instrucciones
+instructions
 
-insulin
 insulina
+insulin
 
-insult
 insulto
-
 insult
+
 insultar, ofender
+insult
 
-insurance
 el seguro, aseguramiento
+insurance
 
-intellectual
 intelectual
+intellectual
 
+inteligente
 intelligent
-inteligente
 
-intend
 pretender, intentar
+intend
 
-intensive
 intensivo
+intensive
 
-intention
 intención
+intention
 
-interested
 interesado
+interested
 
-interesting
 interesante
+interesting
 
-international
 internacional
+international
 
 internet
 internet
 
-interpreter
 intérprete
+interpreter
 
-intersection
 el cruce
+intersection
 
-interview
 entrevista
+interview
 
-into
 en
+into
 
-intolerable
 insoportable
+intolerable
 
+presentar
 introduce
-presentar
 
-intruder
 intruso
+intruder
 
+nulo
 invalid
-nulo
 
-invent
 inventar
+invent
 
-invention
 invención
+invention
 
-invest
 invertir
+invest
 
-investigation
 investigación
+investigation
 
 invisible
 invisible
 
-invitation
 invitación
+invitation
 
-invite
 invitar
+invite
 
-iron
 Plancha
-
 iron
+
 hierro
-
 iron
+
 planchar
+iron
 
-ironing board
 tabla de planchar
+ironing board
 
-irrigate
 regar
+irrigate
 
-irritate
 irritar
+irritate
 
-Islam
 islam. mahometismo
+Islam
 
-island
 la isla
+island
 
-it
 Él, ella, le , lo
+it
 
-it is necessary to + inf
 hay que + infinitive
+it is necessary to + inf
 
-it’s cold
 hace frío
+it’s cold
 
-it’s hot
 hace calor
+it’s hot
 
-Italian
 italiano
+Italian
 
-Italy
 Italia
+Italy
 
-itching
 picazón
+itching
 
-item
 artículo
+item
 
-ivory
 el marfil
+ivory
 
-jacket
 la chaqueta
+jacket
 
-jail
 la cárcel
+jail
 
-jam
 mermelada, confitura
+jam
 
-January
 enero
+January
 
-Japan
 japón
+Japan
 
-jar
 el frasco, el tarro
+jar
 
-jaw
 mandíbula
+jaw
 
-jealous
 celoso, envidioso
+jealous
 
-jeans
 pantalones vaqueros
+jeans
 
-jesus
 jesús
+jesus
 
+judío
 jew
-judío
 
-jeweler
 las joyas
+jeweler
 
-jeweler's
 joyería
+jeweler's
 
-jewelry box
 el joyero
+jewelry box
 
-Jewish
 judío
+Jewish
 
-job
 job, trabajo, empleo
+job
 
-jogging
 footing
+jogging
 
-join
 hacer socio
+join
 
-joke
 chiste, broma
-
 joke
+
 bromear
+joke
 
-journalist
 el periodista
+journalist
 
-journey
 el viaje
+journey
 
-joy
 la alegría
+joy
 
 joystick
 joystick
 
-judge
 el juez
-
 judge
+
 juzgar
+judge
 
-judgment day
 día del juicio final
+judgment day
 
-juice
 jugo, zumo
+juice
 
-July
 julio
+July
 
+saltar
 jump
-saltar
 
-jumper
 pichi
+jumper
 
-June
 junio
+June
 
-jungle
 la selva
+jungle
 
-junk
 trastos
+junk
 
-junk food
 comida basura
+junk food
 
-jury
 el jurado
+jury
 
-just
 justo, nada más, no más
+just
 
-justice
 justicia
+justice
 
-justify
 justificar
+justify
 
-kangaroo
 canguro
+kangaroo
 
-keep
 mantener, guardar
+keep
 
 ketchup
 ketchup
 
-kettle
 hervidor de agua
+kettle
 
-key
 llave
+key
 
-keyboard
 teclado
+keyboard
 
-kick
 el puntapié, patada
-
 kick
+
 dar patadas a alguien
+kick
 
-kid
 niño, chamaco
+kid
 
-kidnap
 secuestrar
+kidnap
 
-kidneys
 riñones
+kidneys
 
-kill
 matar
+kill
 
-kind
 amable, bueno, afable
-
 kind
-tipo
 
-kindergarten
+tipo
+kind
+
 guardería
+kindergarten
 
-king
 rey
+king
 
-kingdom
 reino
+kingdom
 
-kiosk
 quiosco
+kiosk
 
-kiss
 el beso
-
 kiss
+
 besar
+kiss
 
-kit
 equipo
+kit
 
-kitchen
 la cocina
+kitchen
 
-kitchen sink
 el fregadero
+kitchen sink
 
-kitten
 gatito
+kitten
 
-knee
 la rodilla
+knee
 
-knife
 el cuchillo
+knife
 
-knight
 caballero
+knight
 
-knock
 llamar
+knock
 
-know
 saber, conocer
+know
 
-knowledge
 los conocimientos
+knowledge
 
-Koran
 Corán, Alcorán
+Koran
 
+etiqueta
 label
-etiqueta
 
-laces
 los cordones
+laces
 
-lack
 falta
-
 lack
+
 faltar
+lack
 
-ladder
 escalera de mano
+ladder
 
-ladies room
 servicio de señoras
+ladies room
 
+señora
 lady
-señora
 
-lake
 el lago, laguna
+lake
 
-lamb
 el cordero, carne de cordero
+lamb
 
-lame
 cojo
+lame
 
-lamp
 la lámpara
+lamp
 
-land
 tierra, suelo
-
 land
+
 el terreno
-
 land
+
 aterrizar
+land
 
-landing
 aterrizaje
+landing
 
+camino
 lane
-camino
 
-language
 el idioma
+language
 
-languages
 las lenguas / los idiomas
+languages
 
-lantern
 farol
+lantern
 
+computadora portátil
 laptop
-computadora portátil
 
-large
 grande
+large
 
-laser
 láser
+laser
 
-last
 durar. último, final
+last
 
-late
 tarde, a última hora
+late
 
+recientemente
 lately
-recientemente
 
-laugh
 la risa
-
 laugh
+
 reír
+laugh
 
-Laundromat
 la lavandería
+Laundromat
 
-laundry
 el servicio de lavandería
+laundry
 
-law
 ley
+law
 
-lawyer
 el abogado, defensor
+lawyer
 
-lay
 dejar, poner
+lay
 
-lazy
 perezoso, flojo
+lazy
 
-lead
 plomo
-
 lead
+
 ir a la cabeza, conducir
+lead
 
-leader
 el líder, comandante
+leader
 
-leaf
 la hoja
+leaf
 
-leak
 fuga
-
 leak
+
 fugarse, escaparse
+leak
 
-lean
 estar inclinado
+lean
 
-leap
 saltar
+leap
 
-learn
 aprender
+learn
 
-least
 el menos
-
 least
+
 por lo menos
+least
 
-leather
 cuero
+leather
 
-leave
 salir, irse
+leave
 
-lecture
 conferencia
+lecture
 
-left
 izquierda
+left
 
-left handed
 zurdo
+left handed
 
-leftovers
 sobras
+leftovers
 
-leg
 la pierna, pata
+leg
 
-legend
 la leyenda
+legend
 
-legitimate
 legítimo
+legitimate
 
-leisure
 ocio. tiempo libre
+leisure
 
-lemon
 el limón
+lemon
 
-lemonade
 limonada
+lemonade
 
-lend
 prestar
+lend
 
-length
 la longitud
+length
 
-lenses
 las lentillas
+lenses
 
-leopard
 leopardo
+leopard
 
+menos
 less
-menos
 
-less... than
 menos...que
+less... than
 
-lesson
 lección, clase
+lesson
 
-let
 dejar, permitir
+let
 
-letter
 la carta
+letter
 
+el cartero
 letter carrier
-el cartero
 
-lettuce
 la lechuga
+lettuce
 
-level
 nivel, grado
+level
 
-liar
 mentiroso
+liar
 
-library
 la biblioteca
+library
 
-license
 permiso
+license
 
-lick
 lamer
+lick
 
-lid
 tapa
+lid
 
-lie
 mentira
-
 lie
+
 mentir, decir mentiras
+lie
 
+acostarse
 lie down
-acostarse
 
-life
 vida, animación
+life
 
-lifeguard
 el socorrista
+lifeguard
 
-lifejacket
 chaleco salvavidas
+lifejacket
 
-lift
 levantar
+lift
 
-light
 ligero
-
 light
+
 luz, lámpara
+light
 
-light bulb
 bombilla
+light bulb
 
-light year
 el año luz
+light year
 
-lighter
 encendedor
+lighter
 
-lightning
 relámpago
+lightning
 
-like
 como
-
 like
+
 gustar, querer
+like
 
-lime
 el limón, la lima
+lime
 
-limit
 límite
+limit
 
-limo
 limusina
+limo
 
-line
 línea, fila
+line
 
-linguist
 lingüista
+linguist
 
-linguistics
 la lingüística
+linguistics
 
-link
 conexión
+link
 
-lion
 el león
+lion
 
-lip
 el labio
+lip
 
+barra
 lipstick
-barra
 
-liquid
 líquido
+liquid
 
-liquor
 bebida alcohólica
+liquor
 
-list
 lista
+list
 
-listen
 escuchar
+listen
 
-literature
 literatura
+literature
 
-little
 poco. un poco de. chico
+little
 
-live
 vivir
+live
 
-liver
 hígado
+liver
 
-living room
 la sala de recibo, el salón
+living room
 
-lizard
 lagarto
+lizard
 
-llama
 la llama
+llama
 
-load
 carga. cargar
+load
 
-loan
 préstamo
+loan
 
-lobby
 el recibidor
+lobby
 
-lobster
 la langosta
+lobster
 
-local
 de la región
+local
 
 local
 local
 
-lock
 el seguro, la cerradura
-
 lock
-cerrar
 
-locker
+cerrar
+lock
+
 cajón
+locker
 
-log
 tronco
+log
 
-lollipop
 piruleta
+lollipop
 
-lonely
 solo
+lonely
 
-long
 largo, mucho tiempo
+long
 
-look
 apariencia, aire
-
 look
+
 mirar, ver, parecer
+look
 
-look after
 cuidar
+look after
 
+buscar
 look for
-buscar
 
-look out
 tener cuidado. ojo!
+look out
 
-loose
 suelto
+loose
 
-loot
 saquear
+loot
 
+señor
 lord
-señor
 
+camión
 lorry
-camión
 
-lose
 perder. perderse
+lose
 
-lost
 perdido, extraviado
+lost
 
-lost & found
 oficina de objetos perdidos
+lost & found
 
-lot
 mucho de
+lot
 
-lotion
 la loción
+lotion
 
-loud
 fuerte, alto
+loud
 
-loudspeaker
 altavoz
+loudspeaker
 
-lounge
 salón
+lounge
 
-love
 el amor
-
 love
+
 estar enamorado
-
 love
+
 amar, querer, adorar
+love
 
-lovely
 lindo, adorable, precioso
+lovely
 
-lover
 amante
+lover
 
-loving
 cariñoso
+loving
 
-low tide
 la marea baja
+low tide
 
-low, short
 bajo
+low, short
 
-loyal
 fiel
+loyal
 
-lucky
 afortunado, feliz
+lucky
 
-luggage
 el equipaje
+luggage
 
-lunch
 el almuerzo
+lunch
 
-lung
 pulmón
+lung
 
-luxurious
 lujosa
+luxurious
 
-luxury
 el lujo
+luxury
 
+letra
 lyrics
-letra
 
-macaroni
 macarrones
+macaroni
 
-machine
 máquina, aparato
+machine
 
-mad
 enojado, loco
+mad
 
-madhouse
 casa de locos
+madhouse
 
-magazine
 revista
+magazine
 
-magic
 magia
+magic
 
-magnet
 imán
+magnet
 
-magnifying glass
 lupa
+magnifying glass
 
-maid
 la empleada, la muchacha
+maid
 
-mail
 el correo
-
 mail
+
 enviar por correo
+mail
 
+el cartero
 mail carrier
-el cartero
 
-mailbox
 el buzón
+mailbox
 
-mailman
 cartero
+mailman
 
-main
 principal
+main
 
-main course
 el plato principal
+main course
 
-majority
 mayoría
+majority
 
-make
 hacer, fabricar. preparar
+make
 
-make up one's mind
 decidirse
+make up one's mind
 
-makeup
 el maquillaje
+makeup
 
-male
 macho, hombre. masculino
+male
 
-mall
 centro comercial
+mall
 
-man
 el hombre, el macho
+man
 
-manage
 dirigir
+manage
 
-management
 administración
+management
 
-manager
 gerente, jefe, manager
+manager
 
-mango
 el mango
+mango
 
-mankind
 la humanidad
+mankind
 
-manner
 manera, forma, modo
+manner
 
-manners
 educación
+manners
 
-mantis
 la mantis
+mantis
 
-manufacture
 fabricación
+manufacture
 
-many
 muchos, bastantes, varios
+many
 
-map
 el mapa
+map
 
-marble
 mármol
+marble
 
-march
 marzo
+march
 
-marital status
 estado civil
+marital status
 
+nota
 mark
-nota
 
-marker
 rotulador
+marker
 
-market
 mercado
-
 market
-el mercado
 
-marmalade
+el mercado
+market
+
 mermelada de naranja
+marmalade
 
-marriage
 matrimonio, casamiento
+marriage
 
-married
 casado
+married
 
-marry
 casarse con
+marry
 
-mashed potatoes
 puré de papas
+mashed potatoes
 
-mason
 cantero
+mason
 
-massage
 masaje
+massage
 
-mastermind
 cerebro
+mastermind
 
-mat
 estera
+mat
 
-match
 el partido
-
 match
+
 igualar
+match
 
-matches
 cerillas, fósforos
+matches
 
-material
 tejido
+material
 
-math
 las matemáticas
+math
 
-matter
 asunto
+matter
 
-mattress
 colchón
+mattress
 
+maduro
 mature
-maduro
 
-maximum
 máximo
+maximum
 
-may
 mayo
-
 may
+
 tal vez, a lo mejor,acaso
+may
 
-maybe
 tal vez, es posible,acaso
+maybe
 
-mayonnaise
 mayonesa
+mayonnaise
 
-me
 me, a mí
+me
 
-meadow
 prado
+meadow
 
-meal
 la comida
+meal
 
-mean
 malo, cruel, tacaño
-
 mean
+
 significar
+mean
 
-meaning
 significado
+meaning
 
-means
 medios, modos
+means
 
-measure
 medir
+measure
 
-measurements
 medidas
+measurements
 
-measuring tape
 la cinta métrica
+measuring tape
 
-meat
 la carne
+meat
 
-meat shop
 la carnicería
+meat shop
 
-mechanic
 el mecánico
+mechanic
 
-medal
 medalla
+medal
 
-medical
 médico
+medical
 
-medicine
 medicina, medicamento
+medicine
 
-medicine cabinet
 el botiquín
+medicine cabinet
 
-meditation
 meditación
+meditation
 
-medium
 mediano
+medium
 
-meet
 encontrarse con. conocer
+meet
 
-meeting
 reunión
+meeting
 
-melon
 el melón
+melon
 
-melt
 ablandar, disolver,fundir
+melt
 
+socio
 member
-socio
 
-membership
 afiliación
+membership
 
-memorize
 aprender de memoria
+memorize
 
-memory
 memoria
+memory
 
-mend
 servicio de caballeros
+mend
 
+reparar
 men's room
-reparar
 
-mentality
 mentalidad
+mentality
 
-mention
 mencionar
+mention
 
-menu
 el menú, la carta
+menu
 
-merchandise
 mercadería
+merchandise
 
-mercy
 compasión
+mercy
 
-merry Christmas
 feliz navidad
+merry Christmas
 
-mess
 desorden. lío
+mess
 
-message
 el mensaje
+message
 
 metal
 metal
 
-metal detector
 el detector de metales
+metal detector
 
-meteorite
 meteorito
+meteorite
 
-method
 método
+method
 
-Mexico
 méxico
+Mexico
 
-microphone
 micrófono
+microphone
 
-microwave
 el horno microondas
+microwave
 
+mediodía
 midday
-mediodía
 
-middle
 en medio de
+middle
 
-midget
 enano
+midget
 
-midnight
 medianoche
+midnight
 
-mike
 micro
+mike
 
+moho
 mildew
-moho
 
-mile
 milla 1. 6 km
+mile
 
-military
 ejército
+military
 
-milk
 leche
+milk
 
-mill
 molina
+mill
 
-million
 millón, millones de
+million
 
-mind
 mente, mentalidad, miente
-
 mind
+
 importar
+mind
 
-mine
 mina
+mine
 
 mineral
 mineral
 
-mineral water
 el agua mineral
+mineral water
 
-minimum
 mínimo
+minimum
 
-minister
 ministro
+minister
 
-minority
 minoría
+minority
 
-mint
 menta
+mint
 
-minus
 menos
+minus
 
-minute
 minuto
+minute
 
-miracle
 milagro
+miracle
 
-mirror
 el espejo
+mirror
 
-miser
 avaro
+miser
 
-mislead
 engañar
+mislead
 
-mispronounce
 pronunciar mal
+mispronounce
 
-miss
 señorita
-
 miss
+
 extrañar,faltar a
+miss
 
-missile
 misil
+missile
 
-missing
 perdido
+missing
 
-mission
 misión
+mission
 
-misspell
 escribir incorrectamente
+misspell
 
-mistake
 error, falta
+mistake
 
-misty
 hay neblina
+misty
 
-misunderstand
 entender mal
+misunderstand
 
-misunderstanding
 equivocación, malentendido
+misunderstanding
 
-mix
 mezclar
+mix
 
-mix up
 confundir con
+mix up
 
-mixer
 batidora
+mixer
 
-mixture
 mezcla
+mixture
 
-mix-up
 confusión
+mix-up
 
-mobile
 el móvil
+mobile
 
-model
 modelo
+model
 
-modern
 moderno
+modern
 
-modest
 modesto
+modest
 
-modify
 modificar
+modify
 
-moisturizer
 la leche hidratante
+moisturizer
 
-molar
 muela
+molar
 
-mold
 moho
+mold
 
-mole
 lunar
+mole
 
-moment
 momento
+moment
 
-Monday
 lunes
+Monday
 
-money
 dinero. moneda
+money
 
 monitor
 monitor
 
-monk
 monje
+monk
 
-monkey
 el mono, mico
+monkey
 
-monster
 monstruo
+monster
 
-month
 el mes
+month
 
-monument
 monumento
+monument
 
-mood
 humor, gana
+mood
 
-moody
 de humor cambiante
+moody
 
-moon
 luna
+moon
 
-moose
 el alce
+moose
 
-mop
 la fregona, la limpiadora
+mop
 
 moral
 moral
 
-more
 más
+more
 
-more... than
 más...que
+more... than
 
-moreover
 además
+moreover
 
+mañana
 morning
-mañana
 
-mortgage
 hipoteca, préstamo
+mortgage
 
-Moslem
 musulmán
+Moslem
 
-mosque
 mezquita
+mosque
 
-mosquito
 el mosquito
+mosquito
 
-most
 el más, lo más, más
+most
 
-most of
 la mayor parte de
+most of
 
-moth
 mariposa. polilla
+moth
 
-mother
 la madre, mama
+mother
 
-mother-in-law
 suegra
+mother-in-law
 
-motive
 motivo
+motive
 
-motorcycle
 motocicleta
+motorcycle
 
-motorway
 autopista
+motorway
 
-motto
 lema
+motto
 
-mountain
 la montaña, monte, sierra
+mountain
 
-mouse
 el ratón
+mouse
 
-moustache
 el bigote
+moustache
 
-mouth
 la boca
+mouth
 
-move
 mover, mudarse. movimiento
+move
 
-movie
 película, cinta, film
+movie
 
-movies
 el cine
+movies
 
-mow
 cortar
+mow
 
-Mr
 señor
+Mr
 
-Mrs
 señora
+Mrs
 
-ms
 señorita
+ms
 
-much
 mucho. muy, demasiado
+much
 
-mucus
 mocos
+mucus
 
-mud
 barro
+mud
 
-muddy
 barrosa
+muddy
 
-muffin
 magdalena
+muffin
 
-mule
 mulo
+mule
 
-multilingual
 multilingüe
+multilingual
 
-multiply
 multiplicar
+multiply
 
-mumble
 farfullar
+mumble
 
-murder
 asesinato
-
 murder
+
 asesinar
+murder
 
-murderer
 asesino, matador
+murderer
 
-muscle
 músculo
+muscle
 
-museum
 museo
+museum
 
-mushrooms
 champiñones
+mushrooms
 
-music
 la música
+music
 
-musician
 el músico
+musician
 
-musk
 almizcle
+musk
 
-Muslim
 musulmán, islámico
+Muslim
 
-mussels
 mejillones
+mussels
 
-must
 deber, tener que
+must
 
-mustache
 bigote
+mustache
 
-mustard
 mostaza
+mustard
 
-my
 mi, mis, oh dios mío
+my
 
-myself
 yo, yo mismo
+myself
 
-mystery
 misterio
+mystery
 
-myth
 mito
+myth
 
-nail
 uña
+nail
 
-nail clippers
 cortaúñas
+nail clippers
 
-nail polish
 el esmalte para las uñas
+nail polish
 
-naked
 desnudo, corito
+naked
 
+nombre
 name
-nombre
 
-nanny
 niñera
+nanny
 
-nap
 cabezada
+nap
 
-napkin
 la servilleta
+napkin
 
-narrow
 estrecho, angosto
+narrow
 
-nasty
 desagradable
+nasty
 
-nation
 nación
+nation
 
-nationality
 nacionalidad
+nationality
 
-native
 nativo
+native
 
-native speaker
 hablante nativo
+native speaker
 
-native tongue
 lengua materna
+native tongue
 
-natural
 natural, al natural
+natural
 
-nature
 natura, naturaleza
+nature
 
-nausea
 náusea
+nausea
 
-navy
 armada marina
+navy
 
-near
 cerca, cerca de
+near
 
-nearly
 casi
+nearly
 
-necessary
 necesario, obligatorio
+necessary
 
-neck
 el cuello
+neck
 
-necklace
 el collar
+necklace
 
-need
 necesidad
-
 need
+
 necesitar
+need
 
-needle
 aguja
+needle
 
-negative
 negativo
+negative
 
-neglected
 abandonado
+neglected
 
-neighbor
 vecino
+neighbor
 
-neighborhood
 barrio, vecindad
+neighborhood
 
-neither, either
 tampoco
+neither, either
 
-neither... nor
 ni...ni
+neither... nor
 
-nephew
 el sobrino
+nephew
 
-nerve
 nervio
+nerve
 
-nervous
 nervioso
+nervous
 
-nest
 nido
+nest
 
-net
 una red
+net
 
-net weight
 peso neto
+net weight
 
+red
 network
-red
 
-never
 nunca, jamás
+never
 
-new
 nuevo, recién
+new
 
-new year
 el año nuevo
+new year
 
-New York
 nueva york
+New York
 
-news
 noticias
+news
 
-newspaper
 el periódico
+newspaper
 
-next
 próximo, después, luego
+next
 
-next door
 junto, vecino , cerca de
+next door
 
-next to
 de al lado
+next to
 
-nice
 simpático
-
 nice
+
 amable, simpático
-
 nice
+
 bonito, lindo
-
 nice
+
 buen tiempo
+nice
 
-nickname
 apodo
+nickname
 
-niece
 la sobrina
+niece
 
-night
 noche
+night
 
-night club
 el club nocturno
+night club
 
-night shift
 turno de noche
+night shift
 
-nightmare
 pesadilla
+nightmare
 
-nine
 nueve
+nine
 
-nineteen
 diecinueve
+nineteen
 
-nineteenth
 décimo noveno
+nineteenth
 
-ninetieth
 nonagésimo
+ninetieth
 
-ninety
 noventa
+ninety
 
-ninth
 noveno
+ninth
 
-nipple
 el pezón, la mamila, la tetilla
+nipple
 
-no
 no, ningún
-
-no longer
-más ya, ya más
-
-nobody, not anybody
-nadie
-
-noise
-ruido
-
-noisy
-ruidoso
-
-none
-ninguno, nada
-
-nonsense
-disparate
-
-nonsmoker
-no fumador
-
-nonsmoking
-no fumador
-
-nonstop
-directo, sin escalas
-
-noodles
-tallarines
-
-noon
-mediodía
-
-nor
-ni
-
-normal
-normal, regular
-
-normally
-normalmente
-
-north
-norte
-
-nose
-la nariz
-
-nosy
-entrometido
-
-not
 no
 
-not even
+más ya, ya más
+no longer
+
+nadie
+nobody, not anybody
+
+ruido
+noise
+
+ruidoso
+noisy
+
+ninguno, nada
+none
+
+disparate
+nonsense
+
+no fumador
+nonsmoker
+
+no fumador
+nonsmoking
+
+directo, sin escalas
+nonstop
+
+tallarines
+noodles
+
+mediodía
+noon
+
+ni
+nor
+
+normal, regular
+normal
+
+normalmente
+normally
+
+norte
+north
+
+la nariz
+nose
+
+entrometido
+nosy
+
+no
+not
+
 ni siquiera
+not even
 
-note
 nota
+note
 
-notebook
 el cuaderno
-
 notebook
+
 computadora portátil
+notebook
 
-nothing
 nada
+nothing
 
-nothing else
 nada más
+nothing else
 
-notice
 anuncio. aviso
-
 notice
+
 notar, fijarse en
+notice
 
-noun
 nombre
+noun
 
-novel
 la novela
+novel
 
-November
 noviembre
+November
 
-now
 ahora, actualmente
+now
 
-nowadays
 hoy en día
+nowadays
 
-nuclear weapon
 arma nuclear
+nuclear weapon
 
-number
 número
+number
 
-nurse
 la enfermera, ama
+nurse
 
-nut
 la nuez, tuerca
+nut
 
-nuts
 chalado
-
 nuts
+
 los frutos secos
+nuts
 
-o.k
 vale! muy bien, de acuerdo
+o.k
 
 oasis
 oasis
 
-obedient
 obediente
+obedient
 
-obese
 obeso
+obese
 
-obey
 hacer caso, obedecer
+obey
 
-object
 objetivo
-
 object
+
 objeto, cosa
+object
 
-oblige
 obligar
+oblige
 
-obscure
 oscuro
+obscure
 
+observar
 observe
-observar
 
-obsessed
 estar obsesionado con/por
+obsessed
 
-obstacle
 obstáculo
+obstacle
 
-obtain
 obtener
+obtain
 
-obvious
 obvio. evidente
+obvious
 
-occupation
 profesión, ocupacion
+occupation
 
-occur
 ocurrir
+occur
 
-ocean
 el océano, el mar
+ocean
 
-October
 octubre
+October
 
-octopus
 pulpo
+octopus
 
-odd
 raro. extraño
+odd
 
-odor
 olor, perfume
+odor
 
-of
 de, en, por
+of
 
-of course
 claro que si, cómo no
+of course
 
-off season
 temporada baja
+off season
 
-offer
 ofrecer
+offer
 
-office
 la oficina
+office
 
-office building
 el edificio de oficinas
+office building
 
-official
 oficial
+official
 
-offspring
 vástagos
+offspring
 
-often
 a menudo
+often
 
-oil
 el aceite
+oil
 
-ointment
 pomada, ungüento
+ointment
 
-old
 viejo, antiguo
+old
 
-old man
 el anciano
+old man
 
-old woman
 la anciana
+old woman
 
-olive
 aceituna, oliva, olivo
+olive
 
-olive oil
 el aceite de oliva
+olive oil
 
-omelet
 tortilla
+omelet
 
-on
 encima de, sobre
+on
 
-on foot
 a pie
+on foot
 
-on purpose
 a propósito
+on purpose
 
-on the contrary
 al contrario
+on the contrary
 
-once
 una vez
-
 once
+
 en seguida
+once
 
-one
 uno , único
+one
 
-onion
 la cebolla
+onion
 
-online
 en línea
+online
 
-only
 solo, no más. solamente
+only
 
-open
 abierto
-
 open
+
 abrir
+open
 
+al aire libre
 open-air
-al aire libre
 
-open-minded
 de actitud abierta
+open-minded
 
-operation
 operación
+operation
 
-operator
 el telefonista
+operator
 
-opinion
 opinión, concepto
+opinion
 
-opportunity
 oportunidad
+opportunity
 
-oppose
 oponerse
+oppose
 
-opposed to
 estar en contra de
+opposed to
 
-opposite
 contrario
-
 opposite
+
 en frente de
+opposite
 
-optimistic
 optimista
+optimistic
 
-option
 opción
+option
 
-optional
 optativo
+optional
 
-or
 o
+or
 
-orange
 anaranjado
+orange
 
-orange juice
 jugo de naranja
+orange juice
 
-orchid
 la orquídea
+orchid
 
-order
 ordenar, pedir. la orden
+order
 
-organization
 organización
+organization
 
-organize
 organizar
+organize
 
-orgasm
 orgasmo
+orgasm
 
-origin
 origen
+origin
 
 original
 original
 
-orphan
 huérfano
+orphan
 
-other
 otro, otros
+other
 
-otherwise
 si no
+otherwise
 
-our
 nuestro
+our
 
-out
 fuera de. fuera!
+out
 
-outdoor
 al aire libre
+outdoor
 
-outdoor market
 el mercado
+outdoor market
 
-output
 salida
+output
 
-outside
 fuera de, afuera de
+outside
 
-oven
 el horno
+oven
 
-over
 encima, encima de
+over
 
-over there
 allí
+over there
 
-overalls
 el overol, el peto
+overalls
 
-overcoat
 el sobretodo
+overcoat
 
-overcome
 superar, vencer
+overcome
 
-overlook
 pasar por alto
+overlook
 
-overseas
 en el extranjero
+overseas
 
-overstate
 exagerar
+overstate
 
-overthrow
 derrocar
+overthrow
 
-owe
 deber
+owe
 
-owl
 el búho, la lechuza
+owl
 
-own
 poseer, tener. propio
+own
 
-owner
 propietario
+owner
 
-ox
 buey
+ox
 
-oxygen
 oxígeno
+oxygen
 
-oyster
 ostra
+oyster
 
-pacifier
 el chupador, el chupete
+pacifier
 
-pack
 hacer las maletas
+pack
 
-package
 el paquete
+package
 
-package tour
 el viaje organizado
+package tour
 
-padlock
 candado
+padlock
 
-pagan
 pagano
+pagan
 
-page
 página
+page
 
-paid
 pagado
+paid
 
-pain
 dolor
+pain
 
-painful
 doloroso
+painful
 
-paint
 pintura
-
 paint
+
 pintar
+paint
 
-painter
 el pintor
+painter
 
-painting
 la pintura
+painting
 
-pair
 el par
+pair
 
-pajamas
 el pijama
+pajamas
 
-palace
 palacio, alcázar
+palace
 
-pale
 pálido
+pale
 
-palm
 palma
+palm
 
+cacerola
 pan
-cacerola
 
-panties
 la pantaleta
-
 panties
+
 calzones
+panties
 
+los pantalones
 pants
-los pantalones
 
-pantyhose
 la pantimedia
+pantyhose
 
-papaya
 la papaya
+papaya
 
-paper
 el papel
+paper
 
+la papelería
 paper store
-la papelería
 
-parachute
 paracaídas
+parachute
 
-paradise
 paraíso
+paradise
 
-parallel
 paralelo
+parallel
 
-paramedic
 el paramédico
+paramedic
 
-paranoid
 paranoico
+paranoid
 
-parasol
 la sombrilla
+parasol
 
-pardon
 perdonar, disculpar. perdón
+pardon
 
-pardon me
 perdóneme
+pardon me
 
-parents
 padres
+parents
 
-park
 aparcar
+park
 
-parking lot
 aparcamiento
+parking lot
 
-parrot
 el loro
+parrot
 
-parsley
 el perejil
+parsley
 
-part
 la parte
+part
 
-participate
 participar, concurrir
+participate
 
-particle
 partícula
+particle
 
-partner
 socio
+partner
 
-party
 fiesta
-
 party
+
 hacer fiesta
+party
 
-pass
 pasar por adelante de
-
 pass
+
 aprobar un examen
+pass
 
-passengers
 pasajeros. viajeros
+passengers
 
-passion
 pasión
+passion
 
-passport
 el pasaporte
+passport
 
-password
 contraseña
+password
 
-past
 pasado
+past
 
-past
 pasado
+past
 
 pasta
 pasta
 
-pastime
 pasatiempo
+pastime
 
-pastry shop
 la pastelería
+pastry shop
 
-path
 camino
+path
 
-patient
 paciente, enfermo
+patient
 
-patrol
 patrulla
+patrol
 
-pay
 salario
-
 pay
+
 pagar, pago
+pay
 
-pay back
 devolver el dinero
+pay back
 
-pay check
 cheque del sueldo
+pay check
 
-payment
 pago, abono
+payment
 
-peace
 paz
+peace
 
-peach
 el melocotón
+peach
 
-peanut
 cacahuete
+peanut
 
-pear
 la pera
+pear
 
-peas
 los guisantes
+peas
 
-pedal
 el pedal
+pedal
 
-peel
 pelar
+peel
 
-pen
 la pluma, el bolígrafo
+pen
 
-pen pal
 amigo por correspondencia
+pen pal
 
-pencil
 el lápiz
+pencil
 
-peninsula
 la península
+peninsula
 
-penis
 pene
+penis
 
-penniless
 sin un centavo
+penniless
 
-penny
 centavo
+penny
 
-people
 la gente, personas
+people
 
-pepper
 la pimienta
+pepper
 
-pepper shaker
 el pimentero
+pepper shaker
 
-percent
 por ciento
+percent
 
-percentage
 porcentaje
+percentage
 
-perfect
 perfecto
+perfect
 
-performance
 representación
+performance
 
-perfume
 perfume, olor
+perfume
 
-perhaps
 quizá
+perhaps
 
+regla
 period
-regla
 
-permanent
 permanente, durable
+permanent
 
-permission
 permiso, autorización
+permission
 
-permit
 licencia
-
 permit
+
 permitir, autorizar,permiso
+permit
 
-person
 persona
-
 person
+
 en persona
+person
 
-persuade to
 persuadir
+persuade to
 
-pessimistic
 pesimista
+pessimistic
 
-pet
 mascota, animal doméstico
+pet
 
-petrol
 gasolina
+petrol
 
-pharmacist
 el farmacéutico
+pharmacist
 
-pharmacy
 la farmacía
+pharmacy
 
-phone
 llamar por  teléfono
+phone
 
-phone book
 guía telefónica
+phone book
 
-phone call
 llamada telefónica
+phone call
 
-phone card
 tarjeta telefónica
+phone card
 
-photo
 foto
+photo
 
-photo album
 álbum de fotos
+photo album
 
-photo shop
 la tienda de fotografía
+photo shop
 
-photocopier
 fotocopiadora
+photocopier
 
-photocopy
 fotocopiar
+photocopy
 
-physics
 la fisica
+physics
 
 piano
 piano
 
-pick
 escoger. elegir
+pick
 
-pick up
 coger
+pick up
 
-pickpocket
 cortabolsas, ratero
+pickpocket
 
-pickup
 camioneta
+pickup
 
-picky
 tiquismiquis
+picky
 
-picture
 el cuadro, el retrato
+picture
 
-piece
 pedazo, trozo, pieza
+piece
 
-pig
 el cerdo, el puerco, el marrano
+pig
 
-pile
 un montón
+pile
 
-pilgrimage
 peregrinación
+pilgrimage
 
-pill
 píldora
+pill
 
-pillar
 pilar, columna
+pillar
 
-pillow
 la almohada
+pillow
 
-pilot
 el piloto
+pilot
 
-pin
 el alfiler, el prendedor
+pin
 
-pincers
 tenazas
+pincers
 
-pineapple
 la piña
+pineapple
 
-pink
 rosado, modelo
+pink
 
-pious
 piadoso
+pious
 
-pistol
 la pistola
+pistol
 
-pitcher
 la jarra
+pitcher
 
 pizza
 pizza
 
+lugar
 place
-lugar
 
-plague
 plaga
+plague
 
-plain
 plano
+plain
 
 plan
 plan
 
-plan
 planear, programar
+plan
 
-planet
 planeta
+planet
 
-plant
 planta
-
 plant
+
 plantar
+plant
 
-plaster
 tirita, yeso, esparadrapo
+plaster
 
-plastic
 plástico
+plastic
 
-plate
 el plato, la vajilla
+plate
 
-plate, dish
 el plato
+plate, dish
 
-platform
 la plataforma, el andén
+platform
 
-play
 jugar
+play
 
 playboy
 playboy
 
-player
 la jugadora
-
 player
+
 el jugador
+player
 
-please
 por favor
+please
 
-pleased
 contento
+pleased
 
-pliers
 los alicates
+pliers
 
-plough
 arar. arado
+plough
 
-plug
 enchufe
-
 plug
+
 el enchufe
+plug
 
-plum
 la ciruela
+plum
 
-plumber
 fontanero
+plumber
 
 plural
 plural
 
-plus
 ventaja
+plus
 
-pneumonia
 pulmonía
+pneumonia
 
-pocket
 bolsillo, bolsa
+pocket
 
-poetry
 poesía
+poetry
 
-point
 punto
+point
 
-point of view
 punto de vista
+point of view
 
-poison
 envenenar, veneno, poción
+poison
 
-poisonous
 venenoso
+poisonous
 
-Poland
 polonia
+Poland
 
+la policía
 police
-la policía
 
+la policía
 police force
-la policía
 
-policeman
 el policía
+policeman
 
-policy
 póliza
+policy
 
-polish
 el betún
+polish
 
-polite
 educado, cortés
+polite
 
-politics
 política
+politics
 
-pollen
 polen
+pollen
 
-polluted
 contaminado
+polluted
 
-pool
 piscina,pileta,alberca
-
 pool
+
 billar americano
+pool
 
-poop
 caca
+poop
 
-poor
 pobre. pobrecito
+poor
 
-poorly
 mal
+poorly
 
 popular
 popular
 
-population
 población
+population
 
-porch
 el balcón
+porch
 
-pork
 el cerdo
+pork
 
-pork butcher
 la chacinería
+pork butcher
 
-porn
 porno
+porn
 
-port
 puerto
+port
 
-porter
 mozo
+porter
 
-Portugal
 portugal
+Portugal
 
-position
 posición, plaza, situación
+position
 
-possess
 poseer
+possess
 
-possible
 posible
+possible
 
-post office
 la oficina de correos, el correo
+post office
 
-postcard
 la tarjeta postal, la postal
+postcard
 
-postman
 el cartero
+postman
 
-pot
 la olla, la cacerola
+pot
 
-potato
 la papa, la patata
+potato
 
-potatoes
 papas. camotes, patatas
+potatoes
 
-pottery
 cerámica
+pottery
 
-pound
 libra
+pound
 
-pour
 verter
-
 pour
+
 echar
+pour
 
-pouring
 lloviendo a cántaros
+pouring
 
-poverty
 pobreza
+poverty
 
-powder
 polvo
+powder
 
-power
 poder, fuerza
+power
 
-practice
 práctica. practicar
+practice
 
-praise
 elogiar
+praise
 
-pray
 rezar
+pray
 
-prayer
 oración, rezo
+prayer
 
-prefer
 preferir, gustar más
+prefer
 
-pregnant
 embarazada, encinta
+pregnant
 
-prepare
 preparar
+prepare
 
-prescription
 receta médica
+prescription
 
-present
 presente. regalo
+present
 
-president
 presidente
+president
 
-press
 la prensa
+press
 
-pressure
 presión
+pressure
 
-pretend
 hacer como. fingir
+pretend
 
-pretty
 lindo, bonito, guapo
+pretty
 
-prevent
 impedir. evitar
+prevent
 
-previous
 anterior. previo
+previous
 
-prey
 presa
+prey
 
-price
 precio, valor
-
 price
+
 el precio
+price
 
-priceless
 que no tiene precio
+priceless
 
-priest
 sacerdote. cura
+priest
 
-prince
 príncipe
+prince
 
-princess
 princesa
+princess
 
-print
 imprimir
+print
 
-printer
 impresor
+printer
 
-priority
 prioridad
+priority
 
-prison
 prisión, cárcel
+prison
 
-prisoner
 prisionero
+prisoner
 
-private
 privado
+private
 
-privilege
 privilegio
+privilege
 
-prize
 premio
+prize
 
-problem
 el problema, dificultad
+problem
 
-produce
 producir. fabricar
+produce
 
-product
 producto
+product
 
-profession
 profesión
+profession
 
-professor
 el profesor
+professor
 
-profile
 perfil
+profile
 
-program
 programa
-
 program
+
 programar
+program
 
-progress
 progreso
-
 progress
+
 hacer progresos
+progress
 
-prohibited
 prohibido
+prohibited
 
-project
 proyecto
+project
 
-promise
 promesa. prometer
+promise
 
-promotion
 ascenso
+promotion
 
-pronounce
 pronunciar
+pronounce
 
-proof
 prueba
+proof
 
-property
 propiedad
+property
 
-prophet
 profeta
+prophet
 
+sugerir
 propose
-sugerir
 
-prosecutor
 el acusador
+prosecutor
 
-prosperity
 prosperidad
+prosperity
 
+prostituta
 prostitute
-prostituta
 
-prostitution
 prostitución
+prostitution
 
-protect
 proteger, abrigar
+protect
 
-proud
 orgulloso
+proud
 
-prove
 demostrar
+prove
 
-proverb
 proverbio
+proverb
 
-provide
 proveer
+provide
 
-public
 publico
+public
 
-public holiday
 el día festivo
+public holiday
 
-publish
 publicar
+publish
 
-pull
 jalar, tirar. jale!
+pull
 
-pulse
 pulso
+pulse
 
-pump
 la bomba
+pump
 
-pumpkin
 calabaza
+pumpkin
 
-punch
 dar un puñetazo
+punch
 
-punctual
 puntual
+punctual
 
-puncture
 perforar
+puncture
 
-punish
 castigar, disciplinar
+punish
 
-puppy
 perrito
+puppy
 
-pure
 puro, muy limpio
+pure
 
-purple
 morado
+purple
 
-purpose
 propósito, objeto
+purpose
 
-purse
 el monedero, la bolsa
+purse
 
-push
 empujar
+push
 
-put
 poner, posar, aplicar
+put
 
-put on
 ponerse
-
 put on
-ponerse
 
-quality
+ponerse
+put on
+
 calidad
+quality
 
-quantity
 cantidad
+quantity
 
-quarrel
 riña, disputa
-
 quarrel
+
 pelear, discutir
+quarrel
 
-quarter
 cuarto
+quarter
 
-queen
 reina
+queen
 
-question
 pregunta
+question
 
-queue
 cola
+queue
 
-quick
 rápido, listo, veloz
+quick
 
-quickly
 rápidamente, a prisa
+quickly
 
-quiet
 tranquilo, silencioso
+quiet
 
-quit
 dejar
+quit
 
-quite
 bastante
+quite
 
-quiz
 concurso
+quiz
 
-rabbit
 el conejo
+rabbit
 
-Race
 raza
+Race
 
-race
 carrera
+race
 
-racism
 racismo
+racism
 
-racist
 racista
+racist
 
-rack
 el estante
+rack
 
-racket
 una raqueta
+racket
 
 radar
 radar
 
-radiation
 radiación
+radiation
 
-radio
 la radio
-
-radish
-el rábano
-
-railroad
-ferrocarril
-
-railway
-ferrocarril
-
-rain
-la lluvia
-
-rain
-llover
-
-raincoat
-el impermeable
-
-raining
-lloviendo
-
-rainy
-lluvioso
-
-raise
-aumento de sueldo
-
-raisin
-pasa
-
-random
-al azar
-
-rank
-rango
-
-rape
-violar
-
-rapidly
-rápidamente
-
-rare
-raro, excepcional
-
-rare
-poco hecho
-
-rarely
-raras veces
-
-rasp
-la escofina
-
-raspberry
-la frambuesa
-
-rat
-la rata
-
-rate
-tarifa, precio
-
-raw
-crudo
-
-razor
-maquinilla de afeitar
-
-reach
-alcanzar
-
-reaction
-reacción
-
-read
-leer
-
-ready
-listo. alistarse!prepararse!
-
-ready
-prepararse
-
-real
-real. realmente
-
-real estate
-bienes inmuebles
-
-reality
-realidad
-
-realize
-darse cuenta de
-
-really
-en realidad. de veras
-
-rear bumper
-la defensa trasera
-
-rearview mirror
-el espejo retrovisor
-
-reason
-razón, causa, motivo
-
-receipt
-recibo
-
-receive
-recibir
-
-recently
-recientemente
-
-reception
-la recepción
-
-reception desk
-recepción
-
-receptionist
-recepcionista
-
-recipe
-receta
-
-recliner
-el sillón reclinable
-
-recognize
-reconocer
-
-recommend
-recomendar
-
-record
-el récord
-
-record
-disco
-
-record
-grabar
-
-recover
-recuperarse
-
-red
-rojo
-
-reduce
-rebajar
-
-reflector
-el reflector
-
-refrigerator
-la nevera, el frigorífico, el refrigerador
-
-refugee
-refugiado
-
-refund
-reembolso
-
-refund
-rembolsar
-
-refuse
-negarse a hacer algo
-
-regardless
-a pesar de todo
-
-region
-región
-
-register
-registrarse, matricularse
-
-registered
-certificado
-
-registration
-registro. matriculación
-
-reimburse
-rembolsar
-
-relationship
-relación
-
-relax
-relajarse
-
-release
-liberar
-
-reliable
-seguro
-
-relief
-alivio
-
-religion
-religión
-
-religious
-religioso
-
-remain
-quedarse, restar
-
-remember
-recordar, acordarse de
-
-remind
-recordar algo a alguien
-
-remote control
-mando a distancia
-
-remove
-eliminar
-
-rent
-alquilar, rentar. renta
-
-repair
-reparar
-
-repeat
-repetir
-
-reply
-respuesta
-
-reply
-responder
-
-reporter
-reportero
-
-reputation
-reputación
-
-reputed to be
-tener fama de ser
-
-request
-por encargo
-
-require
-requerir. necesitar
-
-rescue
-rescatar
-
-reservation
-reserva
-
-reserve
-reservar
-
-reserved
-reservado
-
-resident
-residente, habitante
-
-resign
-dimitir de
-
-resignation
-dimisión
-
-resist
-resistir
-
-respect
-respeto. respetar
-
-responsible
-responsable de
-
-rest
-resto
-
-rest
-descanso
-
-rest
-descansar
-
-restaurant
-el restaurante
-
-restroom
-servicios
-
-restroom
-baños
-
-result
-resultado
-
-resume
-currículum
-
-retire
-jubilarse
-
-retired
-jubilado, retirado
-
-return
-regresar, devolverse.regreso
-
-return address
-el remitente
-
-return ticket
-el billete de ida y vuelta
-
-revenge
-venganza
-
-revolution
-revolución
-
-revolver
-revólver
-
-reward
-recompensa. recompensar
-
-rhinoceros
-el rinoceronte
-
-rhubarb
-el ruibarbo
-
-rhythm
-ritmo
-
-rice
-arroz
-
-rich
-rico
-
-ride
-montar a
-
-ridiculous
-ridículo
-
-rifle
-rifle
-
-right
-correcto. bien
-
-right
-derecho
-
-right
-tener razón
-
-ring
-anillo
-
-ring
-timbrar, sonar
-
-ripe
-maduro
-
-risk
-riesgo. peligro
-
-rival
-rival
-
-river
-el río
-
-road
-carretera, calle, camino
-
-roasted
-asado
-
-rob
-robar a
-
-robber
-ladrón
-
-robe
-la bata
-
-robin
-el petirrojo
-
-robot
-robot
-
-rock
-roca
-
-rocket
-cohete
-
-roll
-el panecillo
-
-roll over
-darse la vuelta
-
-roller blade
-patín en línea
-
-romantic
-romántico
-
-roof
-el techo, el tejado
-
-room
-el cuarto, la sala
-
-room service
-servicio de habitaciones
-
-root
-raíz
-
-rope
-cuerda, cable
-
-rose
-la rosa
-
-rotten
-podrido
-
-rough
-áspero
-
-rough
-picado
-
-round
-redondo
-
-round trip ticket
-boleto de ida y vuelta
-
-round-the-world
-alrededor del mundo
-
-routine
-rutina
-
-royal
-real
-
-rub
-frotar
-
-rubber band
-cinta de goma. gomita
-
-rubbish
-basura
-
-rude
-maleducado
-
-rug
-el tapete, la alfombra
-
-rule
-regir, gobernar
-
-rule
-regla
-
-ruler
-regla
-
-rumor
-rumor
-
-run away
-escaparse, correrse
-
-rush
-hacer algo con prisas
-
-rush hour
-hora punta
-
-Russia
-rusia
-
-rust
-Óxido
-
-rusty
-oxidado
-
-sacred
-sagrado
-
-sacrifice
-sacrificio
-
-sad
-triste, afligido
-
-sadness
-la tristeza
-
-safe
-seguro
-
-safe
-caja fuerte
-
-safety
-seguridad
-
-sail
-navegar
-
-sailor
-marinero, marino
-
-saint
-santo
-
-salad
-la ensalada
-
-salary
-sueldo, pago, salario
-
-sale
-venta
-
-sale
-la rebaja, la liquidacion
-
-sale
-en oferta, en rebaja
-
-salesman
-el vendedor
-
-salesperson
-vendedor
-
-saliva
-saliva
-
-salmon
-el salmón
-
-salt
-la sal
-
-salt shaker
-el salero
-
-salty
-salado
-
-same
-mismo, el mismo
-
-sample
-muestra
-
-sand
-la arena
-
-sandals
-las sandalias
-
-sandwich
-el sándwich
-
-Santa Claus
-papá noel
-
-sarcastic
-sarcástico
-
-sardines
-sardinas
-
-satellite
-satélite
-
-satisfy
-satisfacer
-
-sauce
-salsa, compota
-
-saucepan
-cacerola
-
-sausage
-la salchicha, el chorizo
-
-save
-ahorrar. salvar. guardar
-
-savings
-ahorros
-
-say
-decir
-
-scale
-la escala, la balanza
-
-scanner
-escáner
-
-scar
-cicatriz
-
-scarf
-la bufanda
-
-schedule
-programa, horario
-
-scheme
-plan, proyecto
-
-scholar
-erudito
-
-scholarship
-beca
-
-school
-escuela
-
-science
-la ciencia
-
-scissors
-unas tijeras
-
-score
-puntuación
-
-score
-marcar
-
-scorpion
-el alacrán
-
-scouring
-el estropajo
-
-scrambled
-huevos revueltos
-
-scratch
-arañar
-
-scream
-gritar. grito
-
-screen
-pantalla, monitor
-
-screw
-tornillo
-
-screw up
-meter la pata
-
-screwdriver
-el destornillador
-
-scrub
-fregar
-
-sea
-el mar
-
-seafood
-los mariscos
-
-seagull
-la gaviota
-
-seal
-foca
-
-search engine
-motor de búsqueda
-
-search for
-buscar
-
-season
-estación
-
-seat
-el asiento, la silla, el sillín
-
-seaweed
-el alga
-
-second
-segundo
-
-second floor
-el primer piso
-
-secret
-secreto
-
-secret agent
-agente secreto
-
-secretary
-el/la b2967secretario/a
-
-section
-zona, parte
-
-security
-seguridad, guardia
-
-security guard
-el guardia
-
-see
-ver, mirar
-
-seed
-semilla
-
-seem
-parecer, mirarse
-
-seizure
-ataque
-
-select
-seleccionar
-
-self-confident
-seguro de sí mismo
-
-selfish
-egoísta
-
-self-taught
-autodidacta
-
-sell
-vender
-
-seller
-vendedor
-
-send
-enviar, mandar
-
-sensitive
-sensible
-
-sent to
-destinatario
-
-sentence
-oración
-
-separate
-separado
-
-separate
-separar
-
-separated
-separado
-
-September
-septiembre
-
-serious
-grave. serio
-
-servant
-criado, mozo
-
-serve
-servir
-
-service
-servicio
-
-service station
-la estación de servicio
-
-seven
-siete
-
-seventeen
-diecisiete
-
-seventeenth
-décimo séptimo
-
-seventh
-séptimo
-
-seventieth
-septuagésimo
-
-seventy
-setenta
-
-several
-varios
-
-several, some
-varios
-
-sew
-coser
-
-sewage
-aguas residuales
-
-sex
-sexo
-
-sexy
-sexy
-
-shade
-sombra
-
-shake
-agitar
-
-shallow
-poco profundo
-
-shame
-la vergüenza
-
-shameless
-desvergonzado, sin vergüenza
-
-shampoo
-el champú
-
-shape
-forma
-
-share
-compartir, dividirse. parte
-
-shark
-el tiburón
-
-sharp
-afilado, agudo
-
-shave
-afeitar
-
-shaving cream
-la crema de afeitar
-
-she
-ella
-
-sheep
-la oveja, el borrego
-
-sheet
-sábana
-
-shell
-concha, cáscara
-
-shellfish
-los mariscos
-
-shelter
-refugio
-
-shelves
-estantería
-
-shepherd
-pastor
-
-shin
-la espinilla
-
-ship
-barco, buque
-
-shipping
-envío
-
-shirt
-la camisa
-
-shit
-mierda
-
-shiver
-tiritar
-
-shoes
-los zapatos
-
-shoot
-disparar. matar de un tiro
-
-shop
-la tienda, almacén
-
-shop
-hacer compras, ir de ~
-
-shopping
-ir de compras
-
-shopping
-las compras
-
-shopping basket
-la canasta de compras
-
-shopping mall
-el centro comercial
-
-short
-pequeño, --de tamaño, corto
-
-shorts
-los pantalones cortos, los calzoncillos
-
-should
-deber, debería…
-
-shoulder
-el hombro
-
-shout
-el grito
-
-shout
-gritar
-
-shovel
-pala
-
-show
-mostrar, espectáculo
-
-shower
-la ducha, el baño de ducha
-
-shower cap
-el gorro de baño
-
-shrimps
-los camarones
-
-shrink
-encoger
-
-shut
-cerrado
-
-shut
-cerrar
-
-shuttle bus
-autobús de conexión
-
-shy
-tímido, vergonzoso
-
-sick
-enfermo
-
-side
-lado
-
-sidewalk
-acera
-
-sigh
-suspirar
-
-sightseeing
-la excursión turística
-
-sign
-signo, señal
-
-sign
-firmar
-
-signal
-señal
-
-signature
-firma
-
-silence
-silencio. silencio!
-
-silk
-seda
-
-silly
-tonto
-
-silver
-plata
-
-similar
-similar, semejante, parecido
-
-simple
-simple, fácil. sencillo
-
-simply
-sencillamente
-
-sin
-pecado
-
-since
-desde. desde que, ya que
-
-sincere
-sincero
-
-sing
-cantar
-
-singer
-cantante
-
-single
-soltero, sujeto
-
-single/ double room
-la habitación individual/ doble
-
-sink
-el fregadero, el lavamanos
-
-sink
-hundirse
-
-sinus
-seno
-
-sir
-señor, caballero
-
-sister
-la hermana
-
-sister-in-law
-cuñada
-
-sit down
-sentarse, tomar asiento
-
-situation
-situación
-
-six
-seis
-
-sixteen
-dieciséis
-
-sixteenth
-décimo sexto
-
-sixth
-sexto
-
-sixtieth
-sexagésimo
-
-sixty
-sesenta
-
-size
-tamaño, talla
-
-skate
-patinar
-
-skating
-el patinaje
-
-skeleton
-esqueleto
-
-ski
-esquiar
-
-ski poles
-unos bastones
-
-skill
-habilidad, experiencia
-
-skin
-piel, cutis
-
-skinny
-escuálido
-
-skirt
-la falda
-
-skull
-cráneo
-
-sky
-cielo
-
-slang
-argot, jerga
-
-slap
-bofetada, guantada, palmada
-
-slap
-dar una guantada a alguien
-
-slash
-barra
-
-slave
-esclavo
-
-sleep
-sueño
-
-sleep
-dormir
-
-sleeping bag
-saco de dormir
-
-sleepy
-tener sueño
-
-sleeve
-manga
-
-slice
-rebanada
-
-slim
-delgado
-
-sling
-el soporte
-
-slip
-el refajo
-
-slip
-resbalar
-
-slippers
-las zapatillas
-
-slippery
-escurridizo
-
-slow
-despacio, lento, atrasado
-
-slowly
-lentamente, despacio
-
-small
-pequeño, bajo, chico
-
-smart
-inteligente
-
-smart ass
-sabelotodo
-
-smell
-olor, olfato
-
-smell
-oler
-
-smile
-la sonrisa
-
-smile
-sonreír
-
-smoke
-humo
-
-smoke
-fumar
-
-smuggle
-pasar de contrabando
-
-smuggling
-contrabando
-
-snack
-el bocadillo, tentempié
-
-snack bar
-cafetería
-
-snail
-caracol
-
-snake
-la serpiente, la víbora
-
-sneakers
-unos deportivos
-
-sneeze
-estornudar
-
-snore
-roncar
-
-snow
-nieve
-
-snow
-nevar
-
-snowing
-nevando
-
-snowy
-nevado
-
-so
-tan. así, entonces
-
-so as to
-para que, de manera que
-
-so far
-hasta ahora
-
-so much
-tanto
-
-so!
-!es así, pues !a tal punto!
-
-soak
-poner en remojo
-
-soap
-el jabón
-
-soap dish
-la jabonera
-
-sober
-sobrio
-
-soccer
-el fútbol
-
-social
-social
-
-society
-sociedad
-
-sock
-el calcetín
-
-socket
-enchufe
-
-socks
-los calcetines
-
-soda
-soda, gaseosa
-
-sofa
-el sofá
-
-soft
-blando, suave
-
-soft drink
-el refresco
-
-soil
-tierra
-
-soldier
-el soldado
-
-solve
-resolver
-
-some
-algunos, un poco, -- de
-
-some, a few
-algún/alguna
-
-someone
-alguien
-
-something
-algo. un poco
-
-sometime
-alguna vez
-
-sometimes
-a veces, a días
-
-somewhere
-a alguna parte. en --
-
-son
-el hijo
-
-song
-canción. canto
-
-son-in-law
-yerno
-
-soon
-pronto, en seguida
-
-sore
-dolorido
-
-sore throat
-dolor de garganta
-
-sorry
-apenado. perdón! lo siento
-
-sort
-clase. clase
-
-so-so
-así así
-
-soul
-alma
-
-sound
-sonido
-
-soup
-la sopa
-
-sour
-agrio, ácido
-
-south
-sur
-
-South Africa
-sudáfrica
-
-souvenir
-recuerdo
-
-sow
-sembrar
-
-soy bean
-semilla de soja
-
-space
-espacio
-
-space station
-la estación espacial
-
-spaghetti
-espaguetis
-
-Spain
-españa
-
-Spanish
-español. hispánico
-
-spare tire
-llanta picada
-
-sparrow
-el gorrión
-
-speak
-hablar
-
-speakers
-altavoz, altoparlente
-
-special
-especial
-
-species
-especie
-
-specific
-específico
-
-specify
-especificar
-
-specimen
-muestra
-
-speech
-discurso
-
-speed
-la velocidad
-
-speed
-acelerar
-
-spell out
-deletrear
-
-spelling
-ortografía
-
-spend
-gastar. pasar
-
-sperm
-esperma
-
-spices
-especias
-
-spicy
-picante
-
-spider
-la araña
-
-spike
-espiga
-
-spill
-derramar
-
-spin
-dar vueltas, girar
-
-spinach
-la espinaca
-
-spine
-columna vertebral
-
-spirit
-espíritu
-
-spirits
-la moral
-
-spit
-escupir
-
-split
-repartir
-
-split personality
-doble personalidad
-
-spoilt
-consentido, mimado
-
-spoke
-los rayos, el radio
-
-sponge
-la esponja
-
-spontaneous
-espontáneo
-
-spoon
-la cuchara
-
-sport
-el deporte
-
-spot
-lugar
-
-spot
-mancha
-
-spring
-primavera. fuente de agua
-
-sprocket
-la corona
-
-spy
-espía. espiar
-
-square
-cuadrado, plaza
-
-squash
-la calabaza
-
-squeeze
-apretar
-
-squid
-el calamar
-
-squirrel
-la ardilla
-
-stable
-estable
-
-stadium
-estadio
-
-staff
-personal
-
-stage
-etapa
-
-stain
-mancha
-
-stainless steel
-acero inoxidable
-
-staircase
-la escalera
-
-stairs
-escaleras
-
-stairway
-la escalera
-
-stamp
-la estampilla, el sello
-
-stamps
-las estampillas
-
-stand-up
-ponerse de pie
-
-stapler
-la grapadora
-
-staples
-las grapas
-
-star
-la estrella
-
-stare
-mirar fijamente
-
-start
-principio
-
-start
-comenzar
-
-state
-estado
-
-statement
-extracto
-
-station
-estación
-
-stationers
-la papelería
-
-statistics
-estadística
-
-statue
-estatua
-
-status
-categoría
-
-stay
-quedarse. permanencia
-
-stay up
-quedarse levantado
-
-steak
-el filete, el bisté
-
-steal
-robar
-
-steam
-vapor
-
-steamer
-buque de vapor
-
-steep
-empinado
-
-steering wheel
-el volante
-
-stem
-el tallo
-
-step
-paso
-
-stethoscope
-el estetoscopio
-
-steward
-el auxiliar de vuelo
-
-stewardess
-azafata
-
-stick
-palo
-
-stick
-pegar
-
-stick shift
-la palanca de velocidades
-
-sticker
-pegatina
-
-still
-aún, todavía, --todo
-
-sting
-picadura
-
-sting
-picar
-
-stingray
-la raya
-
-stink
-apestar
-
-stir
-dar vueltas a la sopa
-
-stitches
-puntos
-
-stocking
-media
-
-stockings
-las medias
-
-stomach
-el estómago, el vientre
-
-stomachache
-dolor de estómago
-
-stone
-piedra
-
-stop
-bloquear, parar. parada
-
-store
-tienda, almacén
-
-storm
-tormenta, temporal
-
-story
-historia
-
-story
-piso
-
-stove
-la cocina, la estufa
-
-straight on
-todo recto, derecho
-
-straighten up
-arreglar
-
-stranger
-extraño, extranjero
-
-strategy
-estrategia
-
-strawberry
-la fresa
-
-street
-calle, callejón
-
-street sign
-el letrero
-
-streetcar
-el tranvía
-
-strength
-fuerza
-
-stress
-estrés
-
-stressful
-estresante
-
-stretch
-estirar
-
-strict
-estricto, severo
-
-strike
-huelga
-
-string
-cuerda
-
-string tie
-el lazo
-
-strip
-hacer striptease
-
-stroke
-derrame
-
-stroller
-el carrito
-
-strong
-fuerte, duro
-
-struggle
-luchar. lucha
-
-stubborn
-testarudo. terco
-
-student
-estudiante, alumno
-
-studies
-estudios
-
-study
-estudiar
-
-stuff
-cosas
-
-stupid
-estúpido, tonto
-
-style
-estilo. moda
-
-subject
-tema, asunto
-
-submarine
-submarino
-
-submit
-presentar
-
-subscribe
-suscribirse
-
-suburb
-zona residencial de la periferia
-
-subway
-el tren subterráneo, el metro
-
-subway station
-la estación de metro
-
-succeed
-tener éxito, lograr éxito
-
-success
-Éxito
-
-such
-tal, tales
-
-suck
-chupar
-
-suddenly
-de repente, de pronto
-
-suffocate
-asfixiar
-
-sugar
-el azúcar
-
-sugar bowl
-el azucarero
-
-suggest
-sugerir
-
-suicide
-suicidio
-
-suit
-el traje
-
-suitcase
-la maleta, la valija
-
-summer
-verano
-
-summit
-cumbre
-
-sun
-sol
-
-sun cream
-la crema bronceadora
-
-sunday
-domingo
-
-sunglasses
-anteojos de sol
-
-sunglasses
-las gafas de sol
-
-sunny
-soleado
-
-sunny day
-día soleado
-
-sunrise
-el amanecer
-
-sunset
-el atardecer, puesta de sol
-
-suntan
-bronceado
-
-super
-genial, estupendo
-
-superficial
-superficial
-
-supermarket
-el supermercado
-
-supervisor
-supervisor
-
-supper
-la cena, la comida
-
-suppose
-suponer
-
-sure
-seguro
-
-sure
-por cierto
-
-surf
-navegar
-
-surface
-superficie
-
-surgeon
-cirujano
-
-surgery
-cirugía
-
-surname
-apellido
-
-surprise
-sorpresa
-
-surrender
-rendirse
-
-surround
-circundar, rodear
-
-surrounded by
-rodeado de
-
-surroundings
-alrededores
-
-survive
-sobrevivir
-
-survivor
-superviviente
-
-suspect
-sospechoso
-
-suspenders
-tirantes. suspensores
-
-suspicion
-la sospecha
-
-swallow
-tragarse
-
-swan
-el cisne
-
-swear
-jurar
-
-sweat
-sudor
-
-sweat
-sudar
-
-sweater
-el suéter
-
-sweep
-barrer
-
-sweet
-dulce
-
-sweet potato
-la batata
-
-sweet shop
-la confitería
-
-sweets
-dulces, caramelos
-
-swell
-hincharse
-
-swim
-nadar, bañarse
-
-swimming
-la natación
-
-swimming pool
-la piscina
-
-swimsuit
-el traje de baño
-
-swing
-balancearse
-
-switch
-el interruptor
-
-switch to
-cambiar a
-
-swollen
-hinchado
-
-sword
-espada
-
-swordfish
-el pez espada
-
-symbol
-símbolo
-
-symptom
-síntoma
-
-syringe
-jeringuilla
-
-system
-sistema, método
-
-table
-la mesa, tabla
-
-tablecloth
-el mantel
-
-tablet
-pastilla
-
-tadpole
-el renacuajo
-
-tag
-etiqueta
-
-tail
-la cola
-
-tail lights
-las luces traseras
-
-tailor's
-la sastrería, sastre
-
-take
-tomar, coger
-
-take a trip
-hacer un viaje
-
-take off
-quitarse
-
-take off
-quitarse
-
-talk
-la conversación
-
-talk
-hablar
-
-tall
-alto
-
-tank
-el tanque
-
-tap
-grifo, llave
-
-tape
-cinta
-
-tape
-la cinta
-
-tape recorder
-magnetófono
-
-taste
-sabor
-
-taste
-saborear, probar
-
-tasty
-sabroso
-
-tattoo
-tatuaje
-
-tax
-impuestos
-
-taxi
-el taxi
-
-taxi driver
-taxista
-
-tea
-té
-
-teach
-enseñar
-
-teacher
-el maestro, el profesor
-
-team
-el equipo
-
-teapot
-la tetera
-
-tear
-la lágrima
-
-tear up
-romper
-
-tears
-lágrimas
-
-tease
-tomar el pelo a
-
-technician
-técnico
-
-teddy bear
-el oso de peluche
-
-teenager
-adolescente
-
-teeth
-dientes
-
-telephone booth
-cabina telefónica
-
-television
-televisión
-
-tell
-decir
-
-teller
-cajero
-
-temperature
-la temperatura
-
-temple
-templo
-
-temporary
-temporal, provisional
-
-ten
-diez
-
-tennis
-el tenis
-
-tent
-la carpa, la tienda de campaña
-
-tenth
-décimo
-
-terrace
-terraza
-
-terrible
-terrible
-
-terrific
-estupendo
-
-terrorist
-terrorista
-
-test
-prueba. examen
-
-text
-texto
-
-than
-que. más que, menos que
-
-thank
-agradecer, dar gracias
-
-thanks to
-gracias a
-
-that
-Ése, eso, ésa. el
-
-the
-el, la , los , las
-
-the best
-el mejor
-
-the greatest
-el mayor
-
-the least
-el menor
-
-the worst
-el peor
-
-theater
-el teatro
-
-their
-su, sus, de ellas
-
-them
-les, las, los
-
-then
-entonces, después , luego
-
-there
-allí, allá, ahí
-
-there is/ are
-hay
-
-there was/ were
-había
-
-thermometer
-el termómetro
-
-these
-Éstos, éstas
-
-they
-ellos, ellas
-
-thick
-grueso, espeso, denso
-
-thief
-el ladrón
-
-thigh
-el muslo
-
-thin
-delgado
-
-thing
-cosa
-
-think
-pensar
-
-third
-tercero
-
-thirsty
-tiene sed
-
-thirteen
-trece
-
-thirteenth
-décimo tercero
-
-thirtieth
-trigésimo
-
-thirty
-treinta
-
-this
-Éste, ésta
-
-those
-aquellos, esas. esos
-
-though
-sin embargo
-
-thoughts
-pensamientos
-
-thousand
-mil
-
-thousandth
-milésimo
-
-thread
-hilo
-
-threaten
-amenazar
-
-three
-tres
-
-throat
-la garganta
-
-through
-a través de
-
-throw
-tirar, arrojar
-
-throw away
-tirar
-
-throw up
-vomitar
-
-thumb
-el pulgar
-
-thunder
-trueno
-
-thunderstorm
-tormenta
-
-Thursday
-jueves
-
-ticket
-el billete, el boleto
-
-ticket
-el pasaje
-
-ticklish
-tener cosquillas
-
-tide
-la marea
-
-tide
-marea alta
-
-tide
-marea baja
-
-tie
-la corbata
-
-tiger
-el tigre
-
-tight
-ajustado, estrecho
-
-tile
-baldosa
-
-till, until
-hasta
-
-time
-tiempo, hora
-
-timetable
-horario
-
-tin opener
-abrelatas
-
-tiny
-diminuto
-
-tip
-consejo, propina
-
-tire
-la llanta
-
-tired
-cansado, aburrido
-
-tissues
-pañuelos de papel
-
-title
-título
-
-to
-a, hacia, para. hasta
-
-to be happy
-alegrarse
-
-to be hungry
-tener hambre
-
-to be surprised
-sorprenderse
-
-to be thirsty
-tener sed
-
-to become angry
-enfadarse
-
-to become bored
-aburrirse
-
-to become used to
-acostumbrarse
-
-to get angry
-enojarse
-
-to get bored
-aburrirse
-
-to get dressed
-vestirse
-
-to get ready
-arreglarse
-
-to get scared
-asustarse
-
-to get sick
-enfermarse
-
-to get tired
-cansarse
-
-to go on vacation
-ir de vacaciones
-
-to go to + inf
-ir a + inf
-
-to go to bed
-acostarse
-
-to have a good time
-divertirse
-
-to have to
-tener que + inf
-
-toasted
-tostado
-
-toaster
-tostador
-
-tobacco shop
-el estanco
-
-tobacconist's
-estanco
-
-today
-día de hoy
-
-toe
-el dedo del pie
-
-toenail
-uña del pie
-
-together
-juntos
-
-toilet
-el retrete, el excusado, los servicios
-
-tolerate
-tolerar
-
-toll
-el peaje
-
-tomato
-el tomate
-
-tomb
-tumba
-
-tomorrow
-mañana
-
-tongue
-la lengua
-
-tonight
-esta noche
-
-too
-también. demasiado. muy
-
-too bad!
-¡qué malo!
-
-tool
-herramienta
-
-toolbox
-la caja de herramientas
-
-tooth
-el diente
-
-toothbrush
-el cepillo de dientes
-
-toothpaste
-la pasta de dientes
-
-top floor
-Último piso
-
-topic
-tema
-
-tornado
-tornado
-
-tortoise
-tortuga
-
-total
-total, suma total
-
-touch
-tocar
-
-tough
-duro
-
-tour
-vuelta, visita
-
-tourist
-turista
-
-tournament
-torneo
-
-tow
-remolcar
-
-towards, about
-hacia
-
-towel
-la toalla
-
-tower
-torre
-
-town
-pueblo, ciudad
-
-town hall
-ayuntamiento
-
-toxic
-tóxico
-
-toy
-el juguete
-
-tradition
-tradición
-
-traditional
-tradicional
-
-traffic
-tráfico
-
-traffic cop
-el policía de tránsito
-
-traffic light
-el semáforo
-
-train
-el tren
-
-train
-tren
-
-train
-entrenar
-
-train station
-la estación de tren
-
-trainee
-aprendiz
-
-trainers
-zapatillas de deporte
-
-training
-el entrenamiento
-
-transfer
-transferir
-
-transfer
-trasbordo
-
-transit
-en tránsito
-
-translate
-traducir
-
-translation
-traducción
-
-translator
-traductor
-
-transparent
-transparente
-
-transportation
-transporte
-
-trap
-trampa
-
-trash
-basura
-
-trashcan
-el basurero
-
-travel
-viajar
-
-travel agency
-la agencia de viajes
-
-travel agent
-agente de viajes
-
-traveler's check
-cheque de viaje
-
-tray
-la bandeja
-
-treasure
-tesoro
-
-treat
-tratar
-
-treatment
-tratamiento
-
-tree
-el árbol
-
-trial
-prueba, ensayo. juicio
-
-triangle
-triángulo
-
-tribe
-tribu
-
-trick
-truco
-
-tricycle
-el triciclo
-
-trip
-viaje, jornada
-
-trolley
-carrito
-
-troops
-tropas
-
-trouble
-el problema
-
-troubles
-problemas
-
-trousers
-los pantalones
-
-trout
-la trucha
-
-truck
-camión
-
-true
-cierto, verdadero
-
-trunk
-el bañador
-
-trunk
-la trompa
-
-trust
-confiar en
-
-trusted
-de confianza
-
-truth
-la verdad
-
-try
-probar, ensayar, tartar
-
-try on
-probarse
-
-t-shirt
-la camiseta
-
-Tuesday
-martes
-
-tulip
-el tulipán
-
-tuna
-el atún
-
-tunnel
-el túnel
-
-turkey
-el pavo
-
-turkey
-Turquía
-
-turn
-vuelta
-
-turn
-girar
-
-turn down
-bajar
-
-turn off
-apagar
-
-turn on
-encender
-
-turn signals
-las luces direccionales,los intermitentes
-
-turn up
-poner el volumen más fuerte
-
-turnip
-el nabo
-
-turnstile
-el torniquete de entrada
-
-turtle
-la tortuga
-
-turtleneck
-cuello alto
-
-tusk
-el colmillo
-
-tweezers
-pinzas
-
-twelfth
-duodécimo
-
-twelve
-docena. doce
-
-twentieth
-vigésimo
-
-twenty
-veinte
-
-twenty-first
-vigésimo primero
-
-twenty-second
-vigésimo segundo
-
-twice
-dos veces
-
-twin
-gemelo
-
-twist
-retorcer
-
-two
-dos
-
-type
-tipo
-
-type
-escribir a máquina
-
-typical
-típico
-
-typist
-la mecanógrafo
-
-tyrant
-tirano
-
-UK
-reino unido
-
-ugly
-feo
-
-ulcer
-Úlcera
-
-umbrella
-el paraguas
-
-uncle
-el tío
-
-under
-bajo, debajo de
-
-under shorts
-el calzoncillo
-
-underestimate
-subestimar
-
-undergraduate
-estudiante universitario
-
-underground
-subterráneo, metro
-
-underneath
-debajo, por abajo
-
-undershirt
-la camiseta
-
-understand
-entender, comprender
-
-understanding
-comprensivo
-
-underwear
-la ropa interior
-
-unemployed
-desempleado. sin empleo
-
-unfit
-estar en baja forma
-
-unfortunately
-desgraciadamente
-
-unhygienic
-antihigiénico
-
-uniform
-uniforme
-
-union
-sindicato
-
-unique
-Único
-
-united states
-los estados unidos
-
-university
-universidad
-
-unknown
-desconocido
-
-unless
-a menos que, excepto
-
-unlucky
-desafortunado
-
-unripe
-inmaduro. verde
-
-until
-hasta que, hasta
-
-unused
-sin usar
-
-up
-arriba, encima
-
-update
-actualizar
-
-upload
-cargar
-
-upper
-superior
-
-upset
-alterado
-
-upset
-molestar
-
-upside down
-al revés
-
-upstairs
-arriba
-
-urgent
-urgente
-
-urinate
-orinar
-
-urine
-la orina
-
-us
-nos
-
-USA
-ee. uu
-
-use
-uso
-
-use
-usar, aprovechar
-
-used
-de segunda mano
-
-used to
-estar acostumbrado a
-
-useful
-Útil
-
-usual
-usual, ordinario
-
-usually
-por lo general, usualmente
-
-vacation
-vacaciones
-
-vacation
-vacación. de vacaciones
-
-vacationer
-veraneante
-
-vaccinate
-vacunar
-
-vacuum cleaner
-la aspiradora
-
-vagina
-vagina
-
-vague
-vago
-
-vain
-en vano
-
-valid
-válido
-
-valley
-el valle
-
-value
-valor
-
-valve
-la válvula
-
-van
-furgoneta, camioneta
-
-variety
-variedad
-
-various
-varios, diversos
-
-vase
-el jarrón, el florero
-
-VCR
-video
-
-vegetables
-las legumbres, las verduras
-
-vegetarian
-veterinario
-
-veil
-velo
-
-vein
-la vena
-
-verb
-verbo
-
-verify
-verificar
-
-verse
-verso
-
-version
-versión
-
-very
-muy
-
-very little
-muy poco
-
-very much
-muchísimo, mucho, muy
-
-vest
-el chaleco
-
-vet
-veterinario
-
-veteran
-veterano
-
-via
-vía
-
-victim
-víctima
-
-victory
-victoria
-
-video camera
-videocámara
-
-videotape
-cinta
-
-view
-vista
-
-villa
-casa de campo, chalé
-
-village
-pueblo, aldea
-
-vine
-la enredadera
-
-vinegar
-el vinagre
-
-violence
-violencia
-
-violent
-violento
-
-violet
-la violeta
-
-violin
-violín
-
-VIP
-VIP
-
-virgin
-virgen
-
-virus
-virus
-
-visa
-visado
-
-visible
-visible
-
-visit
-la visita
-
-visit
-visitar, ir de visita
-
-visor
-la visera
-
-vitamin
-vitamina
-
-v-neck
-cuello de pico
-
-vocabulary
-vocabulario
-
-voice
-voz
-
-void
-nulo
-
-void
-anular, derogar
-
-volcano
-volcán
-
-volleyball
-el voleibol
-
-volunteer
-voluntario
-
-vomit
-vomitar
-
-vote
-votar, voto
-
-vowel
-vocal
-
-vulgar
-vulgar
-
-wage
-sueldo, salario
-
-waist
-la cintura
-
-wait
-esperar
-
-waiter
-camarero, mozo
-
-waiting room
-sala de espera
-
-waitress
-la mesera,  la camarera
-
-wake up
-despertarse
-
-walk
-caminar, andar. paseo
-
-walk
-un paseo
-
-walk
-dar un paseo
-
-wall
-muro
-
-wallet
-la cartera
-
-want
-querer
-
-wanted
-buscado por la policía
-
-war
-guerra
-
-wardrobe
-el guardarropa, el armario
-
-warm
-caliente, caldeado, caluroso
-
-warm up
-calentar
-
-warn
-avisar
-
-warrior
-guerrero
-
-wash
-lavar, limpiarse
-
-washbasin
-lavabo
-
-washing machine
-lavadora
-
-wasp
-avispa
-
-waste
-malgastar
-
-waste bin
-cubo de basura
-
-watch
-ver la tele, mirar la tele
-
-watch
-el reloj de pulsera
-
-watch
-observar
-
-watchmaker
-relojero
-
-water
-agua
-
-waterfall
-cascada
-
-watermelon
-la sandía
-
-wave
-ola
-
-wax
-cera
-
-way
-manera, método. camino
-
-we
-nosotros, nos
-
-weak
-débil. flojo
-
-wealth
-riqueza
-
-weapon
-arma
-
-wear
-traer, vestir. llevar
-
-weather
-tiempo
-
-website
-sitio web, sitio
-
-wedding
-boda
-
-week
-semana
-
-weekend
-fin de semana
-
-weep
-llorar
-
-wee-wee
-pipí
-
-weigh
-pesar
-
-weight
-peso
-
-weird
-raro, extraño
-
-welcome
-acoger. bienvenido
-
-weld
-soldar
-
-well
-bien. sano
-
-well
-pozo
-
-west
-oeste
-
-wet
-mojado
-
-whale
-la ballena
-
-what
-qué. cómo! qué!
-
-wheel
-la rueda
-
-wheelchair
-la silla de ruedas
-
-when
-cuando
-
-whenever
-cada vez
-
-where
-dónde, a dónde
-
-wherever
-donde
-
-which
-cuál, cuáles
-
-while
-mientras, -- que
-
-whisper
-susurrar
-
-white
-blanco
-
-who
-quién
-
-whoever
-quienquiera
-
-whole
-entero
-
-whore
-prostituta
-
-whose
-de quien
-
-why
-por que
-
-wicked
-malvado
-
-wide
-ancho, amplio
-
-widow
-viuda
-
-width
-anchura
-
-wife
-la mujer/ la esposa
-
-wild
-salvaje
-
-win
-ganar
-
-wind
-viento
-
-wind
-bobinar
-
-window
-la ventana
-
-windshield
-el parabrisas
-
-windy
-hace/con viento
-
-wine
-vino
-
-wing
-el ala
-
-wink
-hacer un guiño a alguien
-
-winner
-ganador
-
-winter
-invierno
-
-wipe
-limpiar
-
-wire
-alambre, cable
-
-wireless
 radio
 
-wisdom
-sabiduría
+el rábano
+radish
 
-wise
-sabio
+ferrocarril
+railroad
 
-wish
-deseo
+ferrocarril
+railway
 
-wish
-desear
+la lluvia
+rain
 
-witch
-bruja
+llover
+rain
 
-with
-con
+el impermeable
+raincoat
 
-withdraw
-retirar
+lloviendo
+raining
 
-within
-dentro de
+lluvioso
+rainy
 
-without
+aumento de sueldo
+raise
+
+pasa
+raisin
+
+al azar
+random
+
+rango
+rank
+
+violar
+rape
+
+rápidamente
+rapidly
+
+raro, excepcional
+rare
+
+poco hecho
+rare
+
+raras veces
+rarely
+
+la escofina
+rasp
+
+la frambuesa
+raspberry
+
+la rata
+rat
+
+tarifa, precio
+rate
+
+crudo
+raw
+
+maquinilla de afeitar
+razor
+
+alcanzar
+reach
+
+reacción
+reaction
+
+leer
+read
+
+listo. alistarse!prepararse!
+ready
+
+prepararse
+ready
+
+real. realmente
+real
+
+bienes inmuebles
+real estate
+
+realidad
+reality
+
+darse cuenta de
+realize
+
+en realidad. de veras
+really
+
+la defensa trasera
+rear bumper
+
+el espejo retrovisor
+rearview mirror
+
+razón, causa, motivo
+reason
+
+recibo
+receipt
+
+recibir
+receive
+
+recientemente
+recently
+
+la recepción
+reception
+
+recepción
+reception desk
+
+recepcionista
+receptionist
+
+receta
+recipe
+
+el sillón reclinable
+recliner
+
+reconocer
+recognize
+
+recomendar
+recommend
+
+el récord
+record
+
+disco
+record
+
+grabar
+record
+
+recuperarse
+recover
+
+rojo
+red
+
+rebajar
+reduce
+
+el reflector
+reflector
+
+la nevera, el frigorífico, el refrigerador
+refrigerator
+
+refugiado
+refugee
+
+reembolso
+refund
+
+rembolsar
+refund
+
+negarse a hacer algo
+refuse
+
+a pesar de todo
+regardless
+
+región
+region
+
+registrarse, matricularse
+register
+
+certificado
+registered
+
+registro. matriculación
+registration
+
+rembolsar
+reimburse
+
+relación
+relationship
+
+relajarse
+relax
+
+liberar
+release
+
+seguro
+reliable
+
+alivio
+relief
+
+religión
+religion
+
+religioso
+religious
+
+quedarse, restar
+remain
+
+recordar, acordarse de
+remember
+
+recordar algo a alguien
+remind
+
+mando a distancia
+remote control
+
+eliminar
+remove
+
+alquilar, rentar. renta
+rent
+
+reparar
+repair
+
+repetir
+repeat
+
+respuesta
+reply
+
+responder
+reply
+
+reportero
+reporter
+
+reputación
+reputation
+
+tener fama de ser
+reputed to be
+
+por encargo
+request
+
+requerir. necesitar
+require
+
+rescatar
+rescue
+
+reserva
+reservation
+
+reservar
+reserve
+
+reservado
+reserved
+
+residente, habitante
+resident
+
+dimitir de
+resign
+
+dimisión
+resignation
+
+resistir
+resist
+
+respeto. respetar
+respect
+
+responsable de
+responsible
+
+resto
+rest
+
+descanso
+rest
+
+descansar
+rest
+
+el restaurante
+restaurant
+
+servicios
+restroom
+
+baños
+restroom
+
+resultado
+result
+
+currículum
+resume
+
+jubilarse
+retire
+
+jubilado, retirado
+retired
+
+regresar, devolverse.regreso
+return
+
+el remitente
+return address
+
+el billete de ida y vuelta
+return ticket
+
+venganza
+revenge
+
+revolución
+revolution
+
+revólver
+revolver
+
+recompensa. recompensar
+reward
+
+el rinoceronte
+rhinoceros
+
+el ruibarbo
+rhubarb
+
+ritmo
+rhythm
+
+arroz
+rice
+
+rico
+rich
+
+montar a
+ride
+
+ridículo
+ridiculous
+
+rifle
+rifle
+
+correcto. bien
+right
+
+derecho
+right
+
+tener razón
+right
+
+anillo
+ring
+
+timbrar, sonar
+ring
+
+maduro
+ripe
+
+riesgo. peligro
+risk
+
+rival
+rival
+
+el río
+river
+
+carretera, calle, camino
+road
+
+asado
+roasted
+
+robar a
+rob
+
+ladrón
+robber
+
+la bata
+robe
+
+el petirrojo
+robin
+
+robot
+robot
+
+roca
+rock
+
+cohete
+rocket
+
+el panecillo
+roll
+
+darse la vuelta
+roll over
+
+patín en línea
+roller blade
+
+romántico
+romantic
+
+el techo, el tejado
+roof
+
+el cuarto, la sala
+room
+
+servicio de habitaciones
+room service
+
+raíz
+root
+
+cuerda, cable
+rope
+
+la rosa
+rose
+
+podrido
+rotten
+
+áspero
+rough
+
+picado
+rough
+
+redondo
+round
+
+boleto de ida y vuelta
+round trip ticket
+
+alrededor del mundo
+round-the-world
+
+rutina
+routine
+
+real
+royal
+
+frotar
+rub
+
+cinta de goma. gomita
+rubber band
+
+basura
+rubbish
+
+maleducado
+rude
+
+el tapete, la alfombra
+rug
+
+regir, gobernar
+rule
+
+regla
+rule
+
+regla
+ruler
+
+rumor
+rumor
+
+escaparse, correrse
+run away
+
+hacer algo con prisas
+rush
+
+hora punta
+rush hour
+
+rusia
+Russia
+
+Óxido
+rust
+
+oxidado
+rusty
+
+sagrado
+sacred
+
+sacrificio
+sacrifice
+
+triste, afligido
+sad
+
+la tristeza
+sadness
+
+seguro
+safe
+
+caja fuerte
+safe
+
+seguridad
+safety
+
+navegar
+sail
+
+marinero, marino
+sailor
+
+santo
+saint
+
+la ensalada
+salad
+
+sueldo, pago, salario
+salary
+
+venta
+sale
+
+la rebaja, la liquidacion
+sale
+
+en oferta, en rebaja
+sale
+
+el vendedor
+salesman
+
+vendedor
+salesperson
+
+saliva
+saliva
+
+el salmón
+salmon
+
+la sal
+salt
+
+el salero
+salt shaker
+
+salado
+salty
+
+mismo, el mismo
+same
+
+muestra
+sample
+
+la arena
+sand
+
+las sandalias
+sandals
+
+el sándwich
+sandwich
+
+papá noel
+Santa Claus
+
+sarcástico
+sarcastic
+
+sardinas
+sardines
+
+satélite
+satellite
+
+satisfacer
+satisfy
+
+salsa, compota
+sauce
+
+cacerola
+saucepan
+
+la salchicha, el chorizo
+sausage
+
+ahorrar. salvar. guardar
+save
+
+ahorros
+savings
+
+decir
+say
+
+la escala, la balanza
+scale
+
+escáner
+scanner
+
+cicatriz
+scar
+
+la bufanda
+scarf
+
+programa, horario
+schedule
+
+plan, proyecto
+scheme
+
+erudito
+scholar
+
+beca
+scholarship
+
+escuela
+school
+
+la ciencia
+science
+
+unas tijeras
+scissors
+
+puntuación
+score
+
+marcar
+score
+
+el alacrán
+scorpion
+
+el estropajo
+scouring
+
+huevos revueltos
+scrambled
+
+arañar
+scratch
+
+gritar. grito
+scream
+
+pantalla, monitor
+screen
+
+tornillo
+screw
+
+meter la pata
+screw up
+
+el destornillador
+screwdriver
+
+fregar
+scrub
+
+el mar
+sea
+
+los mariscos
+seafood
+
+la gaviota
+seagull
+
+foca
+seal
+
+motor de búsqueda
+search engine
+
+buscar
+search for
+
+estación
+season
+
+el asiento, la silla, el sillín
+seat
+
+el alga
+seaweed
+
+segundo
+second
+
+el primer piso
+second floor
+
+secreto
+secret
+
+agente secreto
+secret agent
+
+el/la b2967secretario/a
+secretary
+
+zona, parte
+section
+
+seguridad, guardia
+security
+
+el guardia
+security guard
+
+ver, mirar
+see
+
+semilla
+seed
+
+parecer, mirarse
+seem
+
+ataque
+seizure
+
+seleccionar
+select
+
+seguro de sí mismo
+self-confident
+
+egoísta
+selfish
+
+autodidacta
+self-taught
+
+vender
+sell
+
+vendedor
+seller
+
+enviar, mandar
+send
+
+sensible
+sensitive
+
+destinatario
+sent to
+
+oración
+sentence
+
+separado
+separate
+
+separar
+separate
+
+separado
+separated
+
+septiembre
+September
+
+grave. serio
+serious
+
+criado, mozo
+servant
+
+servir
+serve
+
+servicio
+service
+
+la estación de servicio
+service station
+
+siete
+seven
+
+diecisiete
+seventeen
+
+décimo séptimo
+seventeenth
+
+séptimo
+seventh
+
+septuagésimo
+seventieth
+
+setenta
+seventy
+
+varios
+several
+
+varios
+several, some
+
+coser
+sew
+
+aguas residuales
+sewage
+
+sexo
+sex
+
+sexy
+sexy
+
+sombra
+shade
+
+agitar
+shake
+
+poco profundo
+shallow
+
+la vergüenza
+shame
+
+desvergonzado, sin vergüenza
+shameless
+
+el champú
+shampoo
+
+forma
+shape
+
+compartir, dividirse. parte
+share
+
+el tiburón
+shark
+
+afilado, agudo
+sharp
+
+afeitar
+shave
+
+la crema de afeitar
+shaving cream
+
+ella
+she
+
+la oveja, el borrego
+sheep
+
+sábana
+sheet
+
+concha, cáscara
+shell
+
+los mariscos
+shellfish
+
+refugio
+shelter
+
+estantería
+shelves
+
+pastor
+shepherd
+
+la espinilla
+shin
+
+barco, buque
+ship
+
+envío
+shipping
+
+la camisa
+shirt
+
+mierda
+shit
+
+tiritar
+shiver
+
+los zapatos
+shoes
+
+disparar. matar de un tiro
+shoot
+
+la tienda, almacén
+shop
+
+hacer compras, ir de ~
+shop
+
+ir de compras
+shopping
+
+las compras
+shopping
+
+la canasta de compras
+shopping basket
+
+el centro comercial
+shopping mall
+
+pequeño, --de tamaño, corto
+short
+
+los pantalones cortos, los calzoncillos
+shorts
+
+deber, debería…
+should
+
+el hombro
+shoulder
+
+el grito
+shout
+
+gritar
+shout
+
+pala
+shovel
+
+mostrar, espectáculo
+show
+
+la ducha, el baño de ducha
+shower
+
+el gorro de baño
+shower cap
+
+los camarones
+shrimps
+
+encoger
+shrink
+
+cerrado
+shut
+
+cerrar
+shut
+
+autobús de conexión
+shuttle bus
+
+tímido, vergonzoso
+shy
+
+enfermo
+sick
+
+lado
+side
+
+acera
+sidewalk
+
+suspirar
+sigh
+
+la excursión turística
+sightseeing
+
+signo, señal
+sign
+
+firmar
+sign
+
+señal
+signal
+
+firma
+signature
+
+silencio. silencio!
+silence
+
+seda
+silk
+
+tonto
+silly
+
+plata
+silver
+
+similar, semejante, parecido
+similar
+
+simple, fácil. sencillo
+simple
+
+sencillamente
+simply
+
+pecado
 sin
 
-witness
-el testigo
+desde. desde que, ya que
+since
 
-witty
-gracioso
+sincero
+sincere
 
-wolf
-el lobo
+cantar
+sing
 
-woman
-mujer, hembra
+cantante
+singer
 
-wonder
-preguntarse
+soltero, sujeto
+single
 
-wonderful
-maravilloso
+la habitación individual/ doble
+single/ double room
 
-wood
-madera, leña. bosque
+el fregadero, el lavamanos
+sink
 
-wooden
-de madera
+hundirse
+sink
 
-woodpecker
-el pájaro carpintero
+seno
+sinus
 
-wool
-lana
+señor, caballero
+sir
 
-word
-palabra
+la hermana
+sister
 
-work
-trabajo
+cuñada
+sister-in-law
 
-work
-trabajar
+sentarse, tomar asiento
+sit down
 
-worker
-trabajador
+situación
+situation
 
-world
-mundo
+seis
+six
 
-worm
-gusano
+dieciséis
+sixteen
 
-worried
-preocupado
+décimo sexto
+sixteenth
 
-worry
-preocuparse
+sexto
+sixth
 
-worse
-peor
+sexagésimo
+sixtieth
 
-worship
-adorar
+sesenta
+sixty
 
-worst
+tamaño, talla
+size
+
+patinar
+skate
+
+el patinaje
+skating
+
+esqueleto
+skeleton
+
+esquiar
+ski
+
+unos bastones
+ski poles
+
+habilidad, experiencia
+skill
+
+piel, cutis
+skin
+
+escuálido
+skinny
+
+la falda
+skirt
+
+cráneo
+skull
+
+cielo
+sky
+
+argot, jerga
+slang
+
+bofetada, guantada, palmada
+slap
+
+dar una guantada a alguien
+slap
+
+barra
+slash
+
+esclavo
+slave
+
+sueño
+sleep
+
+dormir
+sleep
+
+saco de dormir
+sleeping bag
+
+tener sueño
+sleepy
+
+manga
+sleeve
+
+rebanada
+slice
+
+delgado
+slim
+
+el soporte
+sling
+
+el refajo
+slip
+
+resbalar
+slip
+
+las zapatillas
+slippers
+
+escurridizo
+slippery
+
+despacio, lento, atrasado
+slow
+
+lentamente, despacio
+slowly
+
+pequeño, bajo, chico
+small
+
+inteligente
+smart
+
+sabelotodo
+smart ass
+
+olor, olfato
+smell
+
+oler
+smell
+
+la sonrisa
+smile
+
+sonreír
+smile
+
+humo
+smoke
+
+fumar
+smoke
+
+pasar de contrabando
+smuggle
+
+contrabando
+smuggling
+
+el bocadillo, tentempié
+snack
+
+cafetería
+snack bar
+
+caracol
+snail
+
+la serpiente, la víbora
+snake
+
+unos deportivos
+sneakers
+
+estornudar
+sneeze
+
+roncar
+snore
+
+nieve
+snow
+
+nevar
+snow
+
+nevando
+snowing
+
+nevado
+snowy
+
+tan. así, entonces
+so
+
+para que, de manera que
+so as to
+
+hasta ahora
+so far
+
+tanto
+so much
+
+!es así, pues !a tal punto!
+so!
+
+poner en remojo
+soak
+
+el jabón
+soap
+
+la jabonera
+soap dish
+
+sobrio
+sober
+
+el fútbol
+soccer
+
+social
+social
+
+sociedad
+society
+
+el calcetín
+sock
+
+enchufe
+socket
+
+los calcetines
+socks
+
+soda, gaseosa
+soda
+
+el sofá
+sofa
+
+blando, suave
+soft
+
+el refresco
+soft drink
+
+tierra
+soil
+
+el soldado
+soldier
+
+resolver
+solve
+
+algunos, un poco, -- de
+some
+
+algún/alguna
+some, a few
+
+alguien
+someone
+
+algo. un poco
+something
+
+alguna vez
+sometime
+
+a veces, a días
+sometimes
+
+a alguna parte. en --
+somewhere
+
+el hijo
+son
+
+canción. canto
+song
+
+yerno
+son-in-law
+
+pronto, en seguida
+soon
+
+dolorido
+sore
+
+dolor de garganta
+sore throat
+
+apenado. perdón! lo siento
+sorry
+
+clase. clase
+sort
+
+así así
+so-so
+
+alma
+soul
+
+sonido
+sound
+
+la sopa
+soup
+
+agrio, ácido
+sour
+
+sur
+south
+
+sudáfrica
+South Africa
+
+recuerdo
+souvenir
+
+sembrar
+sow
+
+semilla de soja
+soy bean
+
+espacio
+space
+
+la estación espacial
+space station
+
+espaguetis
+spaghetti
+
+españa
+Spain
+
+español. hispánico
+Spanish
+
+llanta picada
+spare tire
+
+el gorrión
+sparrow
+
+hablar
+speak
+
+altavoz, altoparlente
+speakers
+
+especial
+special
+
+especie
+species
+
+específico
+specific
+
+especificar
+specify
+
+muestra
+specimen
+
+discurso
+speech
+
+la velocidad
+speed
+
+acelerar
+speed
+
+deletrear
+spell out
+
+ortografía
+spelling
+
+gastar. pasar
+spend
+
+esperma
+sperm
+
+especias
+spices
+
+picante
+spicy
+
+la araña
+spider
+
+espiga
+spike
+
+derramar
+spill
+
+dar vueltas, girar
+spin
+
+la espinaca
+spinach
+
+columna vertebral
+spine
+
+espíritu
+spirit
+
+la moral
+spirits
+
+escupir
+spit
+
+repartir
+split
+
+doble personalidad
+split personality
+
+consentido, mimado
+spoilt
+
+los rayos, el radio
+spoke
+
+la esponja
+sponge
+
+espontáneo
+spontaneous
+
+la cuchara
+spoon
+
+el deporte
+sport
+
+lugar
+spot
+
+mancha
+spot
+
+primavera. fuente de agua
+spring
+
+la corona
+sprocket
+
+espía. espiar
+spy
+
+cuadrado, plaza
+square
+
+la calabaza
+squash
+
+apretar
+squeeze
+
+el calamar
+squid
+
+la ardilla
+squirrel
+
+estable
+stable
+
+estadio
+stadium
+
+personal
+staff
+
+etapa
+stage
+
+mancha
+stain
+
+acero inoxidable
+stainless steel
+
+la escalera
+staircase
+
+escaleras
+stairs
+
+la escalera
+stairway
+
+la estampilla, el sello
+stamp
+
+las estampillas
+stamps
+
+ponerse de pie
+stand-up
+
+la grapadora
+stapler
+
+las grapas
+staples
+
+la estrella
+star
+
+mirar fijamente
+stare
+
+principio
+start
+
+comenzar
+start
+
+estado
+state
+
+extracto
+statement
+
+estación
+station
+
+la papelería
+stationers
+
+estadística
+statistics
+
+estatua
+statue
+
+categoría
+status
+
+quedarse. permanencia
+stay
+
+quedarse levantado
+stay up
+
+el filete, el bisté
+steak
+
+robar
+steal
+
+vapor
+steam
+
+buque de vapor
+steamer
+
+empinado
+steep
+
+el volante
+steering wheel
+
+el tallo
+stem
+
+paso
+step
+
+el estetoscopio
+stethoscope
+
+el auxiliar de vuelo
+steward
+
+azafata
+stewardess
+
+palo
+stick
+
+pegar
+stick
+
+la palanca de velocidades
+stick shift
+
+pegatina
+sticker
+
+aún, todavía, --todo
+still
+
+picadura
+sting
+
+picar
+sting
+
+la raya
+stingray
+
+apestar
+stink
+
+dar vueltas a la sopa
+stir
+
+puntos
+stitches
+
+media
+stocking
+
+las medias
+stockings
+
+el estómago, el vientre
+stomach
+
+dolor de estómago
+stomachache
+
+piedra
+stone
+
+bloquear, parar. parada
+stop
+
+tienda, almacén
+store
+
+tormenta, temporal
+storm
+
+historia
+story
+
+piso
+story
+
+la cocina, la estufa
+stove
+
+todo recto, derecho
+straight on
+
+arreglar
+straighten up
+
+extraño, extranjero
+stranger
+
+estrategia
+strategy
+
+la fresa
+strawberry
+
+calle, callejón
+street
+
+el letrero
+street sign
+
+el tranvía
+streetcar
+
+fuerza
+strength
+
+estrés
+stress
+
+estresante
+stressful
+
+estirar
+stretch
+
+estricto, severo
+strict
+
+huelga
+strike
+
+cuerda
+string
+
+el lazo
+string tie
+
+hacer striptease
+strip
+
+derrame
+stroke
+
+el carrito
+stroller
+
+fuerte, duro
+strong
+
+luchar. lucha
+struggle
+
+testarudo. terco
+stubborn
+
+estudiante, alumno
+student
+
+estudios
+studies
+
+estudiar
+study
+
+cosas
+stuff
+
+estúpido, tonto
+stupid
+
+estilo. moda
+style
+
+tema, asunto
+subject
+
+submarino
+submarine
+
+presentar
+submit
+
+suscribirse
+subscribe
+
+zona residencial de la periferia
+suburb
+
+el tren subterráneo, el metro
+subway
+
+la estación de metro
+subway station
+
+tener éxito, lograr éxito
+succeed
+
+Éxito
+success
+
+tal, tales
+such
+
+chupar
+suck
+
+de repente, de pronto
+suddenly
+
+asfixiar
+suffocate
+
+el azúcar
+sugar
+
+el azucarero
+sugar bowl
+
+sugerir
+suggest
+
+suicidio
+suicide
+
+el traje
+suit
+
+la maleta, la valija
+suitcase
+
+verano
+summer
+
+cumbre
+summit
+
+sol
+sun
+
+la crema bronceadora
+sun cream
+
+domingo
+sunday
+
+anteojos de sol
+sunglasses
+
+las gafas de sol
+sunglasses
+
+soleado
+sunny
+
+día soleado
+sunny day
+
+el amanecer
+sunrise
+
+el atardecer, puesta de sol
+sunset
+
+bronceado
+suntan
+
+genial, estupendo
+super
+
+superficial
+superficial
+
+el supermercado
+supermarket
+
+supervisor
+supervisor
+
+la cena, la comida
+supper
+
+suponer
+suppose
+
+seguro
+sure
+
+por cierto
+sure
+
+navegar
+surf
+
+superficie
+surface
+
+cirujano
+surgeon
+
+cirugía
+surgery
+
+apellido
+surname
+
+sorpresa
+surprise
+
+rendirse
+surrender
+
+circundar, rodear
+surround
+
+rodeado de
+surrounded by
+
+alrededores
+surroundings
+
+sobrevivir
+survive
+
+superviviente
+survivor
+
+sospechoso
+suspect
+
+tirantes. suspensores
+suspenders
+
+la sospecha
+suspicion
+
+tragarse
+swallow
+
+el cisne
+swan
+
+jurar
+swear
+
+sudor
+sweat
+
+sudar
+sweat
+
+el suéter
+sweater
+
+barrer
+sweep
+
+dulce
+sweet
+
+la batata
+sweet potato
+
+la confitería
+sweet shop
+
+dulces, caramelos
+sweets
+
+hincharse
+swell
+
+nadar, bañarse
+swim
+
+la natación
+swimming
+
+la piscina
+swimming pool
+
+el traje de baño
+swimsuit
+
+balancearse
+swing
+
+el interruptor
+switch
+
+cambiar a
+switch to
+
+hinchado
+swollen
+
+espada
+sword
+
+el pez espada
+swordfish
+
+símbolo
+symbol
+
+síntoma
+symptom
+
+jeringuilla
+syringe
+
+sistema, método
+system
+
+la mesa, tabla
+table
+
+el mantel
+tablecloth
+
+pastilla
+tablet
+
+el renacuajo
+tadpole
+
+etiqueta
+tag
+
+la cola
+tail
+
+las luces traseras
+tail lights
+
+la sastrería, sastre
+tailor's
+
+tomar, coger
+take
+
+hacer un viaje
+take a trip
+
+quitarse
+take off
+
+quitarse
+take off
+
+la conversación
+talk
+
+hablar
+talk
+
+alto
+tall
+
+el tanque
+tank
+
+grifo, llave
+tap
+
+cinta
+tape
+
+la cinta
+tape
+
+magnetófono
+tape recorder
+
+sabor
+taste
+
+saborear, probar
+taste
+
+sabroso
+tasty
+
+tatuaje
+tattoo
+
+impuestos
+tax
+
+el taxi
+taxi
+
+taxista
+taxi driver
+
+té
+tea
+
+enseñar
+teach
+
+el maestro, el profesor
+teacher
+
+el equipo
+team
+
+la tetera
+teapot
+
+la lágrima
+tear
+
+romper
+tear up
+
+lágrimas
+tears
+
+tomar el pelo a
+tease
+
+técnico
+technician
+
+el oso de peluche
+teddy bear
+
+adolescente
+teenager
+
+dientes
+teeth
+
+cabina telefónica
+telephone booth
+
+televisión
+television
+
+decir
+tell
+
+cajero
+teller
+
+la temperatura
+temperature
+
+templo
+temple
+
+temporal, provisional
+temporary
+
+diez
+ten
+
+el tenis
+tennis
+
+la carpa, la tienda de campaña
+tent
+
+décimo
+tenth
+
+terraza
+terrace
+
+terrible
+terrible
+
+estupendo
+terrific
+
+terrorista
+terrorist
+
+prueba. examen
+test
+
+texto
+text
+
+que. más que, menos que
+than
+
+agradecer, dar gracias
+thank
+
+gracias a
+thanks to
+
+Ése, eso, ésa. el
+that
+
+el, la , los , las
+the
+
+el mejor
+the best
+
+el mayor
+the greatest
+
+el menor
+the least
+
 el peor
+the worst
 
-worthless
+el teatro
+theater
+
+su, sus, de ellas
+their
+
+les, las, los
+them
+
+entonces, después , luego
+then
+
+allí, allá, ahí
+there
+
+hay
+there is/ are
+
+había
+there was/ were
+
+el termómetro
+thermometer
+
+Éstos, éstas
+these
+
+ellos, ellas
+they
+
+grueso, espeso, denso
+thick
+
+el ladrón
+thief
+
+el muslo
+thigh
+
+delgado
+thin
+
+cosa
+thing
+
+pensar
+think
+
+tercero
+third
+
+tiene sed
+thirsty
+
+trece
+thirteen
+
+décimo tercero
+thirteenth
+
+trigésimo
+thirtieth
+
+treinta
+thirty
+
+Éste, ésta
+this
+
+aquellos, esas. esos
+those
+
+sin embargo
+though
+
+pensamientos
+thoughts
+
+mil
+thousand
+
+milésimo
+thousandth
+
+hilo
+thread
+
+amenazar
+threaten
+
+tres
+three
+
+la garganta
+throat
+
+a través de
+through
+
+tirar, arrojar
+throw
+
+tirar
+throw away
+
+vomitar
+throw up
+
+el pulgar
+thumb
+
+trueno
+thunder
+
+tormenta
+thunderstorm
+
+jueves
+Thursday
+
+el billete, el boleto
+ticket
+
+el pasaje
+ticket
+
+tener cosquillas
+ticklish
+
+la marea
+tide
+
+marea alta
+tide
+
+marea baja
+tide
+
+la corbata
+tie
+
+el tigre
+tiger
+
+ajustado, estrecho
+tight
+
+baldosa
+tile
+
+hasta
+till, until
+
+tiempo, hora
+time
+
+horario
+timetable
+
+abrelatas
+tin opener
+
+diminuto
+tiny
+
+consejo, propina
+tip
+
+la llanta
+tire
+
+cansado, aburrido
+tired
+
+pañuelos de papel
+tissues
+
+título
+title
+
+a, hacia, para. hasta
+to
+
+alegrarse
+to be happy
+
+tener hambre
+to be hungry
+
+sorprenderse
+to be surprised
+
+tener sed
+to be thirsty
+
+enfadarse
+to become angry
+
+aburrirse
+to become bored
+
+acostumbrarse
+to become used to
+
+enojarse
+to get angry
+
+aburrirse
+to get bored
+
+vestirse
+to get dressed
+
+arreglarse
+to get ready
+
+asustarse
+to get scared
+
+enfermarse
+to get sick
+
+cansarse
+to get tired
+
+ir de vacaciones
+to go on vacation
+
+ir a + inf
+to go to + inf
+
+acostarse
+to go to bed
+
+divertirse
+to have a good time
+
+tener que + inf
+to have to
+
+tostado
+toasted
+
+tostador
+toaster
+
+el estanco
+tobacco shop
+
+estanco
+tobacconist's
+
+día de hoy
+today
+
+el dedo del pie
+toe
+
+uña del pie
+toenail
+
+juntos
+together
+
+el retrete, el excusado, los servicios
+toilet
+
+tolerar
+tolerate
+
+el peaje
+toll
+
+el tomate
+tomato
+
+tumba
+tomb
+
+mañana
+tomorrow
+
+la lengua
+tongue
+
+esta noche
+tonight
+
+también. demasiado. muy
+too
+
+¡qué malo!
+too bad!
+
+herramienta
+tool
+
+la caja de herramientas
+toolbox
+
+el diente
+tooth
+
+el cepillo de dientes
+toothbrush
+
+la pasta de dientes
+toothpaste
+
+Último piso
+top floor
+
+tema
+topic
+
+tornado
+tornado
+
+tortuga
+tortoise
+
+total, suma total
+total
+
+tocar
+touch
+
+duro
+tough
+
+vuelta, visita
+tour
+
+turista
+tourist
+
+torneo
+tournament
+
+remolcar
+tow
+
+hacia
+towards, about
+
+la toalla
+towel
+
+torre
+tower
+
+pueblo, ciudad
+town
+
+ayuntamiento
+town hall
+
+tóxico
+toxic
+
+el juguete
+toy
+
+tradición
+tradition
+
+tradicional
+traditional
+
+tráfico
+traffic
+
+el policía de tránsito
+traffic cop
+
+el semáforo
+traffic light
+
+el tren
+train
+
+tren
+train
+
+entrenar
+train
+
+la estación de tren
+train station
+
+aprendiz
+trainee
+
+zapatillas de deporte
+trainers
+
+el entrenamiento
+training
+
+transferir
+transfer
+
+trasbordo
+transfer
+
+en tránsito
+transit
+
+traducir
+translate
+
+traducción
+translation
+
+traductor
+translator
+
+transparente
+transparent
+
+transporte
+transportation
+
+trampa
+trap
+
+basura
+trash
+
+el basurero
+trashcan
+
+viajar
+travel
+
+la agencia de viajes
+travel agency
+
+agente de viajes
+travel agent
+
+cheque de viaje
+traveler's check
+
+la bandeja
+tray
+
+tesoro
+treasure
+
+tratar
+treat
+
+tratamiento
+treatment
+
+el árbol
+tree
+
+prueba, ensayo. juicio
+trial
+
+triángulo
+triangle
+
+tribu
+tribe
+
+truco
+trick
+
+el triciclo
+tricycle
+
+viaje, jornada
+trip
+
+carrito
+trolley
+
+tropas
+troops
+
+el problema
+trouble
+
+problemas
+troubles
+
+los pantalones
+trousers
+
+la trucha
+trout
+
+camión
+truck
+
+cierto, verdadero
+true
+
+el bañador
+trunk
+
+la trompa
+trunk
+
+confiar en
+trust
+
+de confianza
+trusted
+
+la verdad
+truth
+
+probar, ensayar, tartar
+try
+
+probarse
+try on
+
+la camiseta
+t-shirt
+
+martes
+Tuesday
+
+el tulipán
+tulip
+
+el atún
+tuna
+
+el túnel
+tunnel
+
+el pavo
+turkey
+
+Turquía
+turkey
+
+vuelta
+turn
+
+girar
+turn
+
+bajar
+turn down
+
+apagar
+turn off
+
+encender
+turn on
+
+las luces direccionales,los intermitentes
+turn signals
+
+poner el volumen más fuerte
+turn up
+
+el nabo
+turnip
+
+el torniquete de entrada
+turnstile
+
+la tortuga
+turtle
+
+cuello alto
+turtleneck
+
+el colmillo
+tusk
+
+pinzas
+tweezers
+
+duodécimo
+twelfth
+
+docena. doce
+twelve
+
+vigésimo
+twentieth
+
+veinte
+twenty
+
+vigésimo primero
+twenty-first
+
+vigésimo segundo
+twenty-second
+
+dos veces
+twice
+
+gemelo
+twin
+
+retorcer
+twist
+
+dos
+two
+
+tipo
+type
+
+escribir a máquina
+type
+
+típico
+typical
+
+la mecanógrafo
+typist
+
+tirano
+tyrant
+
+reino unido
+UK
+
+feo
+ugly
+
+Úlcera
+ulcer
+
+el paraguas
+umbrella
+
+el tío
+uncle
+
+bajo, debajo de
+under
+
+el calzoncillo
+under shorts
+
+subestimar
+underestimate
+
+estudiante universitario
+undergraduate
+
+subterráneo, metro
+underground
+
+debajo, por abajo
+underneath
+
+la camiseta
+undershirt
+
+entender, comprender
+understand
+
+comprensivo
+understanding
+
+la ropa interior
+underwear
+
+desempleado. sin empleo
+unemployed
+
+estar en baja forma
+unfit
+
+desgraciadamente
+unfortunately
+
+antihigiénico
+unhygienic
+
+uniforme
+uniform
+
+sindicato
+union
+
+Único
+unique
+
+los estados unidos
+united states
+
+universidad
+university
+
+desconocido
+unknown
+
+a menos que, excepto
+unless
+
+desafortunado
+unlucky
+
+inmaduro. verde
+unripe
+
+hasta que, hasta
+until
+
+sin usar
+unused
+
+arriba, encima
+up
+
+actualizar
+update
+
+cargar
+upload
+
+superior
+upper
+
+alterado
+upset
+
+molestar
+upset
+
+al revés
+upside down
+
+arriba
+upstairs
+
+urgente
+urgent
+
+orinar
+urinate
+
+la orina
+urine
+
+nos
+us
+
+ee. uu
+USA
+
+uso
+use
+
+usar, aprovechar
+use
+
+de segunda mano
+used
+
+estar acostumbrado a
+used to
+
+Útil
+useful
+
+usual, ordinario
+usual
+
+por lo general, usualmente
+usually
+
+vacaciones
+vacation
+
+vacación. de vacaciones
+vacation
+
+veraneante
+vacationer
+
+vacunar
+vaccinate
+
+la aspiradora
+vacuum cleaner
+
+vagina
+vagina
+
+vago
+vague
+
+en vano
+vain
+
+válido
+valid
+
+el valle
+valley
+
+valor
+value
+
+la válvula
+valve
+
+furgoneta, camioneta
+van
+
+variedad
+variety
+
+varios, diversos
+various
+
+el jarrón, el florero
+vase
+
+video
+VCR
+
+las legumbres, las verduras
+vegetables
+
+veterinario
+vegetarian
+
+velo
+veil
+
+la vena
+vein
+
+verbo
+verb
+
+verificar
+verify
+
+verso
+verse
+
+versión
+version
+
+muy
+very
+
+muy poco
+very little
+
+muchísimo, mucho, muy
+very much
+
+el chaleco
+vest
+
+veterinario
+vet
+
+veterano
+veteran
+
+vía
+via
+
+víctima
+victim
+
+victoria
+victory
+
+videocámara
+video camera
+
+cinta
+videotape
+
+vista
+view
+
+casa de campo, chalé
+villa
+
+pueblo, aldea
+village
+
+la enredadera
+vine
+
+el vinagre
+vinegar
+
+violencia
+violence
+
+violento
+violent
+
+la violeta
+violet
+
+violín
+violin
+
+VIP
+VIP
+
+virgen
+virgin
+
+virus
+virus
+
+visado
+visa
+
+visible
+visible
+
+la visita
+visit
+
+visitar, ir de visita
+visit
+
+la visera
+visor
+
+vitamina
+vitamin
+
+cuello de pico
+v-neck
+
+vocabulario
+vocabulary
+
+voz
+voice
+
+nulo
+void
+
+anular, derogar
+void
+
+volcán
+volcano
+
+el voleibol
+volleyball
+
+voluntario
+volunteer
+
+vomitar
+vomit
+
+votar, voto
+vote
+
+vocal
+vowel
+
+vulgar
+vulgar
+
+sueldo, salario
+wage
+
+la cintura
+waist
+
+esperar
+wait
+
+camarero, mozo
+waiter
+
+sala de espera
+waiting room
+
+la mesera,  la camarera
+waitress
+
+despertarse
+wake up
+
+caminar, andar. paseo
+walk
+
+un paseo
+walk
+
+dar un paseo
+walk
+
+muro
+wall
+
+la cartera
+wallet
+
+querer
+want
+
+buscado por la policía
+wanted
+
+guerra
+war
+
+el guardarropa, el armario
+wardrobe
+
+caliente, caldeado, caluroso
+warm
+
+calentar
+warm up
+
+avisar
+warn
+
+guerrero
+warrior
+
+lavar, limpiarse
+wash
+
+lavabo
+washbasin
+
+lavadora
+washing machine
+
+avispa
+wasp
+
+malgastar
+waste
+
+cubo de basura
+waste bin
+
+ver la tele, mirar la tele
+watch
+
+el reloj de pulsera
+watch
+
+observar
+watch
+
+relojero
+watchmaker
+
+agua
+water
+
+cascada
+waterfall
+
+la sandía
+watermelon
+
+ola
+wave
+
+cera
+wax
+
+manera, método. camino
+way
+
+nosotros, nos
+we
+
+débil. flojo
+weak
+
+riqueza
+wealth
+
+arma
+weapon
+
+traer, vestir. llevar
+wear
+
+tiempo
+weather
+
+sitio web, sitio
+website
+
+boda
+wedding
+
+semana
+week
+
+fin de semana
+weekend
+
+llorar
+weep
+
+pipí
+wee-wee
+
+pesar
+weigh
+
+peso
+weight
+
+raro, extraño
+weird
+
+acoger. bienvenido
+welcome
+
+soldar
+weld
+
+bien. sano
+well
+
+pozo
+well
+
+oeste
+west
+
+mojado
+wet
+
+la ballena
+whale
+
+qué. cómo! qué!
+what
+
+la rueda
+wheel
+
+la silla de ruedas
+wheelchair
+
+cuando
+when
+
+cada vez
+whenever
+
+dónde, a dónde
+where
+
+donde
+wherever
+
+cuál, cuáles
+which
+
+mientras, -- que
+while
+
+susurrar
+whisper
+
+blanco
+white
+
+quién
+who
+
+quienquiera
+whoever
+
+entero
+whole
+
+prostituta
+whore
+
+de quien
+whose
+
+por que
+why
+
+malvado
+wicked
+
+ancho, amplio
+wide
+
+viuda
+widow
+
+anchura
+width
+
+la mujer/ la esposa
+wife
+
+salvaje
+wild
+
+ganar
+win
+
+viento
+wind
+
+bobinar
+wind
+
+la ventana
+window
+
+el parabrisas
+windshield
+
+hace/con viento
+windy
+
+vino
+wine
+
+el ala
+wing
+
+hacer un guiño a alguien
+wink
+
+ganador
+winner
+
+invierno
+winter
+
+limpiar
+wipe
+
+alambre, cable
+wire
+
+radio
+wireless
+
+sabiduría
+wisdom
+
+sabio
+wise
+
+deseo
+wish
+
+desear
+wish
+
+bruja
+witch
+
+con
+with
+
+retirar
+withdraw
+
+dentro de
+within
+
+sin
+without
+
+el testigo
+witness
+
+gracioso
+witty
+
+el lobo
+wolf
+
+mujer, hembra
+woman
+
+preguntarse
+wonder
+
+maravilloso
+wonderful
+
+madera, leña. bosque
+wood
+
+de madera
+wooden
+
+el pájaro carpintero
+woodpecker
+
+lana
+wool
+
+palabra
+word
+
+trabajo
+work
+
+trabajar
+work
+
+trabajador
+worker
+
+mundo
+world
+
+gusano
+worm
+
+preocupado
+worried
+
+preocuparse
+worry
+
+peor
+worse
+
+adorar
+worship
+
+el peor
+worst
+
 no valer nada
+worthless
 
-worthy
 merecer
+worthy
 
-would
 . . . ía
+would
 
-wound
 herida
+wound
 
-wounded
 herido/a
+wounded
 
-wrap, coat
 el abrigo
+wrap, coat
 
-wrench
 la llave inglesa, la llave
+wrench
 
-wrestling
 la lucha
+wrestling
 
-wrinkle
 arruga
+wrinkle
 
-wrist
 la muñeca
+wrist
 
-write
 escribir
+write
 
-writer
 el escritor
+writer
 
-writing
 letra
+writing
 
-wrong
 estar equivocado
+wrong
 
-x-ray
 radiografía
+x-ray
 
-x-rays
 los rayos equis
+x-rays
 
-yacht
 el yate
+yacht
 
-yard
 jardín
+yard
 
-yawn
 bostezar
+yawn
 
-year
 año
+year
 
-yeast
 hez, levadura
+yeast
 
-yell
 gritar
+yell
 
-yellow
 amarillo
+yellow
 
-yes
 sí
+yes
 
-yesterday
 ayer
+yesterday
 
-yet
 todavía
+yet
 
-you
 tú. usted, te
-
 you
+
 os, vosotros
+you
 
-young
 joven
+young
 
-your
 tu, su. tuyo
-
 your
+
 vuestro
+your
 
+su
 your/ his/ her/ its
-su
 
+su
 your/ their
-su
 
-youth
 juventud
+youth
 
-youth hostel
 el albergue juvenil
+youth hostel
 
-zebra
 la cebra
+zebra
 
-zero
 cero
+zero
 
-zip code
 código postal
+zip code
 
-zipper
 cremallera
+zipper
 
-zit
 grano
+zit
 
-zone
 zona
+zone
 
-zoo
 zoológico
+zoo
 
-zoology
 la zoología
+zoology
 
 zoom
 zoom
